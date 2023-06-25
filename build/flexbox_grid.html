@@ -1,0 +1,900 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox & Grid</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        *, body, html{
+            box-sizing:-box;
+            padding: 0;
+            margin: 0;
+            font-family: Arial;
+            font-size: 1rem;
+        }
+        h3{
+            margin: 20px 0;
+            border-bottom:2px solid red;
+            font-weight: bold;
+            text-transform: capitalize;
+            word-spacing: 5px;
+        }
+        p{
+            padding: 10px 0;
+        }
+        .syntax{
+            border-top: 1px solid lightgrey;
+            border-bottom: 1px solid lightgrey;
+            padding: 5px;
+            background-color: darkslateblue;
+            margin: 8px 0;
+            border-radius: 3px;
+        }
+        .note{
+            background-color: darkred;
+            padding: 5px;
+            margin: 5px 0;
+        }
+        li{
+            margin: 5px 20px;
+            list-style-type: disc;
+            text-transform: capitalize;
+            font-family: cursive;
+        }
+    </style>
+</head>
+<body class="bg-black text-white h-full w-full p-2">
+    <h1 class="text-center p-5">Flexbox & Grid</h1>
+    <!-- flex-basis-start -->
+    <div class="p-2 bg-teal-600 rounded-sm">
+        <h3>Flex Basis</h3>
+        <p>Utilities for controlling the initial size of flex items. syntax: <span class="syntax">.basis-{size}</span>Example:</p>
+
+        <div class="flex flex-row gap-2 p-2 bg-slate-700 rounded-sm text-center">
+            <div class="basis-1/4 rounded-sm bg-rose-600 p-5">1</div>
+            <div class="basis-1/4 rounded-sm bg-rose-600 p-5">2</div>
+            <div class="basis-1/2 rounded-sm bg-rose-600 p-5">3</div>
+        </div>
+    </div>
+    <!-- flex-basis-end -->
+    <!-- flex-direction-start -->
+    <div class="p-2 bg-slate-500 rounded-sm my-2">
+        <h3>Flex Directions</h3>
+        <p>Utilities for controlling the direction of flex <span class="span syntax">.flex-{direction-property}</span>.example:</p>
+        <ul>
+            <!-- flex-direction:flex-row; -->
+            <li>flex-row</li>
+            <div class="flex flex-row gap-2 p-2 rounded-sm bg-white text-white text-center">
+                <div class="p-5 rounded-lg bg-black">1</div>
+                <div class="p-5 rounded-lg bg-black">2</div>
+                <div class="p-5 rounded-lg bg-black">3</div>
+            </div>
+            <!-- flex-direction:row-reverse; -->
+            <li>flex-row-reverse</li>
+            <div class="flex flex-row-reverse gap-2 p-2 rounded-sm bg-white text-white text-center">
+                <div class="p-5 rounded-lg bg-black">1</div>
+                <div class="p-5 rounded-lg bg-black">2</div>
+                <div class="p-5 rounded-lg bg-black">3</div>
+            </div>
+            <!-- flex-direction:column; -->
+            <li>flex-col</li>
+            <div class="flex flex-col gap-2 p-2 rounded-sm bg-white text-white text-center">
+                <div class="p-5 rounded-lg bg-black">1</div>
+                <div class="p-5 rounded-lg bg-black">2</div>
+                <div class="p-5 rounded-lg bg-black">3</div>
+            </div>
+            <!-- flex-direction:column-reverse; -->
+            <li>flex-col-reverse</li>
+            <div class="flex flex-col-reverse gap-2 p-2 rounded-sm bg-white text-white text-center">
+                <div class="p-5 rounded-lg bg-black">1</div>
+                <div class="p-5 rounded-lg bg-black">2</div>
+                <div class="p-5 rounded-lg bg-black">3</div>
+            </div>
+        </ul>
+    </div>
+    <!-- flex-directon-end -->
+    <!-- flex-wrap-start -->
+    <div class="p-2 rounded-sm bg-orange-500">
+        <h3>Flex-wrap</h3>
+        <p>Utilities for controlling how flex items wrap. <span class="syntax">.flex-wrap, .flex-wrap-reverse & .flex-nowrap</span>.example:</p>
+        <ul>
+            <!-- flex-wrap:nowrap; -->
+            <li>flex-nowrap</li>
+            <div class="p-2 bg-slate-500 flex flex-nowrap gap-2">
+                <div class="rounded-md basis-1/4 bg-slate-800 p-5 text-center">1</div>
+                <div class="rounded-md basis-1/4 bg-slate-800 p-5 text-center">2</div>
+                <div class="rounded-md basis-1/4 bg-slate-800 p-5 text-center">3</div>
+                <div class="rounded-md basis-1/4 bg-slate-800 p-5 text-center">4</div>
+            </div>
+            <!-- flex-wrap:wrap; -->
+            <li>flex-wrap</li>
+            <div class="p-2 bg-slate-500 flex flex-wrap gap-2">
+                <div class="rounded-md basis-1/4 bg-slate-800 p-5 text-center">1</div>
+                <div class="rounded-md basis-1/4 bg-slate-800 p-5 text-center">2</div>
+                <div class="rounded-md basis-1/4 bg-slate-800 p-5 text-center">3</div>
+                <div class="rounded-md basis-1/4 bg-slate-800 p-5 text-center">4</div>
+            </div>
+            <!-- flex-wrap:wrap-reverse; -->
+            <li>flex-wrap-reverse</li>
+            <div class="p-2 bg-slate-500 flex flex-wrap-reverse gap-2">
+                <div class="rounded-md basis-1/4 bg-slate-800 p-5 text-center">1</div>
+                <div class="rounded-md basis-1/4 bg-slate-800 p-5 text-center">2</div>
+                <div class="rounded-md basis-1/4 bg-slate-800 p-5 text-center">3</div>
+                <div class="rounded-md basis-1/4 bg-slate-800 p-5 text-center">4</div>
+            </div>
+        </ul>
+    </div>
+    <!-- flex-wrap-end -->
+
+    <!-- flex-start -->
+    <div class="p-2 bg-slate-600 rounded-sm my-2">
+        <h3>Flex</h3>
+        <p>Utilities for controlling how flex items both grow and shrink. <span class="syntax">.flex-1, .flex-auto, .flex-initial, .flex-none</span>. example:</p>
+        <ul>
+            <!-- flex: 0 1 0 auto; -->
+            <li>flex-initial</li>
+            <p>Use flex-initial to allow a flex item to shrink but not grow, taking into account its initial size:</p>
+            <div class="flex gap-1 p-2 bg-white rounded-md text-center">
+                <div class="w-14 h-14 flex-none bg-black text-white rounded-md">1</div>
+                <div class="flex-intial w-64 bg-black text-white rounded-md">2</div>
+                <div class="flex-intial w-32 bg-black text-white rounded-md">3</div>
+            </div>
+            <!-- flex:1 1 0%; -->
+            <li>flex-1</li>
+            <p>Use flex-1 to allow a flex item to grow and shrink as needed, ignoring its initial size:</p>
+            <div class="p-2 flex gap-1 rounded-md text-center text-black bg-white">
+                <div class="w-14 h-14 flex-none bg-black text-white rounded-md">1</div>
+                <div class="flex-1 w-64 bg-black text-white rounded-md">2</div>
+                <div class="flex-1 w-32 bg-black text-white rounded-md">3</div>
+            </div>
+            <!-- flex:1 1 auto; -->
+            <li>flex-auto</li>
+            <p>Use flex-auto to allow a flex item to grow and shrink, taking into account its initial size:</p>
+            <div class="p-2 gap-1 flex text-black text-center bg-white rounded-md">
+                <div class="w-14 h-14 flex-none bg-black text-white rounded-md">1</div>
+                <div class="flex-auto w-64 bg-black text-white rounded-md">2</div>
+                <div class="flex-auto w-32 bg-black text-white rounded-md">3</div>
+            </div>
+            <!-- flex:none; -->
+            <li>flex-none</li>
+            <p>Use flex-none to prevent a flex item from growing or shrinking:</p>
+            <div class="p-2 gap-1 flex flex-wrap rounded-md text-center bg-white">
+                <div class="w-14 h-14 flex-none bg-black text-white rounded-md">1</div>
+                <div class="flex-none w-64 bg-black text-white rounded-md">2</div>
+                <div class="flex-none w-32 h-14 bg-black text-white rounded-md">3</div>
+            </div>
+        </ul>
+    </div>
+    <!-- flex-end -->
+
+    <!-- flex-grow start -->
+    <div class="p-2 my-2 rounded-sm bg-teal-600 text-white">
+        <h3>Flex Grow</h3>
+        <p>Utilities for controlling how flex items grow.</p>
+        <p>syntax: <span class="syntax">.grow-{flex-grow property-values}</span>. example:</p>
+        <ul>
+            <!-- flex-grow:1; -->
+            <li>grow</li>
+            <div class="flex gap-1 p-2 bg-slate-300 rounded-md text-center">
+                <div class="w-14 h-14 flex-none bg-black text-white rounded-md">1</div>
+                <div class="grow h-14 bg-black text-white rounded-md">2</div>
+                <div class="w-14 h-14 rounded-md text-white bg-black">3</div>
+            </div>
+            <!-- flex-grow:0; -->
+            <li>grow-0</li>
+            <div class="flex gap-1 p-2 bg-slate-300 rounded-md text-center">
+                <div class="grow h-14 flex-none bg-black text-white rounded-md">1</div>
+                <div class="grow-0 w-14 h-14 bg-black text-white rounded-md">2</div>
+                <div class="grow h-14 rounded-md text-white bg-black">3</div>
+            </div>
+        </ul>
+    </div>
+    <!-- flex-grow end -->
+    <!-- flex-shrink start -->
+    <div class="p-2 rounded-md bg-white text-black">
+        <!-- flex-shrink:1; -->
+        <h3>Flex Shrink</h3>
+        <p>allow a flex-items to shrink if we needed!</p>
+        <ul>
+            <li>shrink-1</li>
+            </p>Utilities for controlling how flex items shrink. example:</p>
+            <div class="flex gap-1 p-2 bg-slate-500 rounded-md text-center">
+                <div class="w-14 h-14 bg-teal-500 flex-none rounded-md text-white">1</div>
+                <div class="w-64 h-14 bg-teal-500 shrink rounded-md text-white">1</div>
+                <div class="w-14 h-14 bg-teal-500 flex-none rounded-md text-white">1</div>
+            </div>
+            <!-- flex-shrink:0; -->
+            <li>shrink-0</li>
+            <p>utility classes to prevent a flex item from shrinking.</p>
+            <div class="flex gap-1 p-2 bg-slate-500 rounded-md text-center">
+                <div class="flex-1 h-14 bg-teal-500 rounded-md text-white">1</div>
+                <div class="shrink-0 w-32 h-14 bg-teal-500 rounded-md text-white">1</div>
+                <div class="h-14 bg-teal-500 flex-1 rounded-md text-white">1</div>
+            </div>
+        </ul>
+    </div>
+    <!-- flex-shrink end -->
+    <!-- order-start -->
+    <div class="p-2 rounded-md bg-rose-700 text-white my-2">
+        <h3>Order</h3>
+        <p>utility for controlling the order of flex and grid-items</p>
+        <ul>
+            <li>order-*</li>
+            <div class="p-2 rounded-md bg-white text-white flex justify-between">
+                <div class="p-5 rounded-md bg-black">1</div>
+                <div class="p-5 rounded-md bg-black order-3">2</div>
+                <div class="p-5 rounded-md bg-black">3</div>
+            </div>
+        </ul>
+    </div>
+    <!-- order-end -->
+
+    <!-- grid-template-rows start -->
+    <div class="p-2 rounded-md bg-cyan-500 text-white">
+        <h3>grid-template-rows</h3>
+        <p>Utilities for specifying the columns in a grid layout. example:</p>
+        <ul>
+            <li>grid-cols-{values}</li>
+            <div class="p-2 bg-white text-white text-center rounded-md grid grid-cols-4 gap-2 md:grid-cols-2">
+                <div class="p-5 rounded-md bg-black">1</div>
+                <div class="p-5 rounded-md bg-black">2</div>
+                <div class="p-5 rounded-md bg-black">3</div>
+                <div class="p-5 rounded-md bg-black">4</div>
+                <div class="p-5 rounded-md bg-black">5</div>
+                <div class="p-5 rounded-md bg-black">6</div>
+                <div class="p-5 rounded-md bg-black">7</div>
+                <div class="p-5 rounded-md bg-black">8</div>
+            </div>
+        </ul>
+    </div>
+    <!-- grid-template-rows end -->
+
+    <!-- grid-column-start/end (start) -->
+    <div class="p-2 rounded-md bg-orange-500 text-white">
+        <h3>Grid-column-start/end</h3>
+        <p>Utilities for controlling how elements are sized and placed across grid columns. <span class="syntax">.col-span{value}</span> example:</p>
+        <p class="note">using span utilities</p>
+        <div class="p-2 bg-white text-center rounded-md grid grid-cols-3 gap-2">
+            <div class="p-5 rounded-md bg-black">1</div>
+            <div class="p-5 rounded-md bg-black">2</div>
+            <div class="p-5 rounded-md bg-black">3</div>
+            <div class="p-5 rounded-md bg-teal-600 col-span-2">4</div>
+            <div class="p-5 rounded-md bg-black">5</div>
+            <div class="p-5 rounded-md bg-black">6</div>
+            <div class="p-5 rounded-md bg-teal-600 col-span-2">7</div>
+            <div class="p-5 rounded-md bg-teal-600 col-span-2">8</div>
+            <div class="p-5 rounded-md bg-black">9</div>
+        </div>
+        <p class="note">another exampel using starting-line and ending-line:</p>
+        <div class="p-2 bg-white text-center rounded-md grid grid-cols-3 gap-2">
+            <div class="p-5 rounded-md bg-teal-600 col-start-1 col-end-3">1</div>
+            <div class="p-5 rounded-md bg-black">2</div>
+            <div class="p-5 rounded-md bg-teal-600 col-start-1 col-end-4">3</div>
+            <div class="p-5 rounded-md bg-black">4</div>
+            <div class="p-5 rounded-md bg-teal-600 col-start-2 col-end-4">5</div>
+            <div class="p-5 rounded-md bg-teal-600 col-start-1 col-end-3">6</div>
+            <div class="p-5 rounded-md bg-black">7</div>
+            <div class="p-5 rounded-md bg-black">8</div>
+            <div class="p-5 rounded-md bg-teal-600 col-start-2 col-end-4">9</div>
+        </div>
+    </div>
+    <!-- grid-column-start/end (end) -->
+    <!-- grid-template-rows start -->
+    <div class="p-1 bg-slate-600 rounded-md text-white">
+        <h3>grid-template-rows</h3>
+        <p>utility for specifying the rows in a grid layout. <span class="syntax">.grid-rows-{values}</span>.example:</p>
+        <div class="p-2 rounded-md bg-white text-white grid grid-flow-col text-center grid-rows-2 gap-2">
+            <div class="p-5 rounded-md bg-black ">1</div>
+            <div class="p-5 rounded-md bg-black ">2</div>
+            <div class="p-5 rounded-md bg-black ">3</div>
+            <div class="p-5 rounded-md bg-black ">4</div>
+            <div class="p-5 rounded-md bg-black ">5</div>
+            <div class="p-5 rounded-md bg-black ">6</div>
+            <div class="p-5 rounded-md bg-black ">6</div>
+        </div>
+        <p class="note">this above using grid-flow-col, which is set the amout of column by auto. will be learn that latter</p>
+    </div>
+    <!-- grid-template-rows end -->
+    <!-- grid-rows-start/end start -->
+    <div class="p-2 bg-white text-black rounded-md my-2">
+        <h3>grid-row-start/end</h3>
+        <p>Utilities for controlling how elements are sized and placed across grid rows. example:</p>
+        <li>using the span-values</li>
+        <div class="grid grid-flow-col gap-2 grid-rows-3 bg-black text-black text-center p-2 rounded-md">
+            <div class="p-5 rounded-md bg-white row-span-3">1</div>
+            <div class="p-5 rounded-md bg-white col-span-2">2</div>
+            <div class="p-5 rounded-md bg-white row-span-2 col-span-2">3</div>
+        </div>
+        <li>using the star|end value</li>
+        <div class="grid grid-flow-col gap-2 grid-rows-3 bg-black text-black text-center p-2 rounded-md">
+            <div class="p-5 rounded-md bg-white row-start-2 row-span-2">1</div>
+            <div class="p-5 rounded-md bg-white row-end-3 row-span-2">2</div>
+            <div class="p-5 rounded-md bg-white row-start-1 row-end-4">3</div>
+        </div>
+    </div>
+    <!-- grid-rows-start/end end -->
+
+    <!-- grid-auto-flow start -->
+    <div class="p-2 rounded-md bg-teal-600 text-white">
+        <h3>grid-auto-flow</h3>
+        <p>Utilities for controlling how elements in a grid are auto-placed.</p>
+        <li>grid-flow-row-dense(fit the amount of grid-items into the container, i guesse)</li>
+        <div class="p-2 bg-rose-600 text-white text-center grid grid-flow-row-dense grid-cols-3 grid-rows-3 gap-2">
+            <div class="p-5 bg-orange-600 text-white rounded-md col-span-2">1</div>
+            <div class="p-5 bg-orange-600 text-white rounded-md col-span-2">2</div>
+            <div class="p-5 bg-white text-black rounded-md">3</div>
+            <div class="p-5 bg-white text-black rounded-md">4</div>
+            <div class="p-5 bg-white text-black rounded-md">5</div>
+            <div class="p-5 bg-orange-600 text-white rounded-md col-span-2">6</div>
+        </div>
+        <p class="note">lemme try another example:</p>
+        <div class="p-2 bg-rose-600 text-white text-center grid grid-flow-col grid-rows-3 gap-2">
+            <div class="p-5 bg-teal-600 text-white rounded-md col-span-2 row-span-3">1</div>
+            <div class="p-5 bg-white text-black rounded-md col-span-4 row-span-2">3</div>
+            <div class="p-5 bg-white text-black rounded-md row-span-2">2</div>
+            <div class="p-5 bg-white text-black rounded-md ">4</div>
+            <div class="p-5 bg-teal-600 text-white rounded-md row-span-3">5</div>
+            <div class="p-5 bg-teal-600 text-white rounded-md col-span-1 row-span-5">6</div>
+        </div>
+    </div>
+    <!-- grid-auto-flow end -->
+
+    <!-- grid-auto-column start -->
+    <div class="p-2 bg-slate-500 rounded-md my-2">
+        <h3>Grid-Auto-Columns</h3>
+        <p>Utilities for controlling the size of implicitly-created grid columns.  <span class="syntax">auto-cols-{property-values}</span>example:</p>
+        <div class="p-2 bg-white text-white rounded-md grid grid-flow-col auto-cols-max gap-2">
+            <div class="rounded-md bg-black p-5">1</div>
+            <div class="rounded-md bg-black p-5">1</div>
+            <div class="rounded-md bg-black p-5">1</div>
+        </div>
+    </div>
+    <!-- grid-auto-column end -->
+
+    <!-- grid-auto-rows start -->
+    <div class="p-2 bg-slate-500 rounded-md my-2">
+        <h3>Grid-Auto-rowss</h3>
+        <p>Utilities for controlling the size of implicitly-created grid rows.  <span class="syntax">auto-cols-{property-values}</span>example:</p>
+        <div class="p-2 bg-white text-white text-center rounded-md grid grid-flow-row auto-rows-max gap-2">
+            <div class="rounded-md bg-black p-5">1</div>
+            <div class="rounded-md bg-black p-5">1</div>
+            <div class="rounded-md bg-black p-5">1</div>
+        </div>
+    </div>
+    <!-- grid-auto-rows end -->
+
+    <!-- gap start -->
+    <div class="p-2 bg-teal-600 text-white rounded-md my-2">
+        <h3>Gap</h3>
+        <p>controlling gutters between grid and flexbox items. <span class="syntax">.gap-*, .gap-x-*, .gap-y-*</span>.example:</p>
+        <li>using .gap-*(column and row gutters)</li>
+        <div class="p-2 rounded-md bg-white grid grid-cols-2 grid-rows-2 gap-2">
+            <div class="p-2 rounded-md bg-black text-center">1</div>
+            <div class="p-2 rounded-md bg-black text-center">2</div>
+            <div class="p-2 rounded-md bg-black text-center">3</div>
+            <div class="p-2 rounded-md bg-black text-center">4</div>
+        </div>
+        <li>using .gap-x-* & .gap-y-*</li>
+        <div class="p-2 rounded-md bg-white grid grid-cols-2 grid-rows-2 gap-x-5 gap-y-10">
+            <div class="p-2 rounded-md bg-black text-center">1</div>
+            <div class="p-2 rounded-md bg-black text-center">2</div>
+            <div class="p-2 rounded-md bg-black text-center">3</div>
+            <div class="p-2 rounded-md bg-black text-center">4</div>
+        </div>
+    </div>
+    <!-- gap end -->
+
+    <!-- justify-conetent start -->
+    <div class="p-2 rounded-md my-2 bg-rose-600">
+        <h3>justify-content flexbox&grid</h3>
+        <p>Utilities for controlling how flex and grid items are positioned along a container's main axis. <span class="syntax">.justify-{values}</span>.example:</p>
+        <ul>
+            <!-- justify-content:flex-start; -->
+            <li>justify-start</li>
+            <div class="p-2 bg-slate-300 text-center rounded-md flex justify-start gap-2">
+                <div class="p-5 rounded-md bg-black text-white">1</div>
+                <div class="p-5 rounded-md bg-black text-white">2</div>
+                <div class="p-5 rounded-md bg-black text-white">3</div>
+            </div>
+            <!-- justify-content:center; -->
+            <li>justify-center</li>
+            <div class="p-2 bg-slate-300 text-center rounded-md flex justify-center gap-2">
+                <div class="p-5 rounded-md bg-black text-white">1</div>
+                <div class="p-5 rounded-md bg-black text-white">2</div>
+                <div class="p-5 rounded-md bg-black text-white">3</div>
+            </div>
+            <!-- justify-content:flex-end; -->
+            <li>justify-end</li>
+            <div class="p-2 bg-slate-300 text-center rounded-md flex justify-end gap-2">
+                <div class="p-5 rounded-md bg-black text-white">1</div>
+                <div class="p-5 rounded-md bg-black text-white">2</div>
+                <div class="p-5 rounded-md bg-black text-white">3</div>
+            </div>
+            <!-- justify-content:space-between; -->
+            <li>justify-between</li>
+            <div class="p-2 bg-slate-300 text-center rounded-md flex justify-between gap-2">
+                <div class="p-5 rounded-md bg-black text-white">1</div>
+                <div class="p-5 rounded-md bg-black text-white">2</div>
+                <div class="p-5 rounded-md bg-black text-white">3</div>
+            </div>
+            <!-- justify-content:space-around; -->
+            <li>justify-around</li>
+            <div class="p-2 bg-slate-300 text-center rounded-md flex justify-around gap-2">
+                <div class="p-5 rounded-md bg-black text-white">1</div>
+                <div class="p-5 rounded-md bg-black text-white">2</div>
+                <div class="p-5 rounded-md bg-black text-white">3</div>
+            </div>
+            <!-- justify-content:space-evenly -->
+            <li>justify-evenly</li>
+            <div class="p-2 bg-slate-300 text-center rounded-md flex justify-evenly gap-2">
+                <div class="p-5 rounded-md bg-black text-white">1</div>
+                <div class="p-5 rounded-md bg-black text-white">2</div>
+                <div class="p-5 rounded-md bg-black text-white">3</div>
+            </div>
+            <!-- justify-content:stretch; -->
+            <li>justify-stretch</li>
+            <div class="p-2 h-28 bg-slate-300 text-center rounded-md flex justify-stretch gap-2">
+                <div class="p-5 rounded-md bg-black text-white">1</div>
+                <div class="p-5 rounded-md bg-black text-white">2</div>
+                <div class="p-5 rounded-md bg-black text-white">3</div>
+            </div>
+        </ul>
+    </div>
+    <!-- justify-conetent end -->
+
+    <!-- justify-items start -->
+    <div class="p-2 my-2 rounded-md bg-orange-500">
+        <h3>Justify-items-{values}</h3>
+        <p>Utilities for controlling how grid items are aligned along their inline axis. <span class="syntax">.justify-items-{value}</span>.example:</p>
+        <ul>
+            <!-- justify-items:start; -->
+            <li>justify-items-start</li>
+            <div class="p-2 rounded-md bg-white text-white grid-cols-3 gap-2 text-center grid justify-items-start">
+                <div class="p-5 bg-black rounded-md">1</div>
+                <div class="p-5 bg-black rounded-md">2</div>
+                <div class="p-5 bg-black rounded-md">3</div>
+                <div class="p-5 bg-black rounded-md">4</div>
+                <div class="p-5 bg-black rounded-md">5</div>
+                <div class="p-5 bg-black rounded-md">6</div>
+            </div>
+            <!-- justify-items: end; -->
+            <li>justify-items-end</li>
+            <div class="p-2 rounded-md bg-white text-white grid-cols-3 gap-2 text-center grid justify-items-end">
+                <div class="p-5 bg-black rounded-md">1</div>
+                <div class="p-5 bg-black rounded-md">2</div>
+                <div class="p-5 bg-black rounded-md">3</div>
+                <div class="p-5 bg-black rounded-md">4</div>
+                <div class="p-5 bg-black rounded-md">5</div>
+                <div class="p-5 bg-black rounded-md">6</div>
+            </div>
+            <!-- justify-items:center; -->
+            <li>justify-items-center</li>
+            <div class="p-2 rounded-md bg-white text-white grid-cols-3 gap-2 text-center grid justify-items-center">
+                <div class="p-5 bg-black rounded-md">1</div>
+                <div class="p-5 bg-black rounded-md">2</div>
+                <div class="p-5 bg-black rounded-md">3</div>
+                <div class="p-5 bg-black rounded-md">4</div>
+                <div class="p-5 bg-black rounded-md">5</div>
+                <div class="p-5 bg-black rounded-md">6</div>
+            </div>
+            <!-- justify-items:stretch; -->
+            <li>justify-items-stretch</li>
+            <div class="p-2 rounded-md bg-white text-white grid-cols-2 gap-2 text-center grid justify-items-stretch">
+                <div class="p-5 bg-black rounded-md">1</div>
+                <div class="p-5 bg-black rounded-md">2</div>
+                <div class="p-5 bg-black rounded-md">3</div>
+                <div class="p-5 bg-black rounded-md">4</div>
+                <div class="p-5 bg-black rounded-md">5</div>
+                <div class="p-5 bg-black rounded-md">6</div>
+            </div>
+        </ul>
+    </div>
+    <!-- justify-items end -->
+
+    <!-- justify-self start -->
+    <div class="p-2 my-2 bg-slate-600 text-white rounded-md">
+        <h3>Justify-self</h3>
+        <p>Utilities for controlling how an individual grid item is aligned along its inline axis. <span class="syntax">.justify-self-{prop.value}</span>.example:</p>
+        <ul>
+            <!-- justify-self:auto; -->
+            <li>justify-self-auto</li>
+            <div class="p-2 bg-white text-white rounded-md grid grid-cols-3 gap-2 text-center justify-items-stretch">
+                <div class="p-5 rounded-md bg-black justify-self-auto">1</div>
+                <div class="p-5 rounded-md bg-black">2</div>
+                <div class="p-5 rounded-md bg-black">3</div>
+            </div>
+            <!-- justify-self:start; -->
+            <li>justify-self-start</li>
+            <div class="p-2 bg-white text-white rounded-md grid grid-cols-3 gap-2 text-center justify-items-stretch">
+                <div class="p-5 rounded-md bg-black">1</div>
+                <div class="p-5 rounded-md bg-black justify-self-start">2</div>
+                <div class="p-5 rounded-md bg-black">3</div>
+            </div>
+            <!-- justify-self:center; -->
+            <li>justify-self-center</li>
+            <div class="p-2 bg-white text-white rounded-md grid grid-cols-3 gap-2 text-center justify-items-stretch">
+                <div class="p-5 rounded-md bg-black">1</div>
+                <div class="p-5 rounded-md bg-black justify-self-center">2</div>
+                <div class="p-5 rounded-md bg-black">3</div>
+            </div>
+            <!-- justify-self:end; -->
+            <li>justify-self-end</li>
+            <div class="p-2 bg-white text-white rounded-md grid grid-cols-3 gap-2 text-center justify-items-stretch">
+                <div class="p-5 rounded-md bg-black justify-self-end">1</div>
+                <div class="p-5 rounded-md bg-black">2</div>
+                <div class="p-5 rounded-md bg-black">3</div>
+            </div>
+            <!-- justify-self:stretch; -->
+            <li>justify-self-stretch</li>
+            <div class="p-2 bg-white text-white rounded-md grid grid-cols-3 gap-2 text-center justify-items-start">
+                <div class="p-5 rounded-md bg-black">1</div>
+                <div class="p-5 rounded-md bg-black justify-self-stretch">2</div>
+                <div class="p-5 rounded-md bg-black justify-self-end">3</div>
+            </div>
+        </ul>
+    </div>
+    <!-- justify-self ends -->
+
+    <!-- align-content start -->
+    <div class="p-2 my-2 bg-violet-600 text-white rounded-md">
+        <h3>Align-content</h3>
+        <p>Utilities for controlling how rows are positioned in multi-row flex and grid containers. <span class="syntax">.content-{property-value}</span>. example:</p>
+        <ul>
+            <!-- align-content:normal; default -->
+            <li>content-normal</li>
+            <div class="p-2 bg-slate-600 grid grid-cols-3 gap-3 content-normal rounded-md text-center h-36">
+                <div class="p-5 h-14 rounded-md bg-rose-600">1</div>
+                <div class="p-5 h-14 rounded-md bg-rose-600">2</div>
+                <div class="p-5 h-14 rounded-md bg-rose-600">3</div>
+            </div>
+            <!-- align-content:start; -->
+            <li>content-start</li>
+            <div class="p-2 bg-slate-600 grid grid-cols-3 gap-3 content-start rounded-md text-center h-36">
+                <div class="p-5 h-14 rounded-md bg-rose-600">1</div>
+                <div class="p-5 h-14 rounded-md bg-rose-600">2</div>
+                <div class="p-5 h-14 rounded-md bg-rose-600">3</div>
+            </div>
+            <!-- align-content:end; -->
+            <li>content-end</li>
+            <div class="p-2 bg-slate-600 grid grid-cols-3 gap-3 content-end rounded-md text-center h-36">
+                <div class="p-5 h-14 rounded-md bg-rose-600">1</div>
+                <div class="p-5 h-14 rounded-md bg-rose-600">2</div>
+                <div class="p-5 h-14 rounded-md bg-rose-600">3</div>
+            </div>
+            <!-- align-content:center; -->
+            <li>content-center</li>
+            <div class="p-2 bg-slate-600 grid grid-cols-3 gap-3 content-center rounded-md text-center h-36">
+                <div class="p-5 h-14 rounded-md bg-rose-600">1</div>
+                <div class="p-5 h-14 rounded-md bg-rose-600">2</div>
+                <div class="p-5 h-14 rounded-md bg-rose-600">3</div>
+            </div>
+            <!-- align-content:space-between; -->
+            <li>content-between</li>
+            <div class="p-2 bg-slate-600 grid grid-cols-3 gap-3 content-between rounded-md text-center h-56">
+                <div class="p-5 h-14 rounded-md bg-rose-600">1</div>
+                <div class="p-5 h-14 rounded-md bg-rose-600">2</div>
+                <div class="p-5 h-14 rounded-md bg-rose-600">3</div>
+                <div class="p-5 h-14 rounded-md bg-rose-600">4</div>
+                <div class="p-5 h-14 rounded-md bg-rose-600">5</div>
+            </div>
+            <!-- align-content:space-around; -->
+            <li>content-around</li>
+            <div class="p-2 bg-slate-600 grid grid-cols-3 gap-3 content-around rounded-md text-center h-56">
+                <div class="p-5 h-14 rounded-md bg-rose-600">1</div>
+                <div class="p-5 h-14 rounded-md bg-rose-600">2</div>
+                <div class="p-5 h-14 rounded-md bg-rose-600">3</div>
+                <div class="p-5 h-14 rounded-md bg-rose-600">4</div>
+                <div class="p-5 h-14 rounded-md bg-rose-600">5</div>
+            </div>
+            <!-- align-content:space-evenly; -->
+            <li>content-evenly</li>
+            <div class="p-2 bg-slate-600 grid grid-cols-3 gap-3 content-evenly rounded-md text-center h-56">
+                <div class="p-5 h-14 rounded-md bg-rose-600">1</div>
+                <div class="p-5 h-14 rounded-md bg-rose-600">2</div>
+                <div class="p-5 h-14 rounded-md bg-rose-600">3</div>
+                <div class="p-5 h-14 rounded-md bg-rose-600">4</div>
+                <div class="p-5 h-14 rounded-md bg-rose-600">5</div>
+            </div>
+            <!-- align-content:stretch; -->
+            <li>content-stretch</li>
+            <div class="p-2 bg-slate-600 grid grid-cols-3 gap-3 content-stretch rounded-md text-center h-52">
+                <div class="p-5 rounded-md bg-rose-600">1</div>
+                <div class="p-5 rounded-md bg-rose-600">2</div>
+                <div class="p-5 rounded-md bg-rose-600">3</div>
+                <div class="p-5 rounded-md bg-rose-600">4</div>
+                <div class="p-5 rounded-md bg-rose-600">5</div>
+            </div>
+        </ul>
+    </div>
+    <!-- align-content ends -->
+
+    <!-- align-items start -->
+    <div class="p-2 bg-teal-700 text-white rounded-md my-2">
+        <h3>Align-items</h3>
+        <p>Utilities for controlling how flex and grid items are positioned along a container's cross axis. <span class="syntax">.items-{property-value}</span>.example:</p>
+        <ul>
+            <!-- align-items:flex-start; -->
+            <li>items-start</li>
+            <div class="p-2 rounded-md bg-slate-500 gap-2 text-black text-center flex items-start h-40">
+                <div class="p-5 rounded-md bg-white">1</div>
+                <div class="p-5 rounded-md bg-white">2</div>
+                <div class="p-5 rounded-md bg-white">3</div>
+                <div class="p-5 rounded-md bg-white">4</div>
+                <div class="p-5 rounded-md bg-white">5</div>
+            </div>
+            <!-- align-items:flex-end; -->
+            <li>items-end</li>
+            <div class="p-2 rounded-md bg-slate-500 gap-2 text-black text-center flex items-end h-40">
+                <div class="p-5 rounded-md bg-white">1</div>
+                <div class="p-5 rounded-md bg-white">2</div>
+                <div class="p-5 rounded-md bg-white">3</div>
+                <div class="p-5 rounded-md bg-white">4</div>
+                <div class="p-5 rounded-md bg-white">5</div>
+            </div>
+            <!-- align-items:center; -->
+            <li>items-center</li>
+            <div class="p-2 rounded-md bg-slate-500 gap-2 text-black text-center flex items-center h-40">
+                <div class="p-5 rounded-md bg-white">1</div>
+                <div class="p-5 rounded-md bg-white">2</div>
+                <div class="p-5 rounded-md bg-white">3</div>
+                <div class="p-5 rounded-md bg-white">4</div>
+                <div class="p-5 rounded-md bg-white">5</div>
+            </div>
+            <!-- align-items:stretch; -->
+            <li>items-stretch</li>
+            <div class="p-2 rounded-md bg-slate-500 gap-2 text-black text-center flex items-stretch h-40">
+                <div class="p-5 rounded-md bg-white">1</div>
+                <div class="p-5 rounded-md bg-white">2</div>
+                <div class="p-5 rounded-md bg-white">3</div>
+                <div class="p-5 rounded-md bg-white">4</div>
+                <div class="p-5 rounded-md bg-white">5</div>
+            </div>
+            <!-- align-items:baseline; -->
+            <li>items-baseline</li>
+            <div class="p-2 rounded-md bg-slate-500 gap-2 text-black text-center flex items-baseline h-40">
+                <div class="py-5 w-full rounded-md bg-white">1</div>
+                <div class="py-16 w-full rounded-md bg-white">2</div>
+                <div class="p-8 w-full rounded-md bg-white">3</div>
+            </div>
+        </ul>
+    </div>
+    <!-- align-items end -->
+
+    <!-- align-self start -->
+    <div class="p-2 bg-orange-800 text-white my-2 rounded-md">
+        <h3>Align-self</h3>
+        <p>Utilities for controlling how an individual flex or grid item is positioned along its container's cross axis. <span class="syntax">.self-{property-value}</span>.example:</p>
+        <ul class="grid grid-cols-2 gap-2">
+            <div>
+                <!-- align-self:flex-start; -->
+                <li>items-start</li>
+                <div class="p-2 rounded-md bg-teal-600 text-center flex gap-2 h-36 items-start">
+                    <div class="p-5 rounded-md h-16 bg-black">1</div>
+                    <div class="self-start p-5 rounded-md h-16 bg-black">2</div>
+                    <div class="p-5 rounded-md h-16 bg-black">3</div>
+                </div>
+            </div>
+            <div>
+                <!-- align-self:flex-end; -->
+                <li>items-end</li>
+                <div class="p-2 rounded-md bg-teal-600 text-center flex gap-2 items-start h-36">
+                    <div class="p-5 rounded-md h-16 bg-black">1</div>
+                    <div class="self-end p-5 rounded-md h-16 bg-black">2</div>
+                    <div class="p-5 rounded-md h-16 bg-black">3</div>
+                </div>
+            </div>
+            <div>
+                <!-- align-self:center; -->
+                <li>items-center</li>
+                <div class="p-2 rounded-md bg-teal-600 text-center flex gap-2 items-start h-36">
+                    <div class="p-5 rounded-md h-16 bg-black">1</div>
+                    <div class="self-center p-5 rounded-md h-16 bg-black">2</div>
+                    <div class="p-5 rounded-md h-16 bg-black">3</div>
+                </div>
+            </div>
+            <div>
+                <!-- align-self:stretch; -->
+                <li>items-stretch</li>
+                <div class="p-2 rounded-md bg-teal-600 text-center flex gap-2 items-stretch h-36">
+                    <div class="p-5 rounded-md h-16 bg-black">1</div>
+                    <div class="self-stretch p-5 rounded-md bg-black">2</div>
+                    <div class="p-5 rounded-md h-16 bg-black">3</div>
+                </div>
+            </div>
+        </ul>
+    </div>
+    <!-- align-self end -->
+
+    <!-- place-contents start -->
+    <div class="p-2 bg-yellow-700 my-2 rounded-md text-white">
+        <h3>Place Contents</h3>
+        <p>Utilities for controlling how <span class="note">content</span> is justified and aligned at the same time. <span class="syntax">.place-content-{property-values}</span>.example:</p>
+        <!-- this shit its like naruh items yang diset 2 class, yaitu justify + allign secara bersamaan dalam 1 buah class gitu. -->
+        <ul>
+            <!-- place-content:start; -->
+            <li>place-content-start</li>
+            <div class="p-2 text-black text-center rounded-md bg-slate-800 place-content-start grid h-56 ">
+                <div class="grid grid-cols-2 gap-2">
+                    <div class="p-5 w-16 rounded-md bg-white">1</div>
+                    <div class="p-5 w-16 rounded-md bg-white">2</div>
+                    <div class="p-5 w-16 rounded-md bg-white">3</div>
+                    <div class="p-5 w-16 rounded-md bg-white">4</div>
+                </div>
+            </div>
+            <!-- place-content:end; -->
+            <li>place-content-end</li>
+            <div class="p-2 text-black text-center rounded-md bg-slate-800 place-content-end grid h-56 ">
+                <div class="grid grid-cols-2 gap-2">
+                    <div class="p-5 w-16 rounded-md bg-white">1</div>
+                    <div class="p-5 w-16 rounded-md bg-white">2</div>
+                    <div class="p-5 w-16 rounded-md bg-white">3</div>
+                    <div class="p-5 w-16 rounded-md bg-white">4</div>
+                </div>
+            </div>
+            <!-- place-content-center -->
+            <li>place-content-center</li>
+            <div class="p-2 text-black text-center rounded-md bg-slate-800 place-content-center grid h-56 ">
+                <div class="grid grid-cols-2 gap-2">
+                    <div class="p-5 w-16 rounded-md bg-white">1</div>
+                    <div class="p-5 w-16 rounded-md bg-white">2</div>
+                    <div class="p-5 w-16 rounded-md bg-white">3</div>
+                    <div class="p-5 w-16 rounded-md bg-white">4</div>
+                </div>
+            </div>
+            <!-- place-content:space-between; -->
+            <li>place-content-between</li>
+            <div class="p-2 text-black text-center rounded-md bg-slate-800 place-content-between grid grid-cols-2 gap-2 h-56">
+                <div class="p-5 w-14 rounded-md bg-white">1</div>
+                <div class="p-5 w-14 rounded-md bg-white">2</div>
+                <div class="p-5 w-14 rounded-md bg-white">3</div>
+                <div class="p-5 w-14 rounded-md bg-white">4</div>
+            </div>
+            <!-- place-content:space-arround; -->
+            <li>place-content-around</li>
+            <div class="p-2 text-black text-center rounded-md bg-slate-800 place-content-around grid grid-cols-2 gap-2 h-56">
+                <div class="p-5 w-14 rounded-md bg-white">1</div>
+                <div class="p-5 w-14 rounded-md bg-white">2</div>
+                <div class="p-5 w-14 rounded-md bg-white">3</div>
+                <div class="p-5 w-14 rounded-md bg-white">4</div>
+            </div>
+            <!-- place-content: space-evenly; -->
+            <li>place-content-evenly</li>
+            <div class="p-2 text-black text-center rounded-md bg-slate-800 place-content-evenly grid grid-cols-2 gap-2 h-56">
+                <div class="p-5 w-14 rounded-md bg-white">1</div>
+                <div class="p-5 w-14 rounded-md bg-white">2</div>
+                <div class="p-5 w-14 rounded-md bg-white">3</div>
+                <div class="p-5 w-14 rounded-md bg-white">4</div>
+            </div>
+            <!-- place-content:stretch; -->
+            <li>place-content-stretch</li>
+            <div class="p-2 text-black text-center rounded-md bg-slate-800 place-content-stretch grid grid-cols-2 gap-2 h-56">
+                <div class="p-5 rounded-md bg-white">1</div>
+                <div class="p-5 rounded-md bg-white">2</div>
+                <div class="p-5 rounded-md bg-white">3</div>
+                <div class="p-5 rounded-md bg-white">4</div>
+            </div>            
+        </ul>
+    </div>
+    <!-- place-contents ends -->
+
+    <!-- place-items start -->
+    <div class="p-2 my-2 bg-teal-700 text-white rounded-md">
+        <h3>place-items</h3>
+        <p>Utilities for controlling how <span class="note">items</span> are justified and aligned at the same time. <span class="syntax">.place-items-{property value}</span>.example:</p>
+        <ul>
+            <!-- place-items:start; -->
+            <li>place-items-start</li>
+            <div class="p-2 bg-slate-400 text-black text-center rounded-md grid grid-cols-3 gap-2 h-44 place-items-start">
+                <div class="p-5 w-16 rounded-md bg-white">1</div>
+                <div class="p-5 w-16 rounded-md bg-white">2</div>
+                <div class="p-5 w-16 rounded-md bg-white">3</div>
+                <div class="p-5 w-16 rounded-md bg-white">4</div>
+                <div class="p-5 w-16 rounded-md bg-white">5</div>
+                <div class="p-5 w-16 rounded-md bg-white">6</div>
+            </div>
+            <!-- place-items:end; -->
+            <li>place-items-end</li>
+            <div class="p-2 bg-slate-400 text-black text-center rounded-md grid grid-cols-3 gap-2 h-44 place-items-end">
+                <div class="p-5 w-16 rounded-md bg-white">1</div>
+                <div class="p-5 w-16 rounded-md bg-white">2</div>
+                <div class="p-5 w-16 rounded-md bg-white">3</div>
+                <div class="p-5 w-16 rounded-md bg-white">4</div>
+                <div class="p-5 w-16 rounded-md bg-white">5</div>
+                <div class="p-5 w-16 rounded-md bg-white">6</div>
+            </div>
+            <!-- place-items:center; -->
+            <li>place-items-center</li>
+            <div class="p-2 bg-slate-400 text-black text-center rounded-md grid grid-cols-3 gap-2 h-44 place-items-center">
+                <div class="p-5 w-16 rounded-md bg-white">1</div>
+                <div class="p-5 w-16 rounded-md bg-white">2</div>
+                <div class="p-5 w-16 rounded-md bg-white">3</div>
+                <div class="p-5 w-16 rounded-md bg-white">4</div>
+                <div class="p-5 w-16 rounded-md bg-white">5</div>
+                <div class="p-5 w-16 rounded-md bg-white">6</div>
+            </div>
+            <!-- place-items-baseline -->
+            <li>place-items-baseline</li>
+            <div class="p-2 bg-slate-400 text-black text-center rounded-md grid grid-cols-3 gap-2 h-44 place-items-baseline">
+                <div class="p-5 w-16 rounded-md bg-white">1</div>
+                <div class="p-5 w-16 rounded-md bg-white">2</div>
+                <div class="p-5 w-16 rounded-md bg-white">3</div>
+                <div class="p-5 w-16 rounded-md bg-white">4</div>
+                <div class="p-5 w-16 rounded-md bg-white">5</div>
+                <div class="p-5 w-16 rounded-md bg-white">6</div>
+            </div>
+            <!-- place-items-stretch -->
+            <li>place-items-stretch</li>
+            <div class="p-2 bg-slate-400 text-black text-center rounded-md grid grid-cols-3 gap-2 h-44 place-items-stretch">
+                <div class="p-5 rounded-md bg-white">1</div>
+                <div class="p-5 rounded-md bg-white">2</div>
+                <div class="p-5 rounded-md bg-white">3</div>
+                <div class="p-5 rounded-md bg-white">4</div>
+                <div class="p-5 rounded-md bg-white">5</div>
+                <div class="p-5 rounded-md bg-white">6</div>
+            </div>
+        </ul>
+    </div>
+    <!-- place-items ends -->
+
+    <!-- place-self start -->
+    <div class="p-2 my-2 bg-rose-700 text-white rounded-md">
+        <h3>Place-self</h3>
+        <p>Utilities for controlling how an individual item is justified and aligned at the same time. <span class="syntax">.place-self-{property-value}</span>.example:</p>
+        <ul>
+            <!-- place-self:auto; -->
+            <li>place-self-auto</li>
+            <div class="p-2 rounded-md bg-black text-black text-center grid grid-cols-3 gap-2 h-48">
+                <div class="p-5 rounded-md bg-white">1</div>
+                <div class="p-5 rounded-md bg-white">2</div>
+                <div class="p-5 rounded-md bg-white">3</div>
+                <div class="p-5 place-self-auto rounded-md bg-teal-600 text-white">4</div>
+                <div class="p-5 rounded-md bg-white">5</div>
+                <div class="p-5 rounded-md bg-white">6</div>
+            </div>
+            <!-- place-self:start; -->
+            <li>place-self-start</li>
+            <div class="p-2 rounded-md bg-black text-black text-center grid grid-cols-3 gap-2 h-48">
+                <div class="p-5 rounded-md bg-white">1</div>
+                <div class="p-5 rounded-md bg-white">2</div>
+                <div class="p-5 rounded-md bg-white">3</div>
+                <div class="p-2 w-10 place-self-start rounded-md bg-teal-600 text-white">4</div>
+                <div class="p-5 rounded-md bg-white">5</div>
+                <div class="p-5 rounded-md bg-white">6</div>
+            </div>
+            <!-- place-self:end; -->
+            <li>place-self-end</li>
+            <div class="p-2 rounded-md bg-black text-black text-center grid grid-cols-3 gap-2 h-48">
+                <div class="p-5 rounded-md bg-white">1</div>
+                <div class="p-5 rounded-md bg-white">2</div>
+                <div class="p-5 rounded-md bg-white">3</div>
+                <div class="p-2 w-10 place-self-end rounded-md bg-teal-600 text-white">4</div>
+                <div class="p-5 rounded-md bg-white">5</div>
+                <div class="p-5 rounded-md bg-white">6</div>
+            </div>
+            <!-- place-self:center; -->
+            <li>place-self-center</li>
+            <div class="p-2 rounded-md bg-black text-black text-center grid grid-cols-3 gap-2 h-48">
+                <div class="p-5 rounded-md bg-white">1</div>
+                <div class="p-5 rounded-md bg-white">2</div>
+                <div class="p-5 rounded-md bg-white">3</div>
+                <div class="p-2 w-10 place-self-center rounded-md bg-teal-600 text-white">4</div>
+                <div class="p-5 rounded-md bg-white">5</div>
+                <div class="p-5 rounded-md bg-white">6</div>
+            </div>
+            <!-- place-self-stretch -->
+            <li>place-self-stretch</li>
+            <div class="p-2 rounded-md bg-black text-black text-center grid grid-cols-3 gap-2 h-48">
+                <div class="p-5 rounded-md bg-white">1</div>
+                <div class="p-5 rounded-md bg-white">2</div>
+                <div class="p-5 rounded-md bg-white">3</div>
+                <div class="p-5 place-self-stretch rounded-md bg-teal-600 text-white">4</div>
+                <div class="p-5 rounded-md bg-white">5</div>
+                <div class="p-5 rounded-md bg-white">6</div>
+            </div>
+        </ul>
+    </div>
+    <!-- place-self ends -->
+
+</body>
+</html>

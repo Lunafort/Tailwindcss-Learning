@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Backgrounds- with-Tailwindcss</title>
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="p-2 bg-black text-white">
+    <h1>Background</h1>
+    <div class="p-2 my-2 rounded-md bg-slate-800">
+        <!-- background-attachment start -->
+        <h3 class="border-b-2">Background-attachment</h3>
+        <p>Utilities for controlling how a background image behaves when scrolling. <span class="text-red-500">.bg-{attachment}</span>. example:</p>
+        <li>bg-fixed</li>
+        <div class="p-2 my-2 border">
+            <div class="h-64 overflow-y-scroll">
+                <div class="bg-fixed h-36" style="background-image:url(img/japan-bg.jpg);"></div>
+                <div class="p-2 font-semibold bg-white text-black">
+                    <h3>Trip to Shanghai!</h3>
+                    <span class="text-slate-500">Nov, 29 2019</span>
+                    <p class="indent-8">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet inventore blanditiis sit tenetur eum eos in neque maxime ullam magni illum eius, nam numquam quis autem exercitationem iusto vitae error at laudantium rerum iste nesciunt accusamus distinctio? Dolorum neque ipsum ab quo officia, nesciunt quod! Consequuntur sapiente id officia? Quae sint voluptas deleniti quo, magnam et obcaecati dolorem necessitatibus, omnis officiis alias libero accusantium iure facere unde culpa voluptatibus vitae placeat! Error quo laboriosam blanditiis placeat mollitia. Itaque laboriosam quas aperiam. Non, cumque? Exercitationem nam repellat quibusdam tenetur laboriosam eius, alias adipisci natus iure perspiciatis, blanditiis numquam voluptates repudiandae saepe!</p>
+                </div>
+            </div>
+        </div>
+        <li>bg-local</li>
+        <div class="p-2 my-2 border">
+            <div class="h-52 overflow-y-scroll">
+                <div class="p-2 font-semibold bg-white text-black bg-local "        style="background-image: url(img/japan-bg.jpg);">
+                    <h3>Trip to Shanghai!</h3>
+                    <span class="text-slate-500">Nov, 29 2019</span>
+                    <p class="indent-8">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet inventore blanditiis sit tenetur eum eos in neque maxime ullam magni illum eius, nam numquam quis autem exercitationem iusto vitae error at laudantium rerum iste nesciunt accusamus distinctio? Dolorum neque ipsum ab quo officia, nesciunt quod! Consequuntur sapiente id officia? Quae sint voluptas deleniti quo, magnam et obcaecati dolorem necessitatibus, omnis officiis alias libero accusantium iure facere unde culpa voluptatibus vitae placeat! Error quo laboriosam blanditiis placeat mollitia. Itaque laboriosam quas aperiam. Non, cumque? Exercitationem nam repellat quibusdam tenetur laboriosam eius, alias adipisci natus iure perspiciatis, blanditiis numquam voluptates repudiandae saepe!</p>
+                </div>
+            </div>
+        </div>
+        <li>bg-scroll</li>
+        <div class="p-2 my-2 border">
+            <div class="h-52 overflow-y-auto">
+                <div class="p-2 font-semibold text-black bg-scroll"        style="background-image: url(img/japan-bg.jpg);">
+                    <h3>Trip to Shanghai!</h3>
+                    <span class="text-slate-500">Nov, 29 2019</span>
+                    <p class="indent-8">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet inventore blanditiis sit tenetur eum eos in neque maxime ullam magni illum eius, nam numquam quis autem exercitationem iusto vitae error at laudantium rerum iste nesciunt accusamus distinctio? Dolorum neque ipsum ab quo officia, nesciunt quod! Consequuntur sapiente id officia? Quae sint voluptas deleniti quo, magnam et obcaecati dolorem necessitatibus, omnis officiis alias libero accusantium iure facere unde culpa voluptatibus vitae placeat! Error quo laboriosam blanditiis placeat mollitia. Itaque laboriosam quas aperiam. Non, cumque? Exercitationem nam repellat quibusdam tenetur laboriosam eius, alias adipisci natus iure perspiciatis, blanditiis numquam voluptates repudiandae saepe!</p>
+                </div>
+            </div>
+        </div>
+        <!-- background-attachment end -->
+
+        <!-- background-clipp start -->
+        <h3 class="border-b-2">background-clip</h3>
+        <p>Utilities for controlling the bounding box of an element's background. <span class="text-red-500">bg-clip-{property-value}</span>.example:</p>
+        <div class="p-2 my-2 border rounded-md flex gap-2">
+            <div class="bg-clip-border p-10 bg-violet-600 border-4 border-violet-400 border-dashed"></div>
+            <div class="bg-clip-padding p-10 bg-violet-600 border-4 border-violet-400 border-dashed"></div>
+            <div class="bg-clip-content p-10 bg-violet-600 border-4 border-violet-400 border-dashed"></div>
+        </div>
+        <p class="p-2 bg-slate-500">another example:</p>
+        <div class="p-2 my-2 border rounded-md">
+            <div class="text-5xl font-extrabold text-center">
+                <p class=" bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500">Hello World</p>
+            </div>
+        </div>
+        <!-- background-clipp ends -->
+
+
+        <!-- background-origin start -->
+        <h3 class="border-b-2">background-origin</h3>
+        <p>Utilities for controlling how an element's background is positioned relative to borders, padding, and content. <span class="text-red-500">.bg-origin-{property-value}</span>. example:</p>
+        <div class="p-2 my-2 rounded-md border flex gap-2">
+            <div class="bg-origin-border p-10 border-4 border-dashed rounded-md" style="background-image: url(img/kayden.jpg);"></div>
+            <div class="bg-origin-padding p-10 border-4 border-dashed rounded-md" style="background-image: url(img/kayden.jpg);"></div>
+            <div class="bg-origin-content p-10 border-4 border-dashed rounded-md" style="background-image: url(img/kayden.jpg);"></div>
+        </div>
+        <!-- background-origin end -->
+
+        <!-- background-position start -->
+        <h3 class="border-b-2">Background-Position</h3>
+        <p>Utilities for controlling the position of an element's background image. <span class="text-red-500">.bg-{position}</span>. example:</p>
+        <div class="my-2 p-2 bg-slate-400 rounded-md flex flex-row flex-wrap gap-2">
+            <!-- left-top -->
+            <div class="w-44 h-44 rounded-md relative bg-slate-700" >
+                <div class="w-14 h-14 rounded-md bg-left-top bg-no-repeat top-0 left-0 absolute z-10" style="background-image: url(img/kayden.jpg);"></div>
+                <img src="img/kayden.jpg" class="opacity-0 hover:opacity-100 rounded-md w-full h-full absolute">
+            </div>
+            <!-- top -->
+            <div class="w-44 h-44 rounded-md relative bg-slate-700" >
+                <div class="w-14 h-14 rounded-md bg-top bg-no-repeat top-0 left-1/4 absolute z-10" style="background-image: url(img/kayden.jpg);"></div>
+                <img src="img/kayden.jpg" class="opacity-0 hover:opacity-100 rounded-md w-full h-full absolute">
+            </div>
+            <!-- right-top -->
+            <div class="w-44 h-44 rounded-md relative bg-slate-700" >
+                <div class="w-14 h-14 rounded-md bg-right-top bg-no-repeat top-0 right-0 absolute z-10" style="background-image: url(img/kayden.jpg);"></div>
+                <img src="img/kayden.jpg" class="opacity-0 hover:opacity-100 rounded-md w-full h-full absolute">
+            </div>
+            <!-- left -->
+            <div class="w-44 h-44 rounded-md relative bg-slate-700" >
+                <div class="w-14 h-14 rounded-md bg-left bg-no-repeat top-1/4 left-0 absolute z-10" style="background-image: url(img/kayden.jpg);"></div>
+                <img src="img/kayden.jpg" class="opacity-0 hover:opacity-100 rounded-md w-full h-full absolute">
+            </div>
+            <!-- center -->
+            <div class="w-44 h-44 rounded-md relative bg-slate-700" >
+                <div class="w-14 h-14 rounded-md bg-center bg-no-repeat top-1/3 left-1/3  absolute z-10" style="background-image: url(img/kayden.jpg);"></div>
+                <img src="img/kayden.jpg" class="opacity-0 hover:opacity-100 rounded-md w-full h-full absolute">
+            </div>
+            <!-- right -->
+            <div class="w-44 h-44 rounded-md relative bg-slate-700" >
+                <div class="w-14 h-14 rounded-md bg-right bg-no-repeat top-1/3 right-0  absolute z-10" style="background-image: url(img/kayden.jpg);"></div>
+                <img src="img/kayden.jpg" class="opacity-0 hover:opacity-100 rounded-md w-full h-full absolute">
+            </div>
+            <!-- left-bottom -->
+            <div class="w-44 h-44 rounded-md relative bg-slate-700" >
+                <div class="w-14 h-14 rounded-md bg-left-bottom bg-no-repeat left-0 bottom-0  absolute z-10" style="background-image: url(img/kayden.jpg);"></div>
+                <img src="img/kayden.jpg" class="opacity-0 hover:opacity-100 rounded-md w-full h-full absolute">
+            </div>
+            <!-- bg-bottom -->
+            <div class="w-44 h-44 rounded-md relative bg-slate-700" >
+                <div class="w-14 h-14 rounded-md bg-bottom bg-no-repeat left-1/3 bottom-0  absolute z-10" style="background-image: url(img/kayden.jpg);"></div>
+                <img src="img/kayden.jpg" class="opacity-0 hover:opacity-100 rounded-md w-full h-full absolute">
+            </div>
+            <!-- bg-right-bottom -->
+            <div class="w-44 h-44 rounded-md relative bg-slate-700" >
+                <div class="w-14 h-14 rounded-md bg-right-bottom bg-no-repeat right-0 bottom-0  absolute z-10" style="background-image: url(img/kayden.jpg);"></div>
+                <img src="img/kayden.jpg" class="opacity-0 hover:opacity-100 rounded-md w-full h-full absolute">
+            </div>
+        </div>
+        <!-- background-position end -->
+
+        <!-- background-repeat start -->
+        <h3 class="border-b-2">background-repeat</h3>
+        <p>Utilities for controlling the repetition of an element's background image. <span class="text-red-500">.bg-repeat-{repeat-property-values}</span>. example:</p>
+        <!-- background-repeat -->
+        <span class="text-slate-500">bg-repeat</span>
+        <div class="p-2 my-2 rounded-md bg-white bg-contain bg-repeat h-52" style="background-image: url(img/kayden.jpg);"></div>
+        <!-- background-no-repeat -->
+        <span class="text-slate-500">bg-no-repeat</span>
+        <div class="p-2 my-2 rounded-md bg-white bg-contain bg-no-repeat h-52" style="background-image: url(img/kayden.jpg);"></div>
+
+        <!-- background-repeat-x -->
+        <span class="text-slate-500">bg-repeat-x</span>
+        <div class="p-2 my-2 rounded-md bg-white bg-contain bg-repeat-x h-52" style="background-image: url(img/kayden.jpg);"></div>
+        <!-- bg-repeat-y -->
+        <span class="text-slate-500">bg-repeat-y</span>
+        <div class="p-2 my-2 rounded-md bg-white bg-contain bg-repeat-y h-52 " style="background-image: url(img/kayden.jpg);"></div>
+        <!-- background-repeat end -->
+
+        <!-- background-size start -->
+        <h3 class="border-b-2">background-size</h3>
+        <p>Utilities for controlling the background size of an element's background image. <span class="text-red-500">.bg-{size}</span>.example:</p>
+        <div class="p-2 my-2">
+            <!-- bg-auto -->
+            <span class="text-slate-500">bg-auto</span>
+            <div class="p-2 my-2 rounded-md bg-white h-52 bg-center bg-no-repeat bg-auto" style="background-image: url(img/beach.jpg);"></div>
+            <!-- bg-cover -->
+            <span class="text-slate-500">bg-cover</span>
+            <div class="p-2 my-2 rounded-md bg-white h-52 bg-center bg-no-repeat bg-cover" style="background-image: url(img/beach.jpg);"></div>
+            <!-- bg-contain -->
+            <span class="text-slate-500">bg-contain</span>
+            <div class="p-2 my-2 rounded-md bg-white h-52 bg-center bg-no-repeat bg-contain" style="background-image: url(img/beach.jpg);"></div>
+        </div>
+        <!-- background-size end -->
+
+        <!-- backround-image start -->
+        <h3 class="border-b-2">Background-image (linear-gradients)</h3>
+        <div class="p-2 my-2">
+            <!-- example-1 -->
+            <div class="p-2 mb-2 rounded-md bg-gradient-to-r from-pink-700 to-emerald-600 text-center font-semibold">
+                <h3>Hello World!</h3>
+            </div>
+            <!-- example-2 -->
+            <div class="p-2 mb-2 rounded-md text-center font-semibold bg-gradient-to-tl from-slate-600 to-rose-600">
+                <h1>Hello World!</h1>
+            </div>
+            <!-- example-3 -->
+            <div class="p-2 mb-2 rounded-md text-center font-semibold bg-gradient-to-r from-emerald-600 to-orange-700 hover:from-orange-800 hover:to-rose-800">
+                <h1>Hello World</h1>
+            </div>
+            <!-- example-4 -->
+            <div class="p-2 mb-2 h-20 rounded-md text-center font-semibold bg-gradient-to-r from-teal-700">
+                <h1>Hello World</h1>
+            </div>
+            <!-- example-5 -->
+            <div class="mb-2 h-20 rounded-md flex place-items-center place-content-center font-semibold bg-gradient-to-r from-orange-800 via-red-800 to-slate-800">
+                <h1>Hello World</h1>
+            </div>
+        </div>
+        <!-- backround-image end -->
+    </div>
+    
+</body>
+</html>

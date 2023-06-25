@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spacing-tailwindcss</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-black text-white p-2">
+    <!-- padding -->
+    <div class="p-2 bg-teal-600 my-2 rounded-md">
+        <h3 class="border-b-2 border-b-orange-500">Padding</h3>
+        <p class="my-2">Utilities for controlling an element's padding. (inside selected element)<span class="bg-violet-500 px-2">.p-{t|r|b|l}-{size}</span>.example:</p>
+        <div class="p-2 rounded-md border grid grid-flow-col gap-2">
+            <div class="p-5 w-fit bg-rose-500 rounded-md"><p class="bg-white text-black">p-5</p></div>
+            <div class="px-5 w-fit bg-rose-500 rounded-md"><p class="bg-white text-black">px-5</p></div>
+            <div class="py-5 w-fit bg-rose-500 rounded-md"><p class="bg-white text-black">py-5</p></div>
+            <div class="pt-5 pb-5 w-fit bg-rose-500 rounded-md"><p class="bg-white text-black">pt-5 pb-5</p></div>
+            <div class="pl-5 pr-5 w-fit bg-rose-500 rounded-md"><p class="bg-white text-black">pl-5 pr-5</p></div>
+        </div>
+    </div>
+    <!-- margin -->
+    <div class="p-2 my-2 rounded-md bg-emerald-500">
+        <h3 class="border-b-2 border-b-red-500">Margin</h3>
+        <p class="my-2">Utilities for controlling an element's margin. (outside selected element) <span class="px-2 bg-slate-400">.m-{t|r|b|l}-{size}</span>.example:</p>
+        <div class="p-2 rounded-md border my-2 grid grid-flow-col gap-2">
+            <div class="rounded-md bg-white w-fit"><p class="m-5 bg-black text-white rounded-sm">m-5</p></div>
+            <div class="rounded-md bg-white w-fit"><p class="mx-5 bg-black text-white rounded-sm">mx-5</p></div>
+            <div class="rounded-md bg-white w-fit"><p class="my-5 bg-black text-white rounded-sm">my-5</p></div>
+            <div class="rounded-md bg-white w-fit"><p class="mb-5 mt-5 bg-black text-white rounded-sm">mt-5 mb-5</p></div>
+            <div class="rounded-md bg-white w-fit"><p class="ml-5 mr-5 bg-black text-white rounded-sm">ml-5 mr-5</p></div>
+        </div>
+    </div>
+    <!-- space-between -->
+    <div class="p-2 my-2 rounded-md bg-rose-700">
+        <h3 class="border-b-2 border-b-orange-600">Space-Between</h3>
+        <p>Utilities for controlling the space between child elements. (spacing between each child elements). <span class="px-2 bg-teal-500">.space-{x/y}-{size}</span>.example:</p>
+        <!-- space-x-{size} -->
+        <li>space-x-{size}</li>
+        <div class="p-2 my-2 border flex space-x-4 text-black">
+            <div class="p-5 rounded-md bg-white">1</div>
+            <div class="p-5 rounded-md bg-white">2</div>
+            <div class="p-5 rounded-md bg-white">3</div>
+        </div>
+        <!-- space-x-reverse} -->
+        <li>reversing children order</li>
+        <div class="p-2 my-2 border flex-row-reverse flex space-x-4 space-x-reverse  text-black">
+            <div class="p-5 rounded-md bg-white">1</div>
+            <div class="p-5 rounded-md bg-white">2</div>
+            <div class="p-5 rounded-md bg-white">3</div>
+        </div>
+        <!-- space-y-{size} -->
+        <li>vertical space between chidlren</li>
+        <div class="p-2 my-2 border flex flex-col space-y-4  text-black text-center">
+            <div class="p-5 rounded-md bg-white">1</div>
+            <div class="p-5 rounded-md bg-white">2</div>
+            <div class="p-5 rounded-md bg-white">3</div>
+        </div>
+    </div>
+</body>
+</html>

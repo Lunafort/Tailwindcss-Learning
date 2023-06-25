@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Border with-Tailwindcss</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-black text-white font-mono p-2">
+
+    <div class="p-2 my-2 bg-slate-800 rounded-md">
+        <!-- border-radius start -->
+        <h3 class="border-b-2">Border-radius</h3>
+        <p>Utilities for controlling the border radius of an element. <span class="text-red-500">.rounded-{radius-value}</span>. example:</p>
+        <div class="p-2 my-2 border flex flex-wrap gap-4">
+            <div class="p-2 text-center">
+                <span class="text-slate-400 ">.rounded</span>
+                <div class="w-20 h-20 text-center rounded bg-violet-700"></div>
+            </div>
+            <div class="p-2 text-center">
+                <span class="text-slate-400 ">.rounded-md</span>
+                <div class="w-20 h-20 text-center rounded-md bg-violet-700"></div>
+            </div>
+            <div class="p-2 text-center">
+                <span class="text-slate-400 ">.rounded-lg</span>
+                <div class="w-20 h-20 text-center rounded-lg bg-violet-700"></div>
+            </div>
+            <div class="p-2 text-center">
+                <span class="text-slate-400 ">.rounded-full</span>
+                <div class="w-20 h-20 text-center rounded-full bg-violet-700"></div>
+            </div>
+        </div>
+        <!-- border-radius on buttons! -->
+        <div class="p-2 my-2 border flex gap-4 text-center">
+            <div>
+                <p>pill buttons</p>
+                <button class="rounded-full px-2 py-2 bg-rose-700 my-2 hover:bg-rose-500">Save Changes</button>
+            </div>
+            <div>
+                <p>no rounding</p>
+                <button class="rounded-none px-2 py-2 bg-rose-700 my-2 hover:bg-rose-500">Save Changes</button>
+            </div>
+        </div>
+        <!-- rounding sides separately -->
+        <h5 class="border-b-2">Rounding <span class="text-red-500">sides</span> separately</h5>
+        <div class="p-2 my-2 border flex flex-wrap gap-4 text-center">
+            <div class="p-2 my-2">
+                <p class="text-slate-400">rounded-t-lg</p>
+                <div class="w-16 h-16 rounded-t-lg bg-teal-700"></div>
+            </div>
+            <div class="p-2 my-2">
+                <p class="text-slate-400">rounded-r-lg</p>
+                <div class="w-16 h-16 rounded-r-lg bg-teal-700"></div>
+            </div>
+            <div class="p-2 my-2">
+                <p class="text-slate-400">rounded-b-lg</p>
+                <div class="w-16 h-16 rounded-b-lg bg-teal-700"></div>
+            </div>
+            <div class="p-2 my-2">
+                <p class="text-slate-400">rounded-l-lg</p>
+                <div class="w-16 h-16 rounded-l-lg bg-teal-700"></div>
+            </div>
+        </div>
+        <h5 class="border-b-2">Rounding <span class="text-red-500">corners</span> separately</h5>
+        <div class="p-2 my-2 border flex flex-wrap gap-4 text-center">
+            <div class="p-2 my-2">
+                <p class="text-slate-400">rounded-tl-lg</p>
+                <div class="w-16 h-16 rounded-tl-lg bg-sky-600"></div>
+            </div>
+            <div class="p-2 my-2">
+                <p class="text-slate-400">rounded-tr-lg</p>
+                <div class="w-16 h-16 rounded-tr-lg bg-sky-600"></div>
+            </div>
+            <div class="p-2 my-2">
+                <p class="text-slate-400">rounded-br-lg</p>
+                <div class="w-16 h-16 rounded-br-lg bg-sky-600"></div>
+            </div>
+            <div class="p-2 my-2">
+                <p class="text-slate-400">rounded-bl-lg</p>
+                <div class="w-16 h-16 rounded-bl-lg bg-sky-600"></div>
+            </div>
+        </div>
+        <!-- border-radius-ends -->
+        <!-- border-width start -->
+        <div class="p-2 my-2">
+            <h3 class="border-b-2">Border-width</h3>
+            <p>Utilities for controlling the width of an element's borders. <span class="text-red-500">.border-{width-size}</span>.example:</p>
+            <div class="p-2 my-2 border">
+                <!-- all-sides-border-width -->
+                <h5 class="border-b-2 border-b-red-500">all sides</h5>
+                <div class="p-2 my-2 bg-slate-900 rounded-md flex flex-wrap gap-2">
+                    <div class="p-5 border-teal-600 border">.border</div>
+                    <div class="p-5 border-teal-600 border-2">.border-2</div>
+                    <div class="p-5 border-teal-600 border-4">.border-4</div>
+                    <div class="p-5 border-teal-600 border-8">.border-8</div>
+                </div>
+                <!-- individual-sides-border-width -->
+                <h5 class="border-b-2 border-b-red-500">individual-sides</h5>
+                <div class="p-2 my-2 bg-slate-900 rounded-md flex flex-wrap gap-2">
+                    <div class="p-5 border-t-4 border-emerald-500 ">.border-t-4</div>
+                    <div class="p-5 border-r-4 border-emerald-500 ">.border-r-4</div>
+                    <div class="p-5 border-b-4 border-emerald-500 ">.border-b-4</div>
+                    <div class="p-5 border-l-4 border-emerald-500 ">.border-l-4</div>
+                </div>
+                <!-- horizontal and vertical sides border-width -->
+                <h5 class="border-b-2 border-red-500">horizontal and vertical sides</h5>
+                <div class="p-2 my-2 bg-slate-900 rounded-md flex flex-wrap gap-2">
+                    <div class="p-5 border-x-4 border-rose-500">.border-x-4</div>
+                    <div class="p-5 border-y-4 border-rose-500">.border-y-4</div>
+                </div>
+            </div>
+        </div>
+        <!-- border-width ends -->
+
+        <!-- border-color star -->
+        <div class="p-2 my-2">
+            <h3 class="border-b-2">border-color</h3>
+            <p>coloring the borders! <span class="text-red-500">.border-{color}</span>. exammple:</p>
+            <div class="p-2 border my-2 flex flex-wrap gap-2">
+                <div>
+                    <span class="text-slate-500">4 sides</span>
+                    <div class="p-10 rounded-md border-teal-700 border-4"></div>
+                </div>
+                <div>
+                    <span class="text-slate-500">border-opacity</span>
+                    <div class="p-10 rounded-md border-teal-700/40 border-4"></div>
+                </div>
+                <div>
+                    <span class="text-slate-500">individual-sides</span>
+                    <div class="p-10 rounded-md border-4 border-t-red-500 border-r-emerald-500 border-b-green-500 border-l-orange-700"></div>
+                </div>
+                <div>
+                    <span class="text-slate-500">horizontal/vertical sides</span>
+                    <div class="p-10 rounded-md border-4 border-x-orange-700 border-y-sky-700"></div>
+                </div>
+            </div>
+        </div>
+        <!-- border-color end -->
+        <!-- border-style start -->
+        <div class="p-2 my-2">
+            <h3 class="border-b-2">border-style</h3>
+            <p>gaves the border some styling!  <span class="text-red-50">.border-{style}</span>.example:</p>
+            <div class="p-2 my-2 border flex flex-wrap gap-2">
+                <div class="p-10 border-4 border-solid rounded-md font-semibold text-slate-400">solid</div>
+                <div class="p-10 border-4 border-dashed rounded-md font-semibold text-slate-400">dashed</div>
+                <div class="p-10 border-4 border-dotted rounded-md font-semibold text-slate-400">dotted</div>
+                <div class="p-10 border-4 border-double rounded-md font-semibold text-slate-400">double</div>
+            </div>
+        </div>
+        <!-- border-style end -->
+
+    </div>
+    <!-- new-section-2 (divide) -->
+    <div class="p-2 my-2 rounded-md bg-teal-800">
+        <h3 class="border-b-2">Divide/pembatas antar element.</h3>
+        <div class="p-2 my-2">
+            <!-- divide width -->
+            <div class="border p-2">
+                <h5 class="border-b-2 border-red-500">divide-width</h5>
+                <p>gaves the right amount of divide width! <span class="text-red-500">.divide-{width}</span>. example:</p>
+                <div class="rounded-md my-2 grid grid-cols-3 divide-x text-center">
+                    <div class="bg-black p-2">1</div>
+                    <div class="bg-black p-2">2</div>
+                    <div class="bg-black p-2">3</div>
+                </div>
+                <p class="my-2 text-sky-500">more example:</p>
+                <div class="grid grid-cols-1 divide-y text-center">
+                    <div class="bg-black p-2">1</div>
+                    <div class="bg-black p-2">2</div>
+                    <div class="bg-black p-2">3</div>
+                </div>
+            </div>
+            <!-- divide-color -->
+            <div class="border my-2 p-2">
+                <h3 class="border-b-2">divide-colors</h3>
+                <p>gaves some divide element colors! <span class="text-red-500">.divide-{colors}</span>. example:</p>
+                <div class="my-2 grid grid-cols-3 divide-x text-center text-black divide-orange-600">
+                    <div class="p-2 bg-white">1</div>
+                    <div class="p-2 bg-white">2</div>
+                    <div class="p-2 bg-white">3</div>
+                </div>
+                <div class="my-2 grid grid-cols-1 divide-y text-center text-black divide-violet-600">
+                    <div class="p-2 bg-white">1</div>
+                    <div class="p-2 bg-white">2</div>
+                    <div class="p-2 bg-white">3</div>
+                </div>
+            </div>
+            <!-- divide-style -->
+            <div class="border p-2 my-2">
+                <h5 class="border-b-2">divide-style</h5>
+                <p>gaves some divide elements styling <span class="text-red-500">.divide-{style}</span>.example:</p>
+                <div class="my-2 grid grid-cols-1 divide-y-2 divide-dashed text-center text-black divide-violet-600">
+                    <div class="p-2 bg-white">1</div>
+                    <div class="p-2 bg-white">2</div>
+                    <div class="p-2 bg-white">3</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- section-3 (new) -->
+    <div class="p-2 rounded-md my-2 bg-violet-800">
+        <h3 class="border-b-2">outline</h3>
+        <p>an outside element's like border but it outside placed before an border!</p>
+        <div class="p-2 my-2 border">
+            <!-- outline-width -->
+            <h5 class="border-b-2 border-teal-700">outline-width</h5>
+            <span class="text-red-500">.outline-{width}</span>
+            <div class="p-2 my-2 flex gap-8 flex-col">
+                <button class="p-2 rounded-md outline outline-2 bg-sky-500 text-white">CLICK</button>
+                <button class="p-2 rounded-md outline outline-4 bg-sky-500 text-white">CLICK</button>
+                <button class="p-2 rounded-md outline outline-8 bg-sky-500 text-white">CLICK</button>
+            </div>
+        </div>
+        <div class="p-2 my-2 border">
+            <!-- outline-color -->
+            <h5 class="border-b-2 border-teal-700">outline-color</h5>
+            <p>gaves an outline colors! <span class="text-red-500">.oulinte-{colors}</span>. example:</p>
+            <div class="p-2 my-2 flex gap-2 flex-col md:flex-row">
+                <button class="p-2 rounded-md outline outline-2 bg-sky-500 outline-orange-500">Click Me</button>
+                <button class="p-2 rounded-md outline outline-2 bg-sky-500 outline-orange-500">Click Me</button>
+                <button class="p-2 rounded-md outline outline-2 bg-sky-500 outline-orange-500">Click Me</button>
+            </div>
+        </div>
+        <div class="p-2 my-2 border">
+            <!-- outline-style -->
+            <h5 class="border-b-2 border-teal-700">outline-style</h5>
+            <p>gaves an outline into selected element <span class="text-red-500">.outline-{style}</span>. example:</p>
+            <div class="p-2 my-2 flex gap-2 flex-col">
+                <button class="p-2 rounded-md outline-2 outline-dashed bg-sky-400">Button</button>
+                <button class="p-2 rounded-md outline-2 outline-dotted bg-sky-400">Button</button>
+                <button class="p-2 rounded-md outline-2 outline-double bg-sky-400">Button</button>
+                <button class="p-2 rounded-md outline-2 outline bg-sky-400">Button</button>
+            </div>
+        </div>
+        <div class="p-2 my-2 border">
+            <!-- outline-offset -->
+            <h5 class="border-b-2 border-teal-700">outline-offset</h5>
+            <p>gaves an outline space between outline and the selected element <span class="text-red-500">.outline-offset-{size}</span>. example:</p>
+            <div class="p-2 my-2 flex gap-8 flex-col">
+                <button class="p-2 rounded-md outline outline-2 outline-offset-2 outline-orange-500 bg-sky-400">Button</button>
+                <button class="p-2 rounded-md outline outline-2 outline-offset-4 outline-orange-500 bg-sky-400">Button</button>
+                <button class="p-2 rounded-md outline outline-2 outline-offset-8 outline-orange-500 bg-sky-400">Button</button>
+            </div>
+        </div>
+    </div>
+    <!-- new-section (ring) -->
+    <div class="p-2 my-2 rounded-md bg-emerald-800">
+        <h3 class="border-b-2">Ring</h3>
+        <p>gaves an selected element an outline with box-shadow :]</p>
+        <div class="p-2 my-2 border">
+            <!-- ring-width -->
+            <h5 class="border-b-2">ring-width</h5>
+            <p>gaves outline rings a width <span class="text-red-500">.ring-{width}</span>. example:</p>
+            <div class="p-2 my-2 flex flex-wrap gap-6">
+                <div class="p-5 ring-2 rounded-md bg-slate-400">ring-2</div>
+                <div class="p-5 ring rounded-md bg-slate-400">ring-2</div>
+                <div class="p-5 ring-4 rounded-md bg-slate-400">ring-2</div>
+            </div>
+        </div>
+        <div class="p-2 my-2 border">
+            <!-- ring-colors -->
+            <h5 class="border-b-2">ring-colors</h5>
+            <p>gaves outline rings a colors <span class="text-red-500">.ring-{color}</span>. example:</p>
+            <div class="p-2 my-2 flex flex-wrap gap-6">
+                <div class="p-5 ring-2 ring-teal-500 rounded-md bg-slate-400">ring-2</div>
+                <div class="p-5 ring ring-orange-500 rounded-md bg-slate-400">ring-2</div>
+                <div class="p-5 ring-4 ring-red-500 rounded-md bg-slate-400">ring-2</div>
+            </div>
+        </div>
+        <div class="p-2 my-2 border">
+            <!-- ring-offset-width -->
+            <h5 class="border-b-2">ring-offset-width</h5>
+            <p>gaves outline rings a offset-width <span class="text-red-500">.ring-{offset-width}</span>. example:</p>
+            <div class="p-2 my-2 flex flex-wrap gap-6">
+                <div class="p-5 ring-offset-0 ring-2 ring-teal-500 rounded-md bg-slate-400">ring-2</div>
+                <div class="p-5 ring-offset-2 ring ring-orange-500 rounded-md bg-slate-400">ring-2</div>
+                <div class="p-5 ring-offset-4 ring-4 ring-red-500 rounded-md bg-slate-400">ring-2</div>
+            </div>
+        </div>
+        <div class="p-2 my-2 border">
+            <!-- ring-offset-colors -->
+            <h5 class="border-b-2">ring-offset-colors</h5>
+            <p>gaves outline rings a offset-colors <span class="text-red-500">.ring-{offset-colors}</span>. example:</p>
+            <div class="p-2 my-2 flex flex-wrap gap-6">
+                <button class="p-2 ring-offset-4 ring-offset-slate-700 ring bg-slate-900 ring-orange-500 rounded-md">Button ring</button>
+                <button class="p-2 ring-offset-4 ring-offset-slate-700 ring bg-slate-900 ring-orange-500 rounded-md">Button ring</button>
+                <button class="p-2 ring-offset-4 ring-offset-slate-700 ring bg-slate-900 ring-orange-500 rounded-md">Button ring</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

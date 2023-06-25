@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typography with- Tailwindcss</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+</head>
+<body class="bg-black text-white p-2">
+    <h1>Typography w-Tailwindcss</h1>
+    <div class="my-2 p-2 border rounded-sm">
+        <!-- font-family -->
+        <h3 class="border-b">Font-family</h3>
+        <p class="my-1">Utilities for controlling the font family of an element. <span class="text-red-600">.font-{property-value}.</span>example:</p>
+        <div class="bg-slate-50 text-black p-2 my-2 rounded-md">
+            <span class="text-slate-500">font-sans</span>
+            <p class="font-sans">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam, quas fuga excepturi unde enim rerum nisi maiores expedita perspiciatis id.</p>
+        </div>
+        <div class="bg-slate-50 text-black p-2 my-2 rounded-md">
+            <span class="text-slate-500">font-serif</span>
+            <p class="font-serif">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam, quas fuga excepturi unde enim rerum nisi maiores expedita perspiciatis id.</p>
+        </div>
+        <div class="bg-slate-50 text-black p-2 my-2 rounded-md">
+            <span class="text-slate-500">font-mono</span>
+            <p class="font-mono">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam, quas fuga excepturi unde enim rerum nisi maiores expedita perspiciatis id.</p>
+        </div>
+
+        <!-- font-size -->
+        <h3 class="border-b">Font-size</h3>
+        <p>Utilities for controlling the font size of an element. <span class="text-red-600">.text-{size-value}</span>.example:</p>
+        <div class="p-2 my-2 rounded-md bg-white text-black">
+            <span class="text-slate-500">text-xs</span>
+            <p class="text-xs">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, consectetur.</p>
+        </div>
+        <div class="p-2 my-2 rounded-md bg-white text-black">
+            <span class="text-slate-500">text-sm</span>
+            <p class="text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, consectetur.</p>
+        </div>
+        <div class="p-2 my-2 rounded-md bg-white text-black">
+            <span class="text-slate-500">text-base</span>
+            <p class="text-base">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, consectetur.</p>
+        </div>
+        <div class="p-2 my-2 rounded-md bg-white text-black">
+            <span class="text-slate-500">text-lg</span>
+            <p class="text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, consectetur.</p>
+        </div>
+        <div class="p-2 my-2 rounded-md bg-white text-black">
+            <span class="text-slate-500">text-xl</span>
+            <p class="text-xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, consectetur.</p>
+        </div>
+        <div class="p-2 my-2 rounded-md bg-white text-black">
+            <span class="text-slate-500">text-2xl</span>
+            <p class="text-2xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, consectetur.</p>
+        </div>
+
+        <!-- font-smmoothing -->
+        <h3 class="border-b">Font Smoothing?</h3>
+        <p>Utilities for controlling the font smoothing of an element. <span class="text-red-500">.antialiased</span> & <span class="text-red-500">.subpixel-antialiased</span>. example:</p>
+        <div class="p-2 my-2 rounded-md bg-white text-black">
+            <ul class="mx-2">
+                <li class="mx-2 border-b-2 border-black">.antialiased <span class="text-violet-600">utility to render text using grayscale antialiasing.</span></li>
+                <div class="p-2 my-2 rounded-md bg-black text-white antialased">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis magni ratione eligendi modi exercitationem cumque debitis vel ea, laboriosam laudantium.</div>
+                <li class="mx-2 border-b-2 border-black">.subpixel-antialiased <span class="text-violet-600">utility to render text using subpixel antialiasing.</span></li>
+                <div class="p-2 my-2 rounded-md bg-black text-white subpixel-antialased">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis magni ratione eligendi modi exercitationem cumque debitis vel ea, laboriosam laudantium.</div>
+            </ul>
+        </div>
+
+        <!-- font-style -->
+        <h3 class="border-b-2">font-style</h3>
+        <p>Utilities for controlling the style of text. example:</p>
+        <div class="p-2 my-2 rounded-md bg-white text-black">
+            <div class="border border-black rounded-md p-2 my-2">
+                <span class="text-slate-500">.italic</span>
+                <p class="italic">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, repellendus.</p>
+            </div>
+            <div class="border border-black my-2 p-2 rounded-md">
+                <span class="text-slate-500">.not-italic</span>
+                <p class="not-italic">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, inventore.</p>
+            </div>
+        </div>
+        <!-- font-weight -->
+        <h3 class="border-b-2">font-weight</h3>
+        <p>Utilities for controlling the font weight of an element.(tebal tidaknya sebuah text/elemen yg dipilih) <span class="text-red-600">.font-{weight-property-value}</span>.example:</p>
+        <div class="p-2 my-2 bg-white text-black rounded-md">
+            <div class="p-2 my-2 bg-teal-700 text-white rounded-md">
+                <span class="text-slate-400">font-light</span>
+                <p class="font-light">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim, sunt?</p>
+            </div>
+            <div class="p-2 my-2 bg-teal-700 text-white rounded-md">
+                <span class="text-slate-400">font-normal</span>
+                <p class="font-normal">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim, sunt?</p>
+            </div>
+            <div class="p-2 my-2 bg-teal-700 text-white rounded-md">
+                <span class="text-slate-400">font-medium</span>
+                <p class="font-medium">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim, sunt?</p>
+            </div>
+            <div class="p-2 my-2 bg-teal-700 text-white rounded-md">
+                <span class="text-slate-400">font-semibold</span>
+                <p class="font-semibold">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim, sunt?</p>
+            </div>
+            <div class="p-2 my-2 bg-teal-700 text-white rounded-md">
+                <span class="text-slate-400">font-bold</span>
+                <p class="font-bold">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim, sunt?</p>
+            </div>
+        </div>
+
+        <!-- font-variant Numeric -->
+        <h3 class="border-b-2">Font-variant-Numeric</h3>
+        <p>Utilities for controlling the variant of numbers. <span class="text-red-600">better looks for example bellow:</span></p>
+        <div class="p-2 my-2 grid grid-cols-3 lg:grid-cols-4 gap-2">
+            <div class="bg-white text-black rounded-md p-2">
+                <span class="text-slate-700">.Ordinal</span>
+                <p class="ordinal">1st</p>
+            </div>
+            <div class="bg-white text-black rounded-md p-2">
+                <span class="text-slate-700">.slased-zero</span>
+                <p class="slashed-zero">0</p>
+            </div>
+            <div class="bg-white text-black rounded-md p-2">
+                <span class="text-slate-700">.oldstyle-nums</span>
+                <p class="oldstyle-nums">123456789</p>
+            </div>
+            <div class="bg-white text-black rounded-md p-2">
+                <span class="text-slate-700">.proportional-figure</span>
+                <p class="proportional-figure">67289</p>
+                <p class="proportional-figure">22344</p>
+            </div>
+            <div class="bg-white text-black rounded-md p-2">
+                <span class="text-slate-700">.tabular nums</span>
+                <p class="tabular-nums">1232</p>
+                <p class="tabular-nums">1232</p>
+            </div>
+            <div class="bg-white text-black rounded-md p-2">
+                <span class="text-slate-700">.diagonal-fractions</span>
+                <p class="diagonal-fractions">1/2</p>
+                <p class="diagonal-fractions">1/4</p>
+            </div>
+            <div class="bg-white text-black rounded-md p-2">
+                <span class="text-slate-700">.stacked-fractions</span>
+                <p class="stacked-fractions">1/2 3/4 6/9</p>
+            </div>
+        </div>
+
+        <!-- letter-spacing start -->
+        <h3 class="border-b-2">Letter-spacing</h3>
+        <p>Utilities for controlling the tracking (letter spacing) of an element. <span class="text-red-600">.tracking-{spacing-value}</span>.example:</p>
+        <div class="p-2 my-2 rounded-md bg-white text-black">
+            <div class="border-2 border-black my-2 p-2 rounded-md">
+                <span class="text-slate-700">tracking-tight</span>
+                <p class="tracking-tight">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, pariatur!</p>
+                <hr class="border-black">
+                <span class="text-slate-700">tracking-normal</span>
+                <p class="tracking-normal">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, delectus!</p>
+                <hr class="border-black">
+                <span class="text-slate-700">tracking-wide</span>
+                <p class="tracking-wide">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, rerum?</p>
+                <hr class="border-black">
+                <span class="text-slate-700">tracking-widest</span>
+                <p class="tracking-widest">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, nostrum!</p>
+            </div>
+        </div>
+
+        <!-- line-clamp start -->
+        <h3 class="border-b-2">Line-Clamp</h3>
+        <p>Utilities for clamping text to a specific number of lines. <span class="text-red-600">.line-clamp-{size}</span>. example:</p>
+        <div class="p-2 my-2 rounded-md bg-slate-800 text-white">
+            <span class="text-slate-400 mb-2">Mar 10 2020</span>
+            <p class="font-bold my-2">Lorem ipsum dolor sit</p>
+            <p class="line-clamp-5 text-slate-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, placeat deleniti sint sapiente officiis assumenda! Commodi, sed dolor? Exercitationem vitae officiis rem, porro distinctio perferendis sunt a, ipsa laboriosam harum necessitatibus natus voluptatem commodi molestias voluptate id odit suscipit expedita totam quas optio quaerat. Voluptas nostrum illum quam quos fugit?</p>
+            <div class="my-2 flex gap-2 items-center">
+                <img src="img/kayden.jpg" class="rounded-full w-auto h-10">
+                <p class="font-bold">Bambang</p>
+            </div>
+        </div>
+        <p class="text-red-600 p-2 border rounded-md">the line-clamp utilities affected if the screen size got wider/smaller!</p>
+
+        <!-- line-height start -->
+        <h3 class="border-b-2">line-Height</h3>
+        <p>controlling space between each line of text/selected element! <span class="text-red-600">.leading-{size}</span>. example:</p>
+        <!-- relative value line-height -->
+        <div class="border my-2 p-2 rounded-md">
+            <li>relative line-height</li>
+            <div class="p-2 my-2 rounded-md bg-white text-black">
+                <div class="p-2 my-2 border-black border-b">
+                    <span class="text-slate-600">leading-normal</span>
+                    <p class="leading-normal">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga, quas cumque! Modi alias ut nemo recusandae dolores dolorum unde labore?</p>
+                </div>
+                <div class="p-2 my-2 border-black border-b">
+                    <span class="text-slate-600">leading-relaxed</span>
+                    <p class="leading-relaxed">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga, quas cumque! Modi alias ut nemo recusandae dolores dolorum unde labore?</p>
+                </div>
+                <div class="p-2 my-2 border-black border-b">
+                    <span class="text-slate-600">leading-loose</span>
+                    <p class="leading-loose">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga, quas cumque! Modi alias ut nemo recusandae dolores dolorum unde labore?</p>
+                </div>
+            </div>
+            <!-- fixed value line-height -->
+            <li>fixed line-height</li>
+            <div class="p-2 my-2 rounded-md bg-white text-black">
+                <div class="p-2 my-2 border-black border-b">
+                    <span class="text-slate-600">leading-6</span>
+                    <p class="leading-6">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi, fugiat!</p>
+                </div>
+                <div class="p-2 my-2 border-black border-b">
+                    <span class="text-slate-600">leading-7</span>
+                    <p class="leading-7">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi, fugiat!</p>
+                </div>
+                <div class="p-2 my-2 border-black border-b">
+                    <span class="text-slate-600">leading-8</span>
+                    <p class="leading-8">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi, fugiat!</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- list start -->
+        <!-- line-style-image -->
+        <h3 class="border-b-2">List-style-image</h3>
+        <p>controlling how the markers images for list items <span class="text-red-600">.list-image-[url(<i>image-directory</i>)]</span>. example:</p>
+        <div class="p-2 my-2 rounded-md border-2">
+            <!-- <ul class="list-image-[url(img/kayden.jpg)] list-outside"> -->
+                <li>5 Apple</li>
+                <li>1/2 ounce Flour</li>
+                <li>5grams Sugar</li>
+            </ul>
+        </div>
+        <span class="text-red-600">didnt work on me huh, cuz the img size? or sonething!</span>
+        <!-- line-style-position -->
+        <h3 class="border-b-2">list-style-position</h3>
+        <p>Utilities for controlling the position of bullets/numbers in lists. <span class="text-red-600">.list-outside</span> / <span class="text-red-600">.list-inside</span>. example:</p>
+        <div class="p-2 my-2 rounded-md border">
+            <ul class="list-inside border-2">
+                <li>5 Apple</li>
+                <li>1/2 ounce Flour</li>
+                <li>5grams Sugar</li>
+            </ul>
+            <hr class="border-black my-2 ">
+            <ul class="list-outside border-2">
+                <li>5 Apple</li>
+                <li>1/2 ounce Flour</li>
+                <li>5grams Sugar</li>
+            </ul>
+        </div>
+        <!-- list-style-type -->
+        <h3 class="border-b-2">list-style-type</h3>
+        <p>Utilities for controlling the bullet/number style of a list. <span class="text-red-600">.list-{value}</span>. example:</p>
+        <div class="p-2 my-2 rounded-md ">
+            <p class="bg-teal-500 px-2">list-none</p>
+            <ul class="list-none px-5 mb-2">
+                <li>5 Apple</li>
+                <li>1/2 ounce Flour</li>
+                <li>5grams Sugar</li>
+            </ul>
+            <p class="px-2 bg-teal-500">list-disc</p>
+            <ul class="list-disc px-5 mb-2">
+                <li>5 Apple</li>
+                <li>1/2 ounce Flour</li>
+                <li>5grams Sugar</li>
+            </ul>
+            <p class="px-2 bg-teal-500">list-decimal</p>
+            <ul class="list-decimal px-5 mb-2">
+                <li>5 Apple</li>
+                <li>1/2 ounce Flour</li>
+                <li>5grams Sugar</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- text-start -->
+    <div class="p-2 my-2 border border-teal-500 rounded-md">
+        <h1 class="text-center border-b-2">TEXT</h1>
+        <div class="p-2 my-2 border rounded-md">
+            <!-- text-align -->
+            <h3 class="border-b">Text-align</h3>
+            <p>Utilities for controlling the alignment of text. <span class="text-red-500">.text-{align}</span>. example:</p>
+            <div class="p-2 my-2 border rounded-md">
+                <p class="text-left mb-2 border-b">Lorem, ipsum dolor.</p>
+                <p class="text-center mb-2 border-b">Lorem, ipsum dolor.</p>
+                <p class="text-right mb-2 border-b">Lorem, ipsum dolor.</p>
+                <p class="text-start mb-2 border-b">Lorem, ipsum dolor.</p>
+                <p class="text-end mb-2 border-b">Lorem, ipsum dolor.</p>
+                <p class="text-justify mb-2 border-b">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, eum.</p>
+            </div>
+            <!-- text-color -->
+            <h3 class="border-b">text-color</h3>
+            <p>Utilities for controlling the text color of an element. <span class="text-red-600">.text-{color}</span> or <span class="text-red-600">.text-{color}-/{opacity}</span>. example:</p>
+            <!-- in css: color: color-value; opacity: .1 - 1.0 ;-->
+            <div class="p-2 my-2 border rounded-md">
+                <span class="text-red-400">text-color example:</span>
+                <!-- color: value; -->
+                <p class="text-teal-100">Lorem ipsum dolor sit amet.</p>
+                <p class="text-teal-300">Lorem ipsum dolor sit amet.</p>
+                <p class="text-teal-500">Lorem ipsum dolor sit amet.</p>
+                <p class="text-teal-700">Lorem ipsum dolor sit amet.</p>
+                <p class="text-teal-900">Lorem ipsum dolor sit amet.</p>
+                <hr class="border-b-2 my-2">
+                <span class="text-red-400">with-opacity:</span>
+                <!-- opacity:value; -->
+                <p class="text-teal-500/100">Lorem ipsum dolor sit amet.</p>
+                <p class="text-teal-500/70">Lorem ipsum dolor sit amet.</p>
+                <p class="text-teal-500/50">Lorem ipsum dolor sit amet.</p>
+                <p class="text-teal-500/25">Lorem ipsum dolor sit amet.</p>
+                <p class="text-teal-500/0">Lorem ipsum dolor sit amet.</p>
+            </div>
+            <!-- text-decoration -->
+            <h3 class="border-b-2">text-decoration</h3>
+            <p>Utilities for controlling the decoration of text. example:</p>
+            <!-- in css: text-decoration-line: line-property value; -->
+            <div class="p-2 my-2 border rounded-md">
+                <p class="hover:underline font-bold my-2">Lorem ipsum dolor sit amet.</p>
+                <p class="hover:overline font-bold my-2">Lorem ipsum dolor sit amet.</p>
+                <p class="hover:line-through font-bold my-2">Lorem ipsum dolor sit amet.</p>
+                <p class="hover:no-underline font-bold my-2">Lorem ipsum dolor sit amet.</p>
+                <hr class="my-2 border-b-1">
+                <span class="text-red-500">just hover it!</span>
+            </div>
+            <!-- text-decoraion-color -->
+            <h3 class="border-b-2">text-decoration-color</h3>
+            <p>Utilities for controlling the color of text decorations. <span class="text-teal-600">.decoration-{color}</span>. example:</p>
+            <!-- in css: text-decoration-color: color-value; -->
+            <div class="p-2 my-2 border rounded-md">
+                <p>Lorem ipsum dolor sit amet consectetur <span class="line-through decoration-violet-600">adipisicing elit</span>. Possimus voluptatum consectetur distinctio tempora harum neque earum laboriosam nam <span class="underline font-bold decoration-sky-500">veritatis exercitationem</span>, beatae perferendis sunt ea eos? Distinctio ullam veritatis voluptates excepturi totam officiis explicabo qui! Non, officiis cum. <span class="underline font-bold decoration-pink-500">Quaerat vitae</span> quae accusantium assumenda, minima rerum aliquam consectetur voluptates impedit veniam quasi!</p>
+            </div>
+            <!-- text-decotaion-style -->
+            <h3 class="border-b-2">text-decoraion-style</h3>
+            <p>Utilities for controlling the style of text decorations. <span class="text-red-500">.decoration-{style}</span>. example:</p>
+            <!-- in css: text-decoration-style: property-value; -->
+            <div class="p-2 my-2 border rounded-md">
+                <span class="text-slate-500">decortaion-solid</span>
+                <p class="underline my-2 decoration-solid">Lorem ipsum dolor sit amet.</p>
+                <span class="text-slate-500">decortaion-double</span>
+                <p class="underline my-2 decoration-double">Lorem ipsum dolor sit amet.</p>
+                <span class="text-slate-500">decortaion-dotted</span>
+                <p class="underline my-2 decoration-dotted">Lorem ipsum dolor sit amet.</p>
+                <span class="text-slate-500">decortaion-dashed</span>
+                <p class="underline my-2 decoration-dashed">Lorem ipsum dolor sit amet.</p>
+                <span class="text-slate-500">decortaion-wavy</span>
+                <p class="underline my-2 decoration-wavy">Lorem ipsum dolor sit amet.</p>
+            </div>
+
+            <!-- text-decoration-thickness -->
+            <h3 class="border-b-2">text-decoration-thickness</h3>
+            <p>Utilities for controlling the thickness of text decorations. <span class="text-red-500">decoration-{thick-value}</span>. example:</p>
+            <!-- in css:text-decoration-thickness: value; -->
+            <div class="p-2 my-2 border rounded-md">
+                <span class="text-slate-500">decorataion-1</span>
+                <p class="underline decoration-1">Lorem ipsum dolor sit amet.</p>
+                <span class="text-slate-500">decorataion-2</span>
+                <p class="underline decoration-2">Lorem ipsum dolor sit amet.</p>
+                <span class="text-slate-500">decorataion-4</span>
+                <p class="underline decoration-4">Lorem ipsum dolor sit amet.</p>
+            </div>
+
+            <!-- text-decoration offset -->
+            <h3 class="border-b-2">Text-decoration-offset</h3>
+            <p>Utilities for controlling the offset of a text underline. <span class="text-red-500">.underline-offset-{size}</span>. example:</p>
+            <!-- in css -> text-underline-offse: value; -->
+            <div class="p-2 my-2 rounded-md border">
+                <span class="text-slate-500">.underline-offset-1</span>
+                <p class="underline decoration-2 underline-offset-1">Lorem, ipsum dolor.</p>
+                <hr class="my-2">
+                <span class="text-slate-500">.underline-offset-4</span>
+                <p class="underline decoration-2 underline-offset-4">Lorem, ipsum dolor.</p>
+                <hr class="my-2">
+                <span class="text-slate-500">.underline-offset-8</span>
+                <p class="underline decoration-2 underline-offset-8">Lorem, ipsum dolor.</p>
+            </div>
+        </div>
+
+        <!-- new lines! -->
+        <div class="p-2 my-2 rounded-md border">
+            <!-- text-tranform start -->
+            <h3 class="border-b-2">Text-transform</h3>
+            <p>Utilities for controlling the transformation of text. example:</p>
+            <!-- text-transform: value; -->
+            <div class="p-2 my-2 rounded-md bg-white text-black">
+                <span class="text-slate-500">uppercase</span>
+                <p class="uppercase">Lorem ipsum dolor sit amet.</p>
+                <hr class="my-2">
+                <span class="text-slate-500">lowercase</span>
+                <p class="lowercase">Lorem ipsum dolor sit amet.</p>
+                <hr class="my-2">
+                <span class="text-slate-500">capitalize</span>
+                <p class="capitalize">Lorem ipsum dolor sit amet.</p>
+                <hr class="my-2">
+                <span class="text-slate-500">normal-case</span>
+                <p class="normal-case">Lorem ipsum dolor sit amet.</p>
+                <hr class="my-2">
+            </div>
+
+            <!-- text-transform -->
+            <h3 class="border-b-2">text-overflow</h3>
+            <p>Utilities for controlling text overflow in an element. example:</p>
+            <div class="my-2 p-2 border rounded-md bg-white text-black">
+                <!-- truncate -->
+                <span class="text-slate-600">truncate</span>
+                <p class="bg-slate-800 text-white px-2 rounded-md">Use truncate to truncate overflowing text with an ellipsis (…) if needed.</p>
+                <div class="p-2 border-black border rounded-md my-2">
+                    <p class="truncate">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, accusantium consequunturconsequunturconsequunturconsequunturconsequuntur! Qui ullam amet dicta cum culpa veritatis saepe optio!</p>
+                </div>
+                <hr class="my-2">
+                <!-- text-ellipsis -->
+                <span class="text-slate-600">text-ellipsis</span>
+                <p class="bg-slate-800 text-white px-2 rounded-md">Use text-ellipsis to truncate overflowing text with an ellipsis (…) if needed.</p>
+                <div class="p-2 border-black border rounded-md my-2">
+                    <p class="text-ellipsis overflow-hidden hover:overflow-visible">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, accusantium consequunturconsequunturconsequunturconsequunturconsequuntur! Qui ullam amet dicta cum culpa veritatis saepe optio!</p>
+                </div>
+                <hr class="my-2">
+                <!-- text-clip -->
+                <span class="text-slate-600">text-clip</span>
+                <p class="bg-slate-800 text-white px-2 rounded-md">Use text-clip to truncate the text at the limit of the content area.</p>
+                <div class="p-2 border-black border rounded-md my-2">
+                    <p class="text-clip overflow-hidden hover:overflow-visible">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, accusantium consequunturconsequunturconsequunturconsequunturconsequuntur! Qui ullam amet dicta cum culpa veritatis saepe optio!</p>
+                </div>
+            </div>
+
+            <!-- text-indent start -->
+            <h3 class="border-b-2">text-indent</h3>
+            <p>Utilities for controlling the amount of empty space shown before text in a block. [ngasih jarak kata pertama dlm sebuah paragraph]. <span class="text-red-500">.indent-{size}</span>. example:</p>
+            <div class="p-2 my-2 border rounded-md indent-8 break-all">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam odio saepe temporibus magni sunt labore quam aut impedit. Sequi, rem!
+            </div>
+
+            <!-- vertical-allign start -->
+            <h3 class="border-b-2">vertical-allign</h3>
+            <p>Utilities for controlling the vertical alignment of an inline or table-cell box. <span class="text-red-600">.align-{value}</span>. example:</p>
+            <div class="p-2 my-2 rounded-md bg-slate-800">
+                <div class="border-b px-2 mb-2">
+                    <span class="text-slate-500 ">align-baseline</span>
+                    <p class="inline-block align-baseline">Lorem ipsum dolor sit amet.</p>
+                </div>
+                <div class="border-b px-2 mb-2">
+                    <span class="text-slate-500">align-top</span>
+                    <p class="inline-block align-top">Lorem ipsum dolor sit amet.</p>
+                </div>
+                <div class="border-b px-2 mb-2">
+                    <span class="text-slate-500">align-middle</span>
+                    <p class="inline-block align-middle">Lorem ipsum dolor sit amet.</p>
+                </div>
+                <div class="border-b px-2 mb-2">
+                    <span class="text-slate-500">align-bottom</span>
+                    <p class="inline-block align-bottom">Lorem ipsum dolor sit amet.</p>
+                </div>
+                <div class="border-b px-2 mb-2">
+                    <span class="text-slate-500">align-text-top</span>
+                    <p class="inline-block align-text-top">Lorem ipsum dolor sit amet.</p>
+                </div>
+                <div class="border-b px-2 mb-2">
+                    <span class="text-slate-500">align-text-bottom</span>
+                    <p class="inline-block align-text-bottom">Lorem ipsum dolor sit amet.</p>
+                </div>
+            </div>
+
+            <!-- whitespaces start -->
+            <h3 class="border-b-2">whitespace</h3>
+            <p>Utilities for controlling an element's white-space property. <span class="text-red-600">.whitespace-{property value}</span>. example:</p>
+            <div class="p-2 my-2 border rounded-md">
+                <span class="text-slate-500">.whitespace-normal</span>
+                <div class="whitespace-normal p-2 my-2 rounded-md bg-slate-800">
+                    Lorem, ipsum dolor.
+
+                    Lorem ipsum dolor sit amet.         Lorem, ipsum dolor.     Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, quaerat!
+
+                    Lorem, ipsum dolor.
+                </div>
+                <span class="text-slate-500">.whitespace-nowrap</span>
+                <div class="whitespace-nowrap  overflow-x-scroll h-20 p-2 my-2 rounded-md bg-slate-800">
+                    Lorem, ipsum dolor.
+
+                    Lorem ipsum dolor sit amet.         Lorem, ipsum dolor.     Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, quaerat!
+
+                    Lorem, ipsum dolor.
+                </div>
+                <span class="text-slate-500 ">.whitespace-pre</span>
+                <div class="whitespace-pre p-2 overflow-x-scroll my-2 rounded-md bg-slate-800">
+                    Lorem, ipsum dolor.
+
+                    Lorem ipsum dolor sit amet.         Lorem, ipsum dolor.     Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, quaerat!
+
+                    Lorem, ipsum dolor.
+                </div>
+                <!-- must remember this things! -->
+                <span class="text-slate-500">.whitespace-pre-line</span>
+                <div class="whitespace-pre-line p-2 my-2 rounded-md bg-slate-800">
+                    Lorem, ipsum dolor.
+
+                    Lorem ipsum dolor sit amet.         Lorem, ipsum dolor.     Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, quaerat!
+
+                    Lorem, ipsum dolor.
+                </div>
+                <span class="text-slate-500">.whitespace-pre-wrap</span>
+                <div class="whitespace-pre-wrap p-2 my-2 rounded-md bg-slate-800">Lorem, ipsum dolor.
+                    Lorem ipsum dolor sit amet.         Lorem, ipsum dolor.     Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, quaerat!
+
+                    Lorem, ipsum dolor.
+                </div>
+                <span class="text-slate-500">.whitespace-break-spaces</span>
+                <div class="whitespace-break-spaces p-2 my-2 rounded-md bg-slate-800">Lorem, ipsum dolor.
+                    Lorem ipsum dolor sit amet.         Lorem, ipsum dolor.     Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, quaerat!
+
+                    Lorem, ipsum dolor.
+                </div>
+            </div>
+
+            <!-- word-break -->
+            <h3 class="border-b-2">word-break</h3>
+            <p>Utilities for controlling word breaks in an element. <span class="text-red-500">break-{property-value}</span>. example:</p>
+            <div class="p-2 my-2 bg-slate-800 rounded-md">
+                <!-- break-normal -->
+                <span class="text-slate-300">break-normal</span>
+                <div class="p-2 my-2 border text-slate-500 break-normal overflow-clip">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas eum quis <span class="font-bold text-white">modimodimodimodimodimodimodimodimodimodi</span> vero, a earum. Sunt, tempore quisquam. Est, incidunt.
+                </div>
+                <!-- break-words -->
+                <span class="text-slate-300">break-words</span>
+                <div class="p-2 my-2 border text-slate-500 break-words">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas eum quis <span class="font-bold text-white">modimodimodimodimodimodimodimodimodimodi</span> vero, a earum. Sunt, tempore quisquam. Est, incidunt.
+                </div>
+                <!-- break-all / break-words:break-all;-->
+                <span class="text-slate-300">break-all</span>
+                <div class="p-2 my-2 border text-slate-500 break-all">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas eum quis <span class="font-bold text-white">modimodimodimodimodimodimodimodimodimodi</span> vero, a earum. Sunt, tempore quisquam. Est, incidunt.
+                </div>
+                <!-- break-keep/break-words:keep-all; -->
+                <span class="text-slate-300">break-keep</span>
+                <div class="p-2 my-2 border text-slate-500 break-keep text-ellipsis overflow-hidden">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas eum quis <span class="font-bold text-white">modimodimodimodimodimodimodimodimodimodi</span> vero, a earum. Sunt, tempore quisquam. Est, incidunt.
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</body>
+</html>

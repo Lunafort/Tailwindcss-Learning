@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snap-x scroll-snap with-tailwindcss</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="">
+    <!-- scroll-x -->
+    <section class="w-screen h-full snap-x snap-mandatory overflow-y-scroll flex text-white font-semibold scroll-pr-20">
+        <div class="bg-slate-800 flex justify-center items-center flex-shrink-0 w-screen h-80 scroll-mx-6 snap-center snap-always text-3xl scroll-pr-20">1</div>
+        <div class="bg-emerald-800 flex justify-center items-center flex-shrink-0 w-screen h-80 scroll-mx-6 snap-center snap-always text-3xl">2</div>
+        <div class="bg-orange-800 flex justify-center items-center flex-shrink-0 w-screen h-80 scroll-mx-6 snap-center snap-always text-3xl">3</div>
+        <div class="bg-cyan-800 flex justify-center items-center flex-shrink-0 w-screen h-80 scroll-mx-6 snap-center snap-always text-3xl">4</div>
+    </section>
+    <!-- scroll-y -->
+    <section class="w-screen h-80 snap-y snap-mandatory overflow-x-scroll text-white font-semibold scroll-pr-20">
+        <div class="bg-slate-800 flex justify-center items-center flex-shrink-0 w-screen h-80 scroll-my-6 snap-center snap-always text-3xl">1</div>
+        <div class="bg-emerald-800 flex justify-center items-center flex-shrink-0 w-screen h-80 scroll-my-6 snap-center snap-always text-3xl">2</div>
+        <div class="bg-orange-800 flex justify-center items-center flex-shrink-0 w-screen h-80 scroll-my-6 snap-center snap-always text-3xl">3</div>
+        <div class="bg-cyan-800 flex justify-center items-center flex-shrink-0 w-screen h-80 scroll-my-6 snap-center snap-always text-3xl">4</div>
+    </section>
+</body>
+</html>

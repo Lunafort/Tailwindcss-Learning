@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning-Tailwindcss-Again</title>
+    <!-- <link rel="stylesheet" href="/build/css/style.css"> -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        *, body, html{
+            box-sizing:-box;
+            padding: 0;
+            margin: 0;
+            font-family: Arial;
+            font-size: 1rem;
+        }
+        h3{
+            margin: 20px 0;
+            border-bottom:2px solid red;
+            font-weight: bold;
+            text-transform: capitalize;
+            word-spacing: 5px;
+        }
+        .syntax{
+            border-top: 1px solid lightgrey;
+            border-bottom: 1px solid lightgrey;
+            /* border:1px solid lightyellow 1px solid red; */
+            padding: 5px;
+            background-color: darkslateblue;
+            margin: 8px 0;
+            border-radius: 3px;
+        }
+        .note{
+            background-color: darkred;
+            padding: 5px;
+            margin: 5px 0;
+        }
+        li{
+            margin: 5px 20px;
+            list-style-type: disc;
+            text-transform: capitalize;
+            font-family: cursive;
+        }
+    </style>
+</head>
+<!-- body -->
+<body class="h-auto w-full p-2 bg-slate-500 text-white">
+    <!-- container -->
+    <div class="p-2 h-auto bg-neutral-700 my-2">
+        <!-- colors -->
+        <h3>customizing colors</h3>
+        <!-- colors syntax -->
+        <p class="syntax">text-{color-values}. example:</p>
+        <ul>
+            <li>neutral</li>
+            <div class="p-2 bg-slate-200">
+                <p class="text-neutral-300">Lorem ipsum dolor sit amet.</p>
+                <p class="text-neutral-500">Lorem ipsum dolor sit amet.</p>
+                <p class="text-neutral-800">Lorem ipsum dolor sit amet.</p>
+                <p class="text-neutral-900">Lorem ipsum dolor sit amet.</p>
+            </div>
+            <li>teal</li>
+            <div class="p-2 bg-slate-100">
+                <p class="text-teal-300">Lorem ipsum dolor sit amet.</p>
+                <p class="text-teal-500">Lorem ipsum dolor sit amet.</p>
+                <p class="text-teal-800">Lorem ipsum dolor sit amet.</p>
+                <p class="text-teal-900">Lorem ipsum dolor sit amet.</p>
+            </div>
+            <li>amber</li>
+            <div class="p-2 bg-slate-100">
+                <p class="text-amber-300">Lorem ipsum dolor sit amet.</p>
+                <p class="text-amber-500">Lorem ipsum dolor sit amet.</p>
+                <p class="text-amber-800">Lorem ipsum dolor sit amet.</p>
+                <p class="text-amber-900">Lorem ipsum dolor sit amet.</p>
+            </div>
+            <li>fuchsia</li>
+            <div class="p-2 bg-slate-100">
+                <p class="text-fuchsia-300">Lorem ipsum dolor sit amet.</p>
+                <p class="text-fuchsia-500">Lorem ipsum dolor sit amet.</p>
+                <p class="text-fuchsia-800">Lorem ipsum dolor sit amet.</p>
+                <p class="text-fuchsia-900">Lorem ipsum dolor sit amet.</p>
+            </div>
+        </ul>
+        <div class="note">Note: And Many more colors value on tailwindcss</div>
+    </div>
+    <!-- display-start -->
+    <div class="h-auto w-full p-2 bg-teal-700 text-white my-2">
+        <h3>Display</h3>
+        <p class="py-2">Utilities for controlling the display box type of an element.</p>
+        <ul>
+            <!-- basic display-usage -->
+            <li>Basic Usage</li>
+            <div class="p-2 border bg-white text-black">
+                <p class="border-b-4 border-red-500">Block, Inline, Inline-block </p>
+                <div class="border my-2 p-2">
+                    <li>inline</li>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique id excepturi non dolores, est <span class="mx-2 bg-slate-400 rounded-md inline "> inline-example</span>. Saepe incidunt ut temporibus similique fuga, cum nostrum sint perspiciatis?</p>
+
+                    <li>block</li>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique id excepturi non dolores, est <span class="mx-2 bg-slate-400 rounded-md block "> block-example</span>. Saepe incidunt ut temporibus similique fuga, cum nostrum sint perspiciatis?</p>
+
+                    <li>inline-block</li>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique id excepturi non dolores, est <span class="mx-2 bg-slate-400 rounded-md inline-block "> inline-block example</span>. Saepe incidunt ut temporibus similique fuga, cum nostrum sint perspiciatis?</p>
+                </div>
+            </div>
+
+            <!-- flex-intro -->
+            <li>flex</li>
+            <div class="my-2 p-2 border bg-white text-black">
+                <p class="border-b-4 border-red-500">Flex, Inline-Flex</p>
+                <div class="border p-2 my-2">
+                    <!-- flex -->
+                    <li>flex</li>
+                    <div class="flex p-2 border bg-teal-700 text-white rounded-md justify-center items-center">
+                        <div class="flex gap-2 items-center justify-between">
+                            <img src="img/avatar3.png" style="border-radius: 100%;height: 100%;width: 60px;">
+                            <div class="bg-slate-300 rounded-md p-2 text-black">
+                                <strong>Jamal</strong>
+                                <p>Lorem ipsum dolor sit amet.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- inline-flex -->
+                    <li>inline-flex</li>
+                    <div class="p-2 bg-teal-700 my-2 text-white rounded-md">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque quas aliquam neque explicabo asperiores nihil id, nostrum totam ipsum non 
+                            <span class="inline-flex items-baseline">
+                                <img src="img/avatar5.png" class="self-center rounded-full mx-1 w-5 h-5">
+                                <strong>JAMAL</strong>
+                            </span> 
+                        hic error amet repellat iure consectetur quasi, recusandae officiis!</p>
+                    </div>
+                </div>
+            </div>
+            <!-- flex-intro-end -->
+            <!-- grid-intro-start -->
+            <li>Grid</li>
+            <div class="p-2 bg-white text-black grid gap-2 grid-cols-3 grid-row-2">
+                <div class="p-10 bg-slate-300 text-2xl text-center rounded-lg">1</div>
+                <div class="p-10 bg-slate-300 text-2xl text-center rounded-lg">1</div>
+                <div class="p-10 bg-slate-300 text-2xl text-center rounded-lg">1</div>
+                <div class="p-10 bg-slate-300 text-2xl text-center rounded-lg">1</div>
+                <div class="p-10 bg-slate-300 text-2xl text-center rounded-lg">1</div>
+                <div class="p-10 bg-slate-300 text-2xl text-center rounded-lg">1</div>
+            </div>
+            <li>inline-grid</li>
+            <div class="p-2 bg-white text-black">
+                <div class="p-2 inline-grid grid-cols-3 gap-2">
+                    <div class="p-10 bg-slate-300 text-center text-2xl rounded-lg">1</div>
+                    <div class="p-10 bg-slate-300 text-center text-2xl rounded-lg">1</div>
+                    <div class="p-10 bg-slate-300 text-center text-2xl rounded-lg">1</div>
+                    <div class="p-10 bg-slate-300 text-center text-2xl rounded-lg">1</div>
+                    <div class="p-10 bg-slate-300 text-center text-2xl rounded-lg">1</div>
+                    <div class="p-10 bg-slate-300 text-center text-2xl rounded-lg">1</div>
+                </div>
+                <div class="p-2 inline-grid grid-cols-3 gap-2">
+                    <div class="p-10 bg-slate-300 text-center text-2xl rounded-lg">1</div>
+                    <div class="p-10 bg-slate-300 text-center text-2xl rounded-lg">1</div>
+                    <div class="p-10 bg-slate-300 text-center text-2xl rounded-lg">1</div>
+                    <div class="p-10 bg-slate-300 text-center text-2xl rounded-lg">1</div>
+                    <div class="p-10 bg-slate-300 text-center text-2xl rounded-lg">1</div>
+                    <div class="p-10 bg-slate-300 text-center text-2xl rounded-lg">1</div>
+                </div>
+            </div>
+            <div class="note">This grid will show the effect if we set the screen-size!</div>
+            <!-- grid-intro-ends -->
+
+            <!-- content-start this things kind a new to me huh -->
+            <li>content <span class="note">(create a phantom container/fake container so the child element can be act like the direct child of parent element)</span> example:</li>
+            <div class="flex flex-wrap p-2 bg-white text-black text-center gap-2">
+                <div class="flex-1 bg-slate-600 text-white p-8 rounded-md">1</div>
+                <div class="contents">
+                    <div class="flex-1 bg-slate-600 text-white p-8 rounded-md">1</div>
+                    <div class="flex-1 bg-slate-600 text-white p-8 rounded-md">1</div>
+                </div>
+                <div class="flex-1 bg-slate-600 text-white p-8 rounded-md">1</div>
+            </div>
+            <!-- content-end -->
+
+            <!-- table-intro-start -->
+            <li>table (intro)</li>
+            <div class="table w-full text-white rounded">
+                <!-- thead -->
+                <div class="table-header-group p-2 bg-slate-700 rounded-md">
+                    <!-- thead-row/thead-content -->
+                    <div class="table-row">
+                        <div class="table-cell text-left p-2">Title</div>
+                        <div class="table-cell text-left p-2">Artist</div>
+                        <div class="table-cell text-left p-2">Year</div>
+                    </div>
+                </div>
+                <!-- tbody/content-table -->
+                <div class="table-row-group bg-white text-black ">
+                    <div class="table-row">
+                        <div class="table-cell p-1">Catching flies</div>
+                        <div class="table-cell p-1">Bambang</div>
+                        <div class="table-cell p-1">2011</div>
+                    </div>
+                    <div class="table-row bg-slate-500 text-white">
+                        <div class="table-cell p-1">Catching Fish</div>
+                        <div class="table-cell p-1">Joko</div>
+                        <div class="table-cell p-1">2010</div>
+                    </div>
+                    <div class="table-row">
+                        <div class="table-cell p-1">Catching Bear</div>
+                        <div class="table-cell p-1">Minnah</div>
+                        <div class="table-cell p-1">2019</div>
+                    </div>
+                    <div class="table-row bg-slate-500 text-white">
+                        <div class="table-cell p-1">Catching Bear</div>
+                        <div class="table-cell p-1">Minnah</div>
+                        <div class="table-cell p-1">2019</div>
+                    </div>
+                </div>
+            </div>
+            <!-- table-intro-ends -->
+
+            <!-- display:none -->
+            <li>Hidden <span class="note">display:none;</span></li>
+            <div class="flex p-2 gap-2 flex-wrap bg-white">
+                <div class="p-10 rounded text-center bg-black text-white hidden">1</div>
+                <div class="p-10 rounded text-center bg-black text-white">2</div>
+                <div class="p-10 rounded text-center bg-black text-white">3</div>
+                <div class="p-10 rounded text-center bg-black text-white">4</div>
+                <div class="p-10 rounded text-center bg-black text-white">5</div>
+            </div>
+            <!-- hidden-ends -->
+
+            <!-- psuedo-elements-start -->
+            <li>Hover, focus and etc.</li>
+            <div class="p-2 flex bg-white text-black">
+                <div>
+                    <li>:hover</li>
+                    <div class="p-2">
+                        <button class="bg-violet-700 text-white p-2 rounded hover:bg-violet-500">Hover me</button>
+                    </div>
+                </div>
+                <div>
+                    <li>:focus</li>
+                    <div class="p-2">
+                        <button class="bg-violet-700 text-white p-2 rounded hover:bg-violet-500 focus:ring focus:ring-violet-400">CLICK ME</button>
+                    </div>
+                </div>
+            </div>
+            <!-- psuedo-elements-ends -->
+        </ul>
+    </div>
+    <!-- display-ends -->
+
+    <!-- float-start -->
+    <div class="p-2 bg-indigo-800 w-full h-full">
+        <!-- float -->
+        <h3>float</h3>
+        <p>utility classes for conttroling the content inside an element!</p>
+        <p class="syntax">.Float-{ float_values }</p>
+        <ul>
+            <!-- float:right; -->
+            <li>float-right</li>
+            <div class="p-2 bg-white text-black">
+                <img src="img/avatar5.png" alt="" class="w-20 h-20 rounded mt-2 ml-2  float-right">
+                <p class="break-all">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui consectetur animi ea nulla maxime vel quas. Totam eligendi aperiam quis iure nulla illo dolorum vel repellendus corporis, molestias sed. Omnis, quisquam, ad inventore nihil eveniet architecto cum quod esse, eius eligendi dolorem quo accusamus rerum doloremque. Labore at quae maiores?</p>
+            </div>
+            <!-- float:left; -->
+            <li>float-left</li>
+            <div class="p-2 bg-white text-black">
+                <img src="img/avatar3.png" alt="" class="w-20 h-20 rounded mt-2 mr-2  float-left">
+                <p class="break-all">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui consectetur animi ea nulla maxime vel quas. Totam eligendi aperiam quis iure nulla illo dolorum vel repellendus corporis, molestias sed. Omnis, quisquam, ad inventore nihil eveniet architecto cum quod esse, eius eligendi dolorem quo accusamus rerum doloremque. Labore at quae maiores?</p>
+            </div>
+            <!-- float:none; -->
+            <li>float-none</li>
+            <div class="p-2 bg-white text-black">
+                <img src="img/avatar6.png" alt="" class="w-20 h-20 rounded mt-2 mr-2  float-none">
+                <p class="break-all">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui consectetur animi ea nulla maxime vel quas. Totam eligendi aperiam quis iure nulla illo dolorum vel repellendus corporis, molestias sed. Omnis, quisquam, ad inventore nihil eveniet architecto cum quod esse, eius eligendi dolorem quo accusamus rerum doloremque. Labore at quae maiores?</p>
+            </div>
+            <!-- float with adding conditionally -->
+            <li>Applying conditionally utilitiy classes! (hover:)</li>
+            <div class="p-2 bg-white text-black">
+                <div>
+                    <img src="img/avatar6.png" alt="" class="w-20 h-20 rounded m-2  float-left hover:float-right">
+                    <p class="break-all">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui consectetur animi ea nulla maxime vel quas. Totam eligendi aperiam quis iure nulla illo dolorum vel repellendus corporis, molestias sed. Omnis, quisquam, ad inventore nihil eveniet architecto cum quod esse, eius eligendi dolorem quo accusamus rerum doloremque. Labore at quae maiores?</p>
+                </div>
+            </div>
+            <!-- float with adding breakpoints/screen size classes -->
+            <li>adding breakpoints (media-query/screen-size) on it</li>
+            <div class="p-2 bg-white text-black">
+                <div>
+                    <img src="img/avatar6.png" alt="" class="w-20 h-20 rounded m-2  float-left md:float-right">
+                    <p class="break-all">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui consectetur animi ea nulla maxime vel quas. Totam eligendi aperiam quis iure nulla illo dolorum vel repellendus corporis, molestias sed. Omnis, quisquam, ad inventore nihil eveniet architecto cum quod esse, eius eligendi dolorem quo accusamus rerum doloremque. Labore at quae maiores?</p>
+                </div>
+            </div>
+        </ul>
+
+        <h3>Clear</h3>
+        <p>utility classes for controlling the wrapping of content arround an element.</p>
+        <p class="syntax">.clear-{ clear_values }</p>
+        <ul>
+            <!-- clear:left; -->
+            <li>clear-left</li>
+            <div class="p-2 bg-white text-black">
+                <img src="img/avatar6.png" alt="" class="w-20 h-20 rounded m-2  float-left">
+                <img src="img/avatar6.png" alt="" class="w-24 h-24 rounded m-2  float-right">
+                <p class="clear-left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet voluptate ducimus sed hic facilis quisquam voluptas nobis! Quidem animi nisi vitae inventore exercitationem voluptatem id ducimus aliquam in obcaecati et soluta explicabo, enim alias atque omnis cupiditate non quam maxime. Quo perspiciatis autem dolorum accusamus distinctio consequuntur aperiam, odit repellendus.</p>
+            </div>
+            <!-- clear:right; -->
+            <li>clear-right</li>
+            <div class="p-2 bg-white text-black">
+                <img src="img/avatar6.png" alt="" class="w-20 h-20 rounded m-2  float-left">
+                <img src="img/avatar6.png" alt="" class="w-24 h-24 rounded m-2  float-right">
+                <p class="clear-right">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet voluptate ducimus sed hic facilis quisquam voluptas nobis! Quidem animi nisi vitae inventore exercitationem voluptatem id ducimus aliquam in obcaecati et soluta explicabo, enim alias atque omnis cupiditate non quam maxime. Quo perspiciatis autem dolorum accusamus distinctio consequuntur aperiam, odit repellendus.</p>
+            </div>
+            <!-- clear:none; -->
+            <li>clear-none</li>
+            <div class="p-2 bg-white text-black">
+                <img src="img/avatar6.png" alt="" class="w-20 h-20 rounded m-2  float-left">
+                <img src="img/avatar6.png" alt="" class="w-24 h-24 rounded m-2  float-right">
+                <p class="clear-none">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet voluptate ducimus sed hic facilis quisquam voluptas nobis! Quidem animi nisi vitae inventore exercitationem voluptatem id ducimus aliquam in obcaecati et soluta explicabo, enim alias atque omnis cupiditate non quam maxime. Quo perspiciatis autem dolorum accusamus distinctio consequuntur aperiam, odit repellendus.</p>
+            </div>
+            <!-- clear:both; -->
+            <li>clear-both</li>
+            <div class="p-2 bg-white text-black">
+                <img src="img/avatar6.png" alt="" class="w-20 h-20 rounded m-2  float-left">
+                <img src="img/avatar6.png" alt="" class="w-24 h-24 rounded m-2  float-right">
+                <p class="clear-both">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet voluptate ducimus sed hic facilis quisquam voluptas nobis! Quidem animi nisi vitae inventore exercitationem voluptatem id ducimus aliquam in obcaecati et soluta explicabo, enim alias atque omnis cupiditate non quam maxime. Quo perspiciatis autem dolorum accusamus distinctio consequuntur aperiam, odit repellendus.</p>
+            </div>
+        </ul>
+    </div>
+    <!-- float-ends -->
+
+    <!-- object-fit-start -->
+    <div class="my-2 p-2 bg-purple-600 text-white h-full w-full">
+        <h3>Object-fit</h3>
+        <p>Utilities for controlling how a replaced element's content should be resized.</p>
+        <p class="syntax">.object-{ object-fit-values }</p>
+        <ul>
+            <!-- object-fit:contain; -->
+            <li>object-contain</li>
+            <div class="border bg-slate-200">
+                <img src="img/beach.jpg" class="h-40 w-full object-contain">
+            </div>
+            <!-- object-fit:cover; -->
+            <li>object-cover</li>
+            <div class="border bg-slate-200">
+                <img src="img/beach.jpg" class="h-40 w-full object-cover">
+            </div>
+            <!-- object-fit:fill; -->
+            <li>object-fill</li>
+            <div class="border bg-slate-200">
+                <img src="img/beach.jpg" class="h-40 w-full object-fill">
+            </div>
+            <!-- obejct-fit:scale-down; -->
+            <li>object-scale-down</li>
+            <div class="border bg-slate-200">
+                <img src="img/beach.jpg" class="h-40 w-full object-scale-down">
+            </div>
+            <!-- object-fit:none;/original-size -->
+            <li>object-none (original-size)</li>
+            <div class="border bg-slate-200">
+                <img src="img/beach.jpg" class="h-40 w-full object-none">
+            </div>
+            <!-- adding-conditional-state! -->
+            <li>adding-conditional-state(kind a intresting!)</li>
+            <div class="border bg-slate-200">
+                <img src="img/beach.jpg" class="h-40 w-full object-none hover:object-scale-down">
+            </div>
+        </ul>
+
+        <h3>object-position</h3>
+        <p>Utilities for controlling how a replaced element's content should be positioned within its container. orginal-picture:</p>
+        <img src="img/kayden.jpg" class="w-24 h-24">
+        <ul>
+            <!-- object-position:top; -->
+            <li>object-top</li>
+            <div class="p-2 border flex flex-wrap flex-col-2">
+                
+                <div class="border h-40 w-40 hover:object-top" style="background-image: url(img/pp-3.jpg);background-size: contain;">
+                    <img src="img/pp-3.jpg" class="h-14 w-h-14 object-none hover:object-bottom">
+                </div>
+            </div>
+        </ul>
+        <p class="note">ditunda dulu masalah agak kurang paham! be right back!</p>
+    </div>
+    <!-- object-fit-end -->
+
+    <!-- overflow-start -->
+    <div class="bg-teal-700 text-white p-2">
+        <h3>overflow</h3>
+        <p>Utilities for controlling how an element handles content that is too large for the container.</p>
+        <p class="syntax">.overflow-{ overflow-property-values }</p>
+        <ul>
+            <!-- overflow:visible; -->
+            <li>overflow-visible</li>
+            <div class="p-3 bg-slate-200 text-white">
+                <div class="w-full h-20 flex items-center gap-2 bg-slate-600 overflow-visible rounded-full">
+                    <img src="img/avatar5.png" class="w-24 h-24 rounded-full ">
+                    <p class="grid">
+                        <strong>JOKO</strong>
+                        <span>Programers!</span>
+                    </p>
+                </div>
+            </div>
+            <!-- overflow:hidden; -->
+            <li>overflow-visible</li>
+            <div class="p-3 bg-slate-200 text-white">
+                <div class="w-full h-20 flex items-center gap-2 bg-slate-600 overflow-hidden rounded-lg">
+                    <img src="img/avatar5.png" class="w-24 h-24 rounded- ">
+                    <p class="grid">
+                        <strong>JOKO</strong>
+                        <span>Programers!</span>
+                    </p>
+                </div>
+            </div>
+
+            <!-- overflow:auto; -->
+            <li>overflow-auto (a.k.a scrolling if we need it!)</li>
+            <div class="">
+                <div class="p-2 h-40 bg-slate-200 rounded-md text-white overflow-auto">
+                    <div class="w-full h-20 p-2 flex  items-center gap-2 bg-slate-600 rounded-lg mb-2">
+                        <img src="img/avatar5.png" class="w-16 h-16 rounded-full ">
+                        <p class="grid">
+                            <strong>JOKO</strong>
+                            <span class="opacity-50">Programers!</span>
+                        </p>
+                    </div>
+                    <div class="w-full h-20 p-2 flex  items-center gap-2 bg-slate-600 rounded-lg mb-2">
+                        <img src="img/avatar5.png" class="w-16 h-16 rounded-full ">
+                        <p class="grid">
+                            <strong>JOKO</strong>
+                            <span class="opacity-50">Programers!</span>
+                        </p>
+                    </div>
+                    <div class="w-full h-20 p-2 flex  items-center gap-2 bg-slate-600 rounded-lg mb-2">
+                        <img src="img/avatar5.png" class="w-16 h-16 rounded-full ">
+                        <p class="grid">
+                            <strong>JOKO</strong>
+                            <span class="opacity-50">Programers!</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- overflow-x:auto; -start -->
+            <li>overflow-x-auto (scroll when we need it)</li>
+            <div class="overflow-hidden">
+                <div class="bg-white text-black flex gap-5 overflow-x-auto ">
+                    <div class="p-2 w-auto h-full grid items text-center">
+                        <img src="img/avatar2.png" class="border-2 border-red-500 w-24 my-2 h-auto rounded-full">
+                        <p>Andrew</p>
+                    </div>
+                    <div class="p-2 w-auto h-full grid items text-center">
+                        <img src="img/avatar1.png" class="border-2 border-red-500 w-24 my-2 h-auto rounded-full">
+                        <p>Andrew</p>
+                    </div>
+                    <div class="p-2 w-auto h-full grid items text-center">
+                        <img src="img/avatar5.png" class="border-2 border-red-500 w-24 my-2 h-auto rounded-full">
+                        <p>Andrew</p>
+                    </div>
+                    <div class="p-2 w-auto h-full grid items text-center">
+                        <img src="img/avatar6.png" class="border-2 border-red-500 w-24 my-2 h-auto rounded-full">
+                        <p>Andrew</p>
+                    </div>
+                    <div class="p-2 w-auto h-full grid items text-center">
+                        <img src="img/kayden.jpg" class="border-2 border-red-500 w-24 my-2 h-auto rounded-full">
+                        <p>Andrew</p>
+                    </div>
+                    <div class="p-2 w-auto h-full grid items text-center">
+                        <img src="img/pp-2.jpg" class="border-2 border-red-500 w-24 my-2 h-auto rounded-full">
+                        <p>Andrew</p>
+                    </div>
+                </div>
+            </div>
+            <!-- overflox-x -ends -->
+            <!-- overflow-y -start -->
+            <li>overflow-y-auto (scroll wehen we need it)</li>
+            <div class="rounded-md bg-slate-800 overflow-y-auto h-48">
+                <div class="p-2 border-b border-b-slate-500 my-2 flex items-center">
+                    <img src="img/avatar1.png" class="h-auto w-16 rounded-full mr-5">
+                    <div>
+                        <strong>Jamal Husein</strong>
+                        <p class="text-slate-500">Tech Advisor</p>
+                    </div>
+                </div>
+                <div class="p-2 border-b border-b-slate-500 my-2 flex items-center">
+                    <img src="img/avatar2.png" class="h-auto w-16 rounded-full mr-5">
+                    <div>
+                        <strong>Jamal Husein</strong>
+                        <p class="text-slate-500">Tech Advisor</p>
+                    </div>
+                </div>
+                <div class="p-2 border-b border-b-slate-500 my-2 flex items-center">
+                    <img src="img/avatar6.png" class="h-auto w-16 rounded-full mr-5">
+                    <div>
+                        <strong>Jamal Husein</strong>
+                        <p class="text-slate-500">Tech Advisor</p>
+                    </div>
+                </div>
+                <div class="p-2 border-b border-b-slate-500 my-2 flex items-center">
+                    <img src="img/kayden.jpg" class="h-auto w-16 rounded-full mr-5">
+                    <div>
+                        <strong>Jamal Husein</strong>
+                        <p class="text-slate-500">Tech Advisor</p>
+                    </div>
+                </div>
+            </div>
+            <!-- overflow-y -end -->
+        </ul>
+
+        <h3>overscroll</h3>
+        <p>utility for controlling how the browser react when the user reach the boundary of scroll area/the end of the area!</p>
+        <p class="syntax">.overscroll-* {overscroll-property-value}</p>
+        <div class="p-2 bg-slate-800 text-white">
+            <ul>
+                <li>overscroll-contain (bounce back if reach bottom)</li>
+                <div class="p-2 border rounded-md h-28 overscroll-contain overflow-auto">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores, distinctio molestias! Modi qui cupiditate velit error delectus, facere quam, ea doloremque dolor expedita sit atque a deleniti tempore earum temporibus blanditiis consequuntur. Delectus dolor voluptates ad ex. Natus reprehenderit, et animi dignissimos itaque officiis sunt sit eius adipisci porro ut, error dolores distinctio ducimus totam pariatur perspiciatis sed quia perferendis. Fugit quia omnis inventore, corporis sit ducimus praesentium ratione delectus, ad tenetur nemo illo consectetur aliquid quae officiis ex blanditiis temporibus atque mollitia reprehenderit eos. Tenetur deleniti fuga praesentium temporibus, ex magnam totam architecto incidunt voluptatibus velit. Architecto, numquam saepe!
+                </div>
+                <li>overscroll-none</li>
+                <div class="p-2 border rounded-md h-28 overscroll-none overflow-auto">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores, distinctio molestias! Modi qui cupiditate velit error delectus, facere quam, ea doloremque dolor expedita sit atque a deleniti tempore earum temporibus blanditiis consequuntur. Delectus dolor voluptates ad ex. Natus reprehenderit, et animi dignissimos itaque officiis sunt sit eius adipisci porro ut, error dolores distinctio ducimus totam pariatur perspiciatis sed quia perferendis. Fugit quia omnis inventore, corporis sit ducimus praesentium ratione delectus, ad tenetur nemo illo consectetur aliquid quae officiis ex blanditiis temporibus atque mollitia reprehenderit eos. Tenetur deleniti fuga praesentium temporibus, ex magnam totam architecto incidunt voluptatibus velit. Architecto, numquam saepe!
+                </div>
+                <li>overscroll-auto</li>
+                <div class="p-2 border rounded-md h-28 overscroll-auto overflow-auto">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores, distinctio molestias! Modi qui cupiditate velit error delectus, facere quam, ea doloremque dolor expedita sit atque a deleniti tempore earum temporibus blanditiis consequuntur. Delectus dolor voluptates ad ex. Natus reprehenderit, et animi dignissimos itaque officiis sunt sit eius adipisci porro ut, error dolores distinctio ducimus totam pariatur perspiciatis sed quia perferendis. Fugit quia omnis inventore, corporis sit ducimus praesentium ratione delectus, ad tenetur nemo illo consectetur aliquid quae officiis ex blanditiis temporibus atque mollitia reprehenderit eos. Tenetur deleniti fuga praesentium temporibus, ex magnam totam architecto incidunt voluptatibus velit. Architecto, numquam saepe!
+                </div>
+
+            </ul>
+        </div>
+    </div>
+    <!-- overflow-ends -->
+
+    <!-- position-start -->
+    <div class="p-2 bg-rose-900 my-2 text-white">
+        <h3>Position</h3>
+        <p>Utilities for controlling how an element is positioned in the DOM.</p>
+        <ul>
+            <!-- basic position usage or whatever dude! -->
+            <li>Basic-usage</li>
+            <div class="p-2 bg-white text-black border relative h-32">
+                <p>static parent</p>
+                <div class="absolute bottom-0 left-0 bg-teal-700 rounded-sm p-2 text-white">
+                    <p>absolute-child</p>
+                </div>
+                <div class="absolute top-0 right-0 bg-teal-700 rounded-sm p-2 text-white">
+                    <p>absolute-child-2</p>
+                </div>
+                <div class="absolute bottom-0 right-0 bg-teal-700 rounded-sm p-2 text-white">
+                    <p>absolute-child-3</p>
+                </div>
+            </div>
+            <!-- fixed position! -->
+            <li>fixed</li>
+            <div class="bg-slate-800 text-white h-52 overflow-x-auto rounded-sm">
+                <!-- <div class="fixed top-0 left-0 p-2 bg-slate-500 opacity-70">Contacts</div> -->
+                <div>
+                    <div class="p-2 border-b border-b-slate-400 flex items-center gap-2">
+                        <img src="img/kayden.jpg" class="w-auto h-16 rounded-full">
+                        <p><strong>Bambang bin Jamal</strong></p>
+                    </div>
+                    <div class="p-2 border-b border-b-slate-400 flex items-center gap-2">
+                        <img src="img/pp-2.jpg" class="w-auto h-16 rounded-full">
+                        <p><strong>Bambang bin Jamal</strong></p>
+                    </div>
+                    <div class="p-2 border-b border-b-slate-400 flex items-center gap-2">
+                        <img src="img/pp-3.jpg" class="w-auto h-16 rounded-full">
+                        <p><strong>Bambang bin Jamal</strong></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- position:sticky; -->
+            <li>sticky</li>
+            <div class="w-full h-52 bg-slate-900 text-white overflow-x-auto">
+                <div class="p-2 bg-slate-700 text-base sticky top-0">BAMBANG</div>
+                <div>
+                    <div class="p-2 border-b border-b-slate-400 flex items-center gap-2">
+                        <img src="img/kayden.jpg" class="w-auto h-16 rounded-full">
+                        <p><strong>Bambang bin Jamal</strong></p>
+                    </div>
+                    <div class="p-2 border-b border-b-slate-400 flex items-center gap-2">
+                        <img src="img/pp-2.jpg" class="w-auto h-16 rounded-full">
+                        <p><strong>Slamet Kopling</strong></p>
+                    </div>
+                    <div class="p-2 border-b border-b-slate-400 flex items-center gap-2">
+                        <img src="img/pp-3.jpg" class="w-auto h-16 rounded-full">
+                        <p><strong>Siti surejeki</strong></p>
+                    </div>
+                </div>
+                <div class="p-2 bg-slate-700 text-base sticky top-0">JOKO</div>
+                <div>
+                    <div class="p-2 border-b border-b-slate-400 flex items-center gap-2">
+                        <img src="img/kayden.jpg" class="w-auto h-16 rounded-full">
+                        <p><strong>Bambang bin Jamal</strong></p>
+                    </div>
+                    <div class="p-2 border-b border-b-slate-400 flex items-center gap-2">
+                        <img src="img/pp-2.jpg" class="w-auto h-16 rounded-full">
+                        <p><strong>Slamet Kopling</strong></p>
+                    </div>
+                    <div class="p-2 border-b border-b-slate-400 flex items-center gap-2">
+                        <img src="img/pp-3.jpg" class="w-auto h-16 rounded-full">
+                        <p><strong>Siti surejeki</strong></p>
+                    </div>
+                </div>
+            </div>
+        </ul><br>
+
+        <h3>Positioning-2 (Top, right, bottom, left)</h3>
+        <div class="grid grid-cols-3 gap-2 p-2 rounded-md bg-white text-black w-full h-auto my-2">
+            <div class="w-20 h-20 bg-rose-500 rounded-md relative text-center">
+                <div class="w-10 h-10 rounded-md bg-violet-600 text-white absolute top-0 left-0">1</div>
+            </div>
+            <div class="w-20 h-20 bg-rose-500 rounded-md relative text-center">
+                <div class="h-10 rounded-md bg-violet-600 text-white absolute inset-x-0 right-0">2</div>
+            </div>
+            <div class="w-20 h-20 bg-rose-500 rounded-md relative text-center">
+                <div class="w-10 h-10 rounded-md bg-violet-600 text-white absolute top-0 right-0">3</div>
+            </div>
+            <div class="w-20 h-20 bg-rose-500 rounded-md relative text-center">
+                <div class="w-10 rounded-md bg-violet-600 text-white absolute bottom-0 inset-y-0">4</div>
+            </div>
+            <div class="w-20 h-20 bg-rose-500 rounded-md relative text-center ">
+                <div class="rounded-md bg-violet-600 text-white absolute inset-0">5</div>
+            </div>
+            <div class="w-20 h-20 bg-rose-500 rounded-md relative text-center">
+                <div class="w-10 rounded-md bg-violet-600 text-white absolute inset-y-0 right-0">6</div>
+            </div>
+            <div class="w-20 h-20 bg-rose-500 rounded-md relative text-center">
+                <div class="w-10 h-10 rounded-md bg-violet-600 text-white absolute bottom-0 left-0">7</div>
+            </div>
+            <div class="w-20 h-20 bg-rose-500 rounded-md relative text-center">
+                <div class="h-10 rounded-md bg-violet-600 text-white absolute inset-x-0 bottom-0">8</div>
+            </div>
+            <div class="w-20 h-20 bg-rose-500 rounded-md relative text-center">
+                <div class="w-10 h-10 rounded-md bg-violet-600 text-white absolute bottom-0 right-0">9</div>
+            </div>
+        </div>
+        <p>example using negative-values on positioning!</p>
+        <div class="flex gap-5 justify-between">
+            <div class="p-2 bg-slate-800 rounded-md w-28 h-10 relative">
+                <div class="w-6 h-auto text-center rounded-full bg-green-500 font-thin text-white absolute -top-3 right-0">3+</div>
+                <p>Notificaton</p>
+            </div><br>
+            <button class="p-2 bg-teal-600 w-20 rounded-md active:translate-y-2 hover:bg-teal-800">Click</button>
+        </div>
+    </div>
+    <!-- position-end -->
+
+    <div class="p-2 bg-white text-black">
+        <h3>Visbility</h3>
+        <ul>
+            <!-- visibility:visible; -->
+            <li>visible</li>
+            <div class="p-2 gap-2 grid grid-cols-3 text-white text-center">
+                <div class="rounded-md p-2 w-full bg-slate-600">1</div>
+                <div class="rounded-md p-2 w-full bg-slate-600 hover:invisible">2</div>
+                <div class="rounded-md p-2 w-full bg-slate-600">3</div>
+            </div>
+            <!-- visibility:hidden; -->
+            <li>invisible</li>
+            <div class="p-2 gap-2 grid grid-cols-3 text-white text-center">
+                <div class="rounded-md p-2 w-full bg-slate-600">1</div>
+                <div class="rounded-md p-2 w-full bg-slate-600 invisible ">2</div>
+                <div class="rounded-md p-2 w-full bg-slate-600">3</div>
+            </div>
+            <!-- visibility-collapse -->
+            <li>collapse</li>
+            <div class="p-2">
+                <p>idk bout this for sure, but this thing will work with table!</p>
+            </div>
+        </ul>
+    </div>
+
+    <div class="p-2 bg-emerald-500 my-2 text-white">
+        <h3>Z-index</h3>
+        <p>Utilities for controlling the stack order of an element.</p>
+        <div class=" text-white inline-flex p-2">
+            <div class="p-5 rounded-full w-16 h-auto text-black text-center bg-white z-40">4</div>
+            <div class="p-5 rounded-full w-16 h-auto text-black text-center bg-white z-30">3</div>
+            <div class="p-5 rounded-full w-16 h-auto text-black text-center bg-white z-20">2</div>
+            <div class="p-5 rounded-full w-16 h-auto text-black text-center bg-white z-10">1</div>
+        </div>
+
+        <div class="p-2 bg-slate-500 rounded sm flex">
+            <div class="w-16 h-16 p-5 text-center z-10 rounded-md bg-indigo-500">1</div>
+            <div class="w-24 h-20 p-5 text-center z-20 rounded-md bg-red-500">2</div>
+            <div class="w-40 h-20 p-5 text-center z-30 rounded-md bg-yellow-500">3</div>
+        </div>
+    </div>
+
+</body>
+</html>

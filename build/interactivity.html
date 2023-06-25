@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactivity with-Tailwindcss</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        p{
+            text-indent: 1.5rem;
+            font-weight: 400;
+        }
+    </style>
+</head>
+<body class="bg-black text-white p-2">
+    <h1 class="border-b">Interactivity with-Tailwindcss</h1>
+    <div class="p-2 my-2 rounded-md bg-slate-800">
+        <!-- accent-colos -->
+        <div class="border p-2 my-2 rounded-md">
+            <h3 class="border-b">Accent-colors</h3>
+            <p>Utilities for controlling the accent(base-colors) color of an form control. <span class="text-red-500">.accent-{colors}</span>. example:</p>
+            <div class="p-2 my-2 bg-slate-500 rounded-md flex flex-wrap gap-4">
+                <div class="p-2">
+                    <input type="checkbox" name="checkbox" checked class="">
+                    <input type="checkbox" name="checkbox" checked class="mx-2 accent-purple-700">
+                </div>
+                <div class="p-2 mr-2">
+                    <input type="radio" name="radio" class="" checked>
+                    <input type="radio" name="radio" class="accent-teal-400" checked>
+                </div>
+                <div class="p-2 mr-2">
+                    <input type="color" class="accent-teal-700" id="">
+                    <input type="range" class="accent-red-500" id="">
+                </div>
+            </div>
+        </div>
+
+        <!-- apperaance start -->
+        <div class="border p-2 rounded-md">
+            <h3 class="border-b">appereance</h3>
+            <p>suoressng native form-control styling. <span class="text-red-500">.appereance-none</span>. example:</p>
+            <div class="p-2 rounded-md bg-slate-500 flex flex-wrap gap-4">
+                <select name="" class="text-black p-2 rounded-md">
+                    <option value="" selected>Apple</option>
+                    <option value="">Orange</option>
+                    <option value="">Grape</option>
+                </select>
+                <select name="" class="text-black p-2 rounded-md appearance-none">
+                    <option value="" selected>Apple</option>
+                    <option value="">Orange</option>
+                    <option value="">Grape</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- cursor start -->
+        <div class="p-2 my-2 border rounded-md">
+            <h3 class="border-b">Cursor</h3>
+            <p>controlling the cursor styling when hovering elements. <span class="text-red-500">.cursor-{style}</span>. example:</p>
+            <div class="flex flex-wrap gap-4 p-2 rounded-md bg-slate-500">
+                <button class="p-3 rounded-md bg-sky-600 text-white font-semibold cursor-progress">Saving...</button>
+                <button class="p-3 rounded-md bg-sky-600 text-white font-semibold cursor-pointer">Submit</button>
+                <button class="p-3 rounded-md bg-sky-600 text-white font-semibold cursor-not-allowed" disabled>Confirm</button>
+            </div>
+        </div>
+
+        <!-- caret-color -->
+        <div class="p-2 my-2 border rounded-md">
+            <h3 class="border-b">Caret-colors</h3>
+            <p>controlling the color of text-input(i guess its like the outline of form-controls). <span class="text-red-500">.caret-{colors}</span>. example:</p>
+            <div class="p-2 bg-slate-500 rounded-md grid gap-4">
+                <input type="text" class="w-full rounded-sm caret-teal-600">
+                <input type="password" class="w-full rounded-sm caret-teal-600">
+                <textarea class="w-full rounded-sm caret-green-600"></textarea>
+            </div>
+        </div>
+
+        <!-- pointer-events start -->
+        <div class="p-2 my-2 rouneded-md border">
+            <h3 class="border-b">pointer-events</h3>
+            <p>controlling whether an element must response into pointer event or not!. <span class="text-red-500">.pointer-events-{none/auto}</span>. example:</p>
+            <div class="p-2 my-2 rounded-md bg-slate-500">
+                <!-- example-1 (auto) -->
+                <div class="relative flex place-items-center p-2 my-2 rounded-md bg-slate-700">
+                    <div class="absolute pointer-events-auto">
+                        <span class="">🔎</span>
+                    </div>
+                    <input type="text" placeholder="Search..." class="w-full rounded-md text-black border pl-5 font-semibold">
+                </div>
+                <!-- example-2 (none) -->
+                <div class="relative flex place-items-center p-2 my-2 rounded-md bg-slate-700">
+                    <div class="absolute pointer-events-none">
+                        <span class="">🔎</span>
+                    </div>
+                    <input type="text" placeholder="Search..." class="w-full rounded-md text-black border pl-5 font-semibold">
+                </div>
+
+                <p class=" px-2 bg-rose-700 text-white font-semibold">NOTE: in this case, i just used the windows emoji, not the svg one isnt it? cuz its not working rn. haha</p>
+            </div>
+        </div>
+
+        <!-- resize start -->
+        <div class="p-2 my-2 border rounded-md">
+            <h3 class="border-b">resize</h3>
+            <p>controlling the textarea/elements can be resize or not. <span class="text-red-500">.resize-{x/y/none}</span>. example:</p>
+            <div class="p-2 rounded-md my-2 bg-slate-500 flex flex-wrap gap-2">
+                <!-- resize-y -->
+                <div class="p-2 border rounded-sm flex-col flex text-center">
+                    <span class="text-slate-300">.resize-y</span>
+                    <textarea name="" id="" cols="10" rows="1" class="bg-slate-700 rounded-md resize-y"></textarea>
+                </div>
+                <!-- resize-x -->
+                <div class="p-2 border rounded-sm flex-col flex text-center">
+                    <span class="text-slate-300">.resize-x</span>
+                    <textarea name="" id="" cols="10" rows="1" class="bg-slate-700 rounded-md resize-x"></textarea>
+                </div>
+                <!-- resize -->
+                <div class="p-2 border rounded-sm flex-col flex text-center">
+                    <span class="text-slate-300">.resize</span>
+                    <textarea name="" id="" cols="10" rows="1" class="bg-slate-700 rounded-md resize"></textarea>
+                </div>
+            </div>
+        </div>
+
+        <!-- scroll-behavior -->
+        <div class="p-2 my-2 rounded-md border">
+            <h3 class="border-b">scroll-behavior</h3>
+            <p>controlling the scroll behavior on selected elements. <span class="text-red-400">.scroll-{smooth/auto}</span>. example?:</p>
+            <div class="p-2 rounded-md bg-white text-black font-medium scroll-smooth h-20 overflow-y-scroll indent-8">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos ea repellat, reiciendis fuga laudantium ducimus libero, necessitatibus quia alias expedita neque molestias rerum facilis vitae sed totam sint aspernatur obcaecati soluta consectetur explicabo iure hic aliquam? Odit nisi odio quisquam vel nobis tempora porro culpa fuga, eos corporis quos saepe nostrum. Corrupti magnam, eius voluptatem, voluptate in perspiciatis, nostrum sit quibusdam ea minus deserunt. Vitae dolores rem fugiat magni expedita magnam suscipit! Aut iste nobis fugit! Quis impedit laboriosam officia nihil ipsum odio exercitationem eaque modi praesentium voluptate molestias explicabo ipsam suscipit nostrum cum unde, quas temporibus? Ut, maxime suscipit.</div>
+        </div>
+
+        <!-- user-select -->
+        <div class="p-2 my-2 border rounded-md">
+            <h3 class="border-b">user-select</h3>
+            <p>controlling whether user can select inside an element or not. <span class="text-red-500">.select-{effect}</span>. example:</p>
+            <div class="flex flex-col gap-2 p-2 bg-white text-black rounded-md">
+                <span class="text-slate-700">.select-all</span>
+                <p class="select-all">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae, culpa?</p>
+                <hr class="border-black">
+                <span class="text-slate-700">.select-text (default browser)</span>
+                <p class="select-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius, atque.</p>
+                <hr class="border-black">
+                <span class="text-slate-700">.select-none (can't select any text!)</span>
+                <p class="select-none">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, laborum.</p>
+            </div>
+        </div>
+
+        <!-- touch-action -->
+        <div class="p-2 my-2 border rounded-md">
+            <h3 class="border-b">touch-action</h3>
+            <p>Utilities for controlling how an element can be scrolled and zoomed on touchscreens. <span class="text-red-500">.touch-{action}</span>. example:</p>
+
+            <div class="p-2 flex flex-wrap gap-2">
+                <div class="rounded-md scroll-auto h-24 w-24 ">
+                    <img src="img/beach.jpg" class="h-24 w-full rounded-md">
+                </div>
+                <!-- lil bit confusing huh? wkwk -->
+            </div>
+            <p class="bg-rose-700">note: this shit here, make me feel little idk cant understand this shit. might be figure it out later.</p>
+        </div>
+
+        <!-- will-change -->
+        <div class="p-2 my-2 rounded-md border">
+            <h3 class="border-b">will-change</h3>
+            <p>Utilities for optimizing upcoming animations of elements that are expected to change. <span class="text-red-500">.will-change-{property-value}</span>. like:</p>
+            <ul class="list-outside text-white list-decimal px-5">
+                <li>.will-change-auto</li>
+                <li>.will-change-scroll</li>
+                <li>.will-change-contents</li>
+                <li>.will-change-transform</li>
+            </ul>
+        </div>
+
+    </div>
+
+    
+</body>
+</html>

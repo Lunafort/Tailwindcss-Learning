@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filters with-tailwindcss</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        span{
+            color:lightgrey;
+            font-weight: 500;
+            border-bottom: 1px solid;
+            margin: 10px 0;
+        }
+        span::before{
+            content: '.';
+        }
+    </style>
+</head>
+<body class="bg-black text-white p-2">
+    <h1 class="border-b-2 my-2">Filters with-tailwindcss</h1>
+    <!-- content-1 -->
+    <div class="p-2 bg-slate-800 rounded-md">
+        <!-- blur start -->
+        <div>
+            <h3 class="border-b">Blur</h3>
+            <p>Utilities Classes for applying blur filters to an element. <span class="text-red-400">.blur-{amount}</span>. example:</p>
+            <div class="p-2 my-2 flex gap-2 flex-wrap rounded-md bg-slate-500">
+                <div>
+                    <span class="">blur-none</span>
+                    <img src="img/avatar3.png" alt="avatar3" class="w-20 h-20 rounded-md blur-none my-2 ">
+                </div>
+                <div>
+                    <span class="">blur-sm</span>
+                    <img src="img/avatar2.png" alt="avatar3" class="w-20 h-20 rounded-md blur-sm my-2 ">
+                </div>
+                <div>
+                    <span class="">blur-lg</span>
+                    <img src="img/avatar5.png" alt="avatar3" class="w-20 h-20 rounded-md blur-lg my-2 ">
+                </div>
+            </div>
+        </div>
+        <!-- blur ends -->
+        <!-- brightnes start -->
+        <div>
+            <h3 class="border-b-2">Brightness</h3>
+            <p>applying brigtness utilities into element. <span class="text-red-500">brightness-{amount}</span>.example:</p>
+            <div class="p-2 my-2 flex gap-2 flex-wrap rounded-md bg-slate-500">
+                <div>
+                    <span>brightness-50</span>
+                    <img src="img/avatar3.png" alt="avatar3" class="w-20 h-20 rounded-md brightness-50 my-2 ">
+                </div>
+                <div>
+                    <span>brightness-125</span>
+                    <img src="img/avatar2.png" alt="avatar3" class="w-20 h-20 rounded-md brightness-125 my-2 ">
+                </div>
+                <div>
+                    <span>brightness-200</span>
+                    <img src="img/avatar5.png" alt="avatar3" class="w-20 h-20 rounded-md brightness-200 my-2 ">
+                </div>
+            </div>
+        </div>
+        <!-- brightnes end -->
+        <!-- contrast start -->
+        <div>
+            <h3 class="border-b-2">contrast</h3>
+            <p>applying contrast into selected element <span class="text-red-400">contrast-{amount}</span>. example:</p>
+            <div class="p-2 my-2 flex gap-2 flex-wrap rounded-md bg-slate-500">
+                <div>
+                    <span class="">contrast-50</span>
+                    <img src="img/avatar3.png" alt="avatar3" class="w-20 h-20 rounded-md contrast-50 my-2 ">
+                </div>
+                <div>
+                    <span class="">contrast-125</span>
+                    <img src="img/avatar2.png" alt="avatar3" class="w-20 h-20 rounded-md contrast-125 my-2 ">
+                </div>
+                <div>
+                    <span class="">contrast-200</span>
+                    <img src="img/avatar5.png" alt="avatar3" class="w-20 h-20 rounded-md contrast-200 my-2 ">
+                </div>
+            </div>
+        </div>
+        <!-- contrast end -->
+        <!-- drop-shadow start -->
+        <div>
+            <h3 class="border-b-2">drop-shadow</h3>
+            <p>applying drop-shadow property into selected elements! <span class="text-red-400">.drop-shadow-{amount}</span>.example:</p>
+            <div class="p-2 my-2 flex gap-2 flex-wrap rounded-md bg-white text-black">
+                <div>
+                    <span class="">drop-shadow-md</span>
+                    <div class="w-20 h-20 rounded-md drop-shadow-md my-2 bg-slate-300"></div>
+                </div>
+                <div>
+                    <span class="">drop-shadow-lg</span>
+                    <div class="w-20 h-20 rounded-md drop-shadow-xl my-2 bg-slate-300"></div>
+                </div>
+                <div>
+                    <span class="">drop-shadow-xl</span>
+                    <div class="w-20 h-20 rounded-md drop-shadow-xl my-2 bg-slate-300"></div>
+                </div>
+            </div>
+        </div>
+        <!-- drop-shadow end -->
+        <!-- grayscale-start -->
+        <div>
+            <h3 class="border-b-2">grayscale</h3>
+            <span class="text-red-400">.grayscale-{1/0}</span>
+            <div class="p-2 my-2 flex gap-2 flex-wrap rounded-md bg-slate-500">
+                <div>
+                    <span >grayscale</span>
+                    <img src="img/avatar3.png" alt="avatar3" class="w-20 h-20 rounded-md grayscale my-2 ">
+                </div>
+                <div>
+                    <span >grayscale-0</span>
+                    <img src="img/avatar2.png" alt="avatar3" class="w-20 h-20 rounded-md grayscale-0 my-2 ">
+                </div>
+            </div>
+        </div>
+        <!-- grayscale-end -->
+        <!-- hue rotate start -->
+        <div>
+            <h3 class="border-b-2">hue-rotate</h3>
+            <p><span class="text-red-400">hue-rotate-{deg}</span>. example:</p>
+            <div class="p-2 my-2 flex gap-2 flex-wrap rounded-md bg-slate-500">
+                <div>
+                    <span >hue-rotate-15</span>
+                    <img src="img/avatar3.png" alt="avatar3" class="w-20 h-20 rounded-md hue-rotate-15 my-2 ">
+                </div>
+                <div>
+                    <span >hue-rotate-90</span>
+                    <img src="img/avatar2.png" alt="avatar3" class="w-20 h-20 rounded-md hue-rotate-90 my-2 ">
+                </div>
+                <div>
+                    <span >hue-rotate-180</span>
+                    <img src="img/avatar5.png" alt="avatar3" class="w-20 h-20 rounded-md hue-rotate-180 my-2 ">
+                </div>
+            </div>
+        </div>
+        <!-- hue rotate ends -->
+        <!-- invert start -->
+        <div>
+            <h3 class="border-b-2">invert</h3>
+            <p><span class="text-red-400">invert-0 || invert</span>. example:</p>
+            <div class="p-2 my-2 flex gap-2 flex-wrap rounded-md bg-slate-500">
+                <div>
+                    <span >invert</span>
+                    <img src="img/avatar3.png" alt="avatar3" class="w-20 h-20 rounded-md invert my-2 ">
+                </div>
+                <div>
+                    <span >invert-0</span>
+                    <img src="img/avatar2.png" alt="avatar3" class="w-20 h-20 rounded-md invert-0 my-2 ">
+                </div>
+            </div>
+        </div>
+        <!-- invert ends -->
+        <!-- saturate start -->
+        <div>
+            <h3 class="border-b-2">saturate</h3>
+            <p><span class="text-red-400">saturate-{amount}</span>. example:</p>
+            <div class="p-2 my-2 flex gap-2 flex-wrap rounded-md bg-slate-500">
+                <div>
+                    <span >saturate-50</span>
+                    <img src="img/avatar3.png" alt="avatar3" class="w-20 h-20 rounded-md saturate-50 my-2 ">
+                </div>
+                <div>
+                    <span >saturate-150</span>
+                    <img src="img/avatar2.png" alt="avatar3" class="w-20 h-20 rounded-md saturate-150 my-2 ">
+                </div>
+                <div>
+                    <span >saturate-200</span>
+                    <img src="img/avatar5.png" alt="avatar3" class="w-20 h-20 rounded-md saturate-200 my-2 ">
+                </div>
+            </div>
+        </div>
+        <!-- saturate ends -->
+        <!-- sepia start -->
+        <div>
+            <h3 class="border-b-2">Sepia</h3>
+            <p><span class="text-red-400">sepia || .sepia-0</span>. example:</p>
+            <div class="p-2 my-2 flex gap-2 flex-wrap rounded-md bg-slate-500">
+                <div>
+                    <span >sepia</span>
+                    <img src="img/avatar3.png" alt="avatar3" class="w-20 h-20 rounded-md sepia my-2 ">
+                </div>
+                <div>
+                    <span >sepia-0</span>
+                    <img src="img/avatar2.png" alt="avatar3" class="w-20 h-20 rounded-md sepia-0 my-2 ">
+                </div>
+            </div>
+        </div>
+        <!-- sepia ends -->
+    </div>
+    <!-- content-1 ends -->
+
+    <!-- content-2 start -->
+    <div class="p-2 rounded-md my-2 bg-violet-800">
+        <div class="p-2 my-2 rounded-md">
+            <!-- backdrop-blur start -->
+            <h3 class="border-b-2">backdrop-blur</h3>
+            <p><span class="text-red-400">backdrop-blur-{amount}</span>. example:</p>
+            <div class="p-2 my-2 bg-slate-500 rounded-md flex flex-wrap gap-2">
+                <!-- backdrop-blur-sm -->
+                <div>
+                    <span>backdrop-blur-sm</span>
+                    <div class="w-44 h-44 rounded-md border bg-center flex bg-cover place-content-center" style="background-image: url(img/kayden.jpg);">
+                        <div class="bg-white/30 w-20 h-20 rounded-md place-self-center backdrop-blur-sm"></div>
+                    </div>
+                </div>
+                <!-- backdrop-blur-md -->
+                <div>
+                    <span>backdrop-blur-md</span>
+                    <div class="w-44 h-44 rounded-md border bg-center flex bg-cover place-content-center" style="background-image: url(img/kayden.jpg);">
+                        <div class="bg-white/30 w-20 h-20 rounded-md place-self-center backdrop-blur-md"></div>
+                    </div>
+                </div>
+                <!-- backdrop-blur-xl -->
+                <div>
+                    <span>backdrop-blur-xl</span>
+                    <div class="w-44 h-44 rounded-md border bg-center flex bg-cover place-content-center" style="background-image: url(img/kayden.jpg);">
+                        <div class="bg-white/30 w-20 h-20 rounded-md place-self-center backdrop-blur-xl"></div>
+                    </div>
+                </div>
+            </div>
+            <!-- backdrop-blur ends -->
+            <!-- backdrop-brightness start -->
+            <h3 class="border-b-2">backdrop-brightness</h3>
+            <p><span class="text-red-400">backdrop-brightness-{amount}</span>. example:</p>
+            <div class="p-2 my-2 bg-slate-500 rounded-md flex flex-wrap gap-2">
+                <!-- backdrop-brightness -->
+                <div>
+                    <span class="">backdrop-brightness-50</span>
+                    <div class="my-2 w-44 h-44 rounded-md border bg-center flex bg-cover place-content-center" style="background-image: url(img/kayden.jpg);">
+                        <div class="bg-white/30 w-20 h-20 rounded-md place-self-center backdrop-brightness-50"></div>
+                    </div>
+                </div>
+                <!-- backdrop-brightnes200 -->
+                <div>
+                    <span class="">backdrop-brightness-200</span>
+                    <div class="my-2 w-44 h-44 rounded-md border bg-center flex bg-cover place-content-center" style="background-image: url(img/kayden.jpg);">
+                        <div class="bg-white/30 w-20 h-20 rounded-md place-self-center backdrop-brightness-200"></div>
+                    </div>
+                </div>
+            </div>
+            <!-- backdrop-brightness ends -->
+            <!-- backdrop-contrast-start -->
+            <h3 class="border-b-2">backdrop-contrast</h3>
+            <p><span class="text-red-400">backdrop-contrast-{amount}</span>. example:</p>
+            <div class="p-2 my-2 bg-slate-500 rounded-md flex flex-wrap gap-2">
+                <!-- backdrop-contrast -->
+                <div>
+                    <span class="">backdrop-contrast-50</span>
+                    <div class="my-2 w-44 h-44 rounded-md border bg-center flex bg-cover place-content-center" style="background-image: url(img/kayden.jpg);">
+                        <div class="bg-white/30 w-20 h-20 rounded-md place-self-center backdrop-contrast-50"></div>
+                    </div>
+                </div>
+                <!-- backdrop-contrast-200 -->
+                <div>
+                    <span class="">backdrop-contrast-200</span>
+                    <div class="my-2 w-44 h-44 rounded-md border bg-center flex bg-cover place-content-center" style="background-image: url(img/kayden.jpg);">
+                        <div class="bg-white/30 w-20 h-20 rounded-md place-self-center backdrop-contrast-200"></div>
+                    </div>
+                </div>
+            </div>
+            <!-- backdrop-contrast-ends -->
+            <!-- backdrop-grayscale start -->
+            <h3 class="border-b-2">backdrop-grayscale</h3>
+            <p><span class="text-red-400">backdrop-grayscale-{amount}</span>. example:</p>
+            <div class="p-2 my-2 bg-slate-500 rounded-md flex flex-wrap gap-2">
+                <!-- backdrop-grayscale -->
+                <div>
+                    <span class="">backdrop-grayscale</span>
+                    <div class="my-2 w-44 h-44 rounded-md border bg-center flex bg-cover place-content-center" style="background-image: url(img/kayden.jpg);">
+                        <div class="bg-white/30 w-20 h-20 rounded-md place-self-center backdrop-grayscale"></div>
+                    </div>
+                </div>
+                <!-- backdrop-grayscale-0 -->
+                <div>
+                    <span class="">backdrop-grayscale-0</span>
+                    <div class="my-2 w-44 h-44 rounded-md border bg-center flex bg-cover place-content-center" style="background-image: url(img/kayden.jpg);">
+                        <div class="bg-white/30 w-20 h-20 rounded-md place-self-center backdrop-grayscale-0"></div>
+                    </div>
+                </div>
+            </div>
+            <!-- backdrop-grayscale-ends -->
+            
+            <!-- backdrop-hue-rotate start -->
+            <h3 class="border-b-2">backdrop-hue-rotate</h3>
+            <p><span class="text-red-400">backdrop-hue-rotate-{amount}</span>. example:</p>
+            <div class="p-2 my-2 bg-slate-500 rounded-md flex flex-wrap gap-2">
+                <!-- backdrop-hue-rotate -->
+                <div>
+                    <span class="">backdrop-hue-rotate-60</span>
+                    <div class="my-2 w-44 h-44 rounded-md border bg-center flex bg-cover place-content-center" style="background-image: url(img/kayden.jpg);">
+                        <div class="bg-white/30 w-20 h-20 rounded-md place-self-center backdrop-hue-rotate-60"></div>
+                    </div>
+                </div>
+                <!-- backdrop-hue-rotate-0 -->
+                <div>
+                    <span class="">backdrop-hue-rotate-180</span>
+                    <div class="my-2 w-44 h-44 rounded-md border bg-center flex bg-cover place-content-center" style="background-image: url(img/kayden.jpg);">
+                        <div class="bg-white/30 w-20 h-20 rounded-md place-self-center backdrop-hue-rotate-180"></div>
+                    </div>
+                </div>
+            </div>
+            <!-- backdrop-hue-rotate ends -->
+
+            <!-- backdrop-invert start -->
+            <h3 class="border-b-2">backdrop-invert</h3>
+            <p><span class="text-red-400">backdrop-invert-{amount}</span>. example:</p>
+            <div class="p-2 my-2 bg-slate-500 rounded-md flex flex-wrap gap-2">
+                <!-- backdrop-invert -->
+                <div>
+                    <span class="">backdrop-invert-0</span>
+                    <div class="my-2 w-44 h-44 rounded-md border bg-center flex bg-cover place-content-center" style="background-image: url(img/kayden.jpg);">
+                        <div class="bg-white/30 w-20 h-20 rounded-md place-self-center backdrop-invert-0"></div>
+                    </div>
+                </div>
+                <!-- backdrop-invert-0 -->
+                <div>
+                    <span class="">backdrop-invert</span>
+                    <div class="my-2 w-44 h-44 rounded-md border bg-center flex bg-cover place-content-center" style="background-image: url(img/kayden.jpg);">
+                        <div class="bg-white/30 w-20 h-20 rounded-md place-self-center backdrop-invert"></div>
+                    </div>
+                </div>
+            </div>
+            <!-- backdrop-invert ends -->
+
+            <!-- backdrop-opacity start -->
+            <h3 class="border-b-2">backdrop-opacity</h3>
+            <p><span class="text-red-400">backdrop-opacity-{amount}</span>. example:</p>
+            <div class="p-2 my-2 bg-slate-500 rounded-md flex flex-wrap gap-2">
+                <!-- backdrop-opacity-60 -->
+                <div>
+                    <span class="">backdrop-opacity-60</span>
+                    <div class="my-2 w-44 h-44 rounded-md border bg-center flex bg-cover place-content-center" style="background-image: url(img/kayden.jpg);">
+                        <div class="bg-white/30 w-20 h-20 rounded-md place-self-center backdrop-opacity-60"></div>
+                    </div>
+                </div>
+                <!-- backdrop-opacity-10 -->
+                <div>
+                    <span class="">backdrop-opacity-100</span>
+                    <div class="my-2 w-44 h-44 rounded-md border bg-center flex bg-cover place-content-center" style="background-image: url(img/kayden.jpg);">
+                        <div class="bg-white/30 w-20 h-20 rounded-md place-self-center backdrop-opacity-100"></div>
+                    </div>
+                </div>
+            </div>
+            <!-- backdrop-opacity ends -->
+
+            <!-- backdrop-saturate start -->
+            <h3 class="border-b-2">backdrop-saturate</h3>
+            <p><span class="text-red-400">backdrop-saturate-{amount}</span>. example:</p>
+            <div class="p-2 my-2 bg-slate-500 rounded-md flex flex-wrap gap-2">
+                <!-- backdrop-saturate -->
+                <div>
+                    <span class="">backdrop-saturate-50</span>
+                    <div class="my-2 w-44 h-44 rounded-md border bg-center flex bg-cover place-content-center" style="background-image: url(img/kayden.jpg);">
+                        <div class="bg-white/30 w-20 h-20 rounded-md place-self-center backdrop-saturate-50"></div>
+                    </div>
+                </div>
+                <!-- backdrop-saturate-0 -->
+                <div>
+                    <span class="">backdrop-saturate-200</span>
+                    <div class="my-2 w-44 h-44 rounded-md border bg-center flex bg-cover place-content-center" style="background-image: url(img/kayden.jpg);">
+                        <div class="bg-white/30 w-20 h-20 rounded-md place-self-center backdrop-saturate-200"></div>
+                    </div>
+                </div>
+            </div>
+            <!-- backdrop-saturate ends -->
+            <!-- backdrop-sepia start -->
+            <h3 class="border-b-2">backdrop-sepia</h3>
+            <p><span class="text-red-400">backdrop-sepia-{amount}</span>. example:</p>
+            <div class="p-2 my-2 bg-slate-500 rounded-md flex flex-wrap gap-2">
+                <!-- backdrop-sepia -->
+                <div>
+                    <span class="">backdrop-sepia</span>
+                    <div class="my-2 w-44 h-44 rounded-md border bg-center flex bg-cover place-content-center" style="background-image: url(img/kayden.jpg);">
+                        <div class="bg-white/30 w-20 h-20 rounded-md place-self-center backdrop-sepia"></div>
+                    </div>
+                </div>
+                <!-- backdrop-sepia-0 -->
+                <div>
+                    <span class="">backdrop-sepia-0</span>
+                    <div class="my-2 w-44 h-44 rounded-md border bg-center flex bg-cover place-content-center" style="background-image: url(img/kayden.jpg);">
+                        <div class="bg-white/30 w-20 h-20 rounded-md place-self-center backdrop-sepia-0"></div>
+                    </div>
+                </div>
+            </div>
+            <!-- backdrop-sepia ends -->
+
+        </div>
+    </div>
+    <!-- content-2 ends -->
+</body>
+</html>

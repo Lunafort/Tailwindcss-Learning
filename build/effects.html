@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Effect with-Tailwindcss</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-slate-800 text-white p-2">
+    <!-- section-1 -->
+    <div class="p-2 rounded-md my-2 bg-white text-black">
+        <!-- box-shadow start -->
+        <div>
+            <h1 class="border-b-2">Box-shadow</h1>
+            <p>Utilities for controlling the box shadow of an element. <span class="text-red-500">.shadow-{size}</span>.example:</p>
+            <!-- outer-shadow -->
+            <li>outer-shadow, example:</li>
+            <div class="p-2 my-2 rounded-md border flex gap-4 flex-wrap text-center">
+                <div class="h-40 w-40 rounded-md shadow bg-slate-100">shadow</div>
+                <div class="h-40 w-40 rounded-md shadow-md bg-slate-100">shadow-md</div>
+                <div class="h-40 w-40 rounded-md shadow-lg bg-slate-100">shadow-lg</div>
+                <div class="h-40 w-40 rounded-md shadow-xl bg-slate-100">shadow-xl</div>
+                <div class="h-40 w-40 rounded-md shadow-2xl bg-slate-100">shadow-2xl</div>
+            </div>
+            <!-- inner-shadow -->
+            <li>inner-shadow, example:</li>
+            <div class="p-2 my-2 border text-center">
+                <div class="h-40 w-40 rounded-md shadow-inner bg-slate-100">inner-shadow</div>
+            </div>
+            <p class="bg-rose-600 font-semibold text-white px-2">Note: removing shadow? using: <span class="border-b text-violet-600">shadow-none</span></p>
+        </div>
+        <div>
+            <!-- box-shadow-colors -->
+            <h1 class="border-b-2">box-shadow-colors</h1>
+            <p>adding colors into box-shadow property-classes. <span class="text-red-500">.shadow-{color}</span>. example:</p>
+            <div class="p-2 my-2 rounded-md border gap-5 flex flex-wrap">
+                <button class="p-4 rounded-md text-white font-semibold shadow-lg bg-sky-600 shadow-orange-500">Subscribe</button>
+                <button class="p-4 rounded-md font-medium shadow-lg bg-white shadow-indigo-500/50 hover:bg-slate-400 hover:text-white">Subscribe</button>
+                <button class="p-4 rounded-md font-medium shadow-lg text-white bg-red-600 shadow-rose-600 hover:bg-red-800 hover:text-white">Cancel</button>
+            </div>
+        </div>
+    </div>
+    <!-- section-2 -->
+    <div class="p-2 my-2 bg-teal-800 rounded-md">
+        <h3 class="border-b-2">opacity</h3>
+        <p>Utilities for controlling the opacity of an element. <span class="text-red-500">.opacity-{amount}</span>. example:</p>
+        <div class="p-2 border-2 rounded-md my-2 flex gap-2 flex-wrap text-center">
+            <div class="h-16 w-16 rounded-md bg-sky-600 opacity-100">100</div>
+            <div class="h-16 w-16 rounded-md bg-sky-600 opacity-75">75</div>
+            <div class="h-16 w-16 rounded-md bg-sky-600 opacity-50">50</div>
+            <div class="h-16 w-16 rounded-md bg-sky-600 opacity-25">25</div>
+            <div class="h-16 w-16 rounded-md bg-sky-600 opacity-10">10</div>
+        </div>
+    </div>
+
+    <!-- section-3 playground -->
+    <div class="py-20 my-2 rounded-md bg-slate-900 flex place-items-center place-content-center sm:px-10">
+        <div class="rounded-md bg-white text-black p-2 h-full shadow-md shadow-white">
+            <h1 class="font-semibold text-center my-2">Login</h1>
+            <form action="" class="my-2">
+                <input type="text" class='w-full my-2 mb-2 rounded-md bg-transparent outline-none border-b-2 bg-slate-400 p-2' placeholder="username">
+                <input type="password" class='w-full border-b-2 my-2 mb-2 rounded-md bg-transparent outline-none bg-slate-400 p-2' placeholder="password">
+                <input type="button" class="bg-sky-500 p-2 w-full text-white rounded-md my-2 hover:bg-sky-700 cursor-pointer active:translate-y-1" value="Sign In">
+            </form>
+            <p class="text-sm font-mono">Didnt have account? <a href="#" class="text-sky-400 hover:border-b border-b-slate-800">register now!</a></p>
+        </div>
+    </div>
+
+    <div class="p-2 my-2 rounded-md bg-slate-900 grid gap-2 xl:grid-cols-5 sm:grid-cols-2">
+        <!-- box-1 -->
+        <div class="p-2 w-1/24 h-full rounded-md bg-slate-100 text-black shadow-sm">
+            <div class="flex place-items-center justify-between bg-slate-400 p-2 rounded-md">
+                <img src="img/kayden.jpg" class="w-16 h-auto rounded-full">
+                <div class="text-sm mx-2">
+                    <p class="font-semibold">Bambang</p>
+                    <span class="text-slate-600 font-medium text-xs">15 Aug 2019</span>
+                </div>
+            </div>
+
+            <div class="rounded-md bg-slate-500 text-white my-2 shadow-sm">
+                <img src="img/pizza-3.jpg" class="rounded-md h-52 w-full bg-contain xl:h-full">
+                <div class="p-2">
+                    <p class="text-slate-300">Title : This things looks good!</p>
+                    <span class="text-sm font-normal line-clamp-2 indent-8">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum voluptatum perspiciatis dicta explicabo voluptate quidem natus obcaecati soluta provident doloribus!</span>
+                </div>
+            </div>
+            <div>
+                <button class="bg-green-500 active:translate-y-1 hover:bg-green-700 shadow-md shadow-slate-500 p-3 rounded-md text-white my-2">Approve</button>
+                <button class="bg-red-500 active:translate-y-1 hover:bg-red-700 shadow-md shadow-slate-500 p-3 rounded-md text-white my-2">Cancel</button>
+            </div>
+            <p class="text-sm">consider spam? <a href="#" class=" hover:border-b text-rose-600 border-b-black cursor-help active:text-sky-500">click here.</a></p>
+        </div>
+        <!-- box-2 -->
+        <div class="p-2 w-1/24 h-full rounded-md bg-slate-100 text-black shadow-sm">
+            <div class="flex place-items-center justify-between bg-slate-400 p-2 rounded-md">
+                <img src="img/pp-3.jpg" class="w-16 h-auto rounded-full">
+                <div class="text-sm mx-2">
+                    <p class="font-semibold">Hilman</p>
+                    <span class="text-slate-600 font-medium text-xs">10 Sept 2008</span>
+                </div>
+            </div>
+            <div class="rounded-md bg-slate-500 text-white my-2 shadow-sm">
+                <img src="img/pizza-2.jpg" class="rounded-md h-52 w-full bg-contain xl:h-full">
+                <div class="p-2">
+                    <p class="text-slate-300">Title : This things looks good!</p>
+                    <span class="text-sm font-normal line-clamp-2 indent-8">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum voluptatum perspiciatis dicta explicabo voluptate quidem natus obcaecati soluta provident doloribus!</span>
+                </div>
+            </div>
+            <div>
+                <button class="bg-green-500 active:translate-y-1 hover:bg-green-700 shadow-md shadow-slate-500 p-3 rounded-md text-white my-2">Approve</button>
+                <button class="bg-red-500 active:translate-y-1 hover:bg-red-700 shadow-md shadow-slate-500 p-3 rounded-md text-white my-2">Cancel</button>
+            </div>
+            <p class="text-sm">consider spam? <a href="#" class=" hover:border-b text-rose-600 border-b-black cursor-help active:text-sky-500">click here.</a></p>
+        </div>
+        <div class="p-2 w-1/24 h-full rounded-md bg-slate-100 text-black shadow-sm">
+            <div class="flex place-items-center justify-between bg-slate-400 p-2 rounded-md">
+                <img src="img/pp.jpg" class="w-16 h-auto rounded-full">
+                <div class="text-sm mx-2">
+                    <p class="font-semibold">Bossman</p>
+                    <span class="text-slate-600 font-medium text-xs">10 Sept 2008</span>
+                </div>
+            </div>
+            <div class="rounded-md bg-slate-500 text-white my-2 shadow-sm">
+                <img src="img/kitchen-2.jpg" class="rounded-md h-52 w-full bg-contain xl:h-full">
+                <div class="p-2">
+                    <p class="text-slate-300">Title : This things looks good!</p>
+                    <span class="text-sm font-normal line-clamp-2 indent-8">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum voluptatum perspiciatis dicta explicabo voluptate quidem natus obcaecati soluta provident doloribus!</span>
+                </div>
+            </div>
+            <div>
+                <button class="bg-green-500 active:translate-y-1 hover:bg-green-700 shadow-md shadow-slate-500 p-3 rounded-md text-white my-2">Approve</button>
+                <button class="bg-red-500 active:translate-y-1 hover:bg-red-700 shadow-md shadow-slate-500 p-3 rounded-md text-white my-2">Cancel</button>
+            </div>
+            <p class="text-sm">consider spam? <a href="#" class=" hover:border-b text-rose-600 border-b-black cursor-help active:text-sky-500">click here.</a></p>
+        </div>
+        <div class="p-2 w-1/24 h-full rounded-md bg-slate-100 text-black shadow-sm">
+            <div class="flex place-items-center justify-between bg-slate-400 p-2 rounded-md">
+                <img src="img/pp-3.jpg" class="w-16 h-auto rounded-full">
+                <div class="text-sm mx-2">
+                    <p class="font-semibold">Hilman</p>
+                    <span class="text-slate-600 font-medium text-xs">10 Sept 2008</span>
+                </div>
+            </div>
+            <div class="rounded-md bg-slate-500 text-white my-2 shadow-sm">
+                <img src="img/beach.jpg" class="rounded-md h-52 w-full bg-contain xl:h-full">
+                <div class="p-2">
+                    <p class="text-slate-300">Title : This things looks good!</p>
+                    <span class="text-sm font-normal line-clamp-2 indent-8">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum voluptatum perspiciatis dicta explicabo voluptate quidem natus obcaecati soluta provident doloribus!</span>
+                </div>
+            </div>
+            <div>
+                <button class="bg-green-500 active:translate-y-1 hover:bg-green-700 shadow-md shadow-slate-500 p-3 rounded-md text-white my-2">Approve</button>
+                <button class="bg-red-500 active:translate-y-1 hover:bg-red-700 shadow-md shadow-slate-500 p-3 rounded-md text-white my-2">Cancel</button>
+            </div>
+            <p class="text-sm">consider spam? <a href="#" class=" hover:border-b text-rose-600 border-b-black cursor-help active:text-sky-500">click here.</a></p>
+        </div>
+        <div class="p-2 w-1/24 h-full rounded-md bg-slate-100 text-black shadow-sm">
+            <div class="flex place-items-center justify-between bg-slate-400 p-2 rounded-md">
+                <img src="img/pp-2.jpg" class="w-16 h-auto rounded-full">
+                <div class="text-sm mx-2">
+                    <p class="font-semibold">Sari</p>
+                    <span class="text-slate-600 font-medium text-xs">10 Sept 2008</span>
+                </div>
+            </div>
+            <div class="rounded-md bg-slate-500 text-white my-2 shadow-sm">
+                <img src="img/wedding.jpg" class="rounded-md h-52 w-full bg-contain xl:h-full">
+                <div class="p-2">
+                    <p class="text-slate-300">Title : This things looks good!</p>
+                    <span class="text-sm font-normal line-clamp-2 indent-8">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum voluptatum perspiciatis dicta explicabo voluptate quidem natus obcaecati soluta provident doloribus!</span>
+                </div>
+            </div>
+            <div>
+                <button class="bg-green-500 active:translate-y-1 hover:bg-green-700 shadow-md shadow-slate-500 p-3 rounded-md text-white my-2">Approve</button>
+                <button class="bg-red-500 active:translate-y-1 hover:bg-red-700 shadow-md shadow-slate-500 p-3 rounded-md text-white my-2">Cancel</button>
+            </div>
+            <p class="text-sm">consider spam? <a href="#" class=" hover:border-b text-rose-600 border-b-black cursor-help active:text-sky-500">click here.</a></p>
+        </div>
+    </div>
+</body>
+</html>

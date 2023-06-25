@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform with-Tailwindcss</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-black text-white p-2">
+    <h1 class="border-b border-b-rose-500">Transform with-Tailwindcss</h1>
+    <!-- start -->
+    <div class="p-2 my-2 rounded-md bg-slate-800">
+        <!-- scale -->
+        <h3 class="border-b">Scale</h3>
+        <p>scaling the selected element with transform <span class="text-red-500">.scale-{amount}</span>. example:</p>
+        <div class="p-5 border my-2 rounded-md h-auto w-auto flex flex-wrap gap-2">
+            <img src="img/kayden.jpg" alt="slace-75" class="h-20 w-20 rounded-md scale-75">
+            <img src="img/kayden.jpg" alt="scale-100" class="h-20 w-20 rounded-md scale-100">
+            <img src="img/kayden.jpg" alt="scale-125" class="h-20 w-20 rounded-md scale-125">
+        </div>
+
+        <!-- rotate -->
+        <h3 class="border-b">Rotate</h3>
+        <p>rotating selected element using transform rotate propertys. <span class="text-red-500">.rotate-{amount}</span>. example:</p>
+        <div class="p-5 my-2 rounded-md border flex flex-wrap gap-2">
+            <img src="img/pp-3.jpg" alt="rotate-45" class="h-16 w-16 rounded-md rotate-45">
+            <img src="img/pp-3.jpg" alt="rotate-90" class="h-16 w-16 rounded-md rotate-90">
+            <img src="img/pp-3.jpg" alt="rotate-180" class="h-16 w-16 rounded-md rotate-180">
+        </div>
+
+        <!-- translate -->
+        <h3 class="border-b">Translate</h3>
+        <p>translating selected element using transfrom-translate property. <span class="text-red-500">.translate-{x/y}-{amount}</span>. example:</p>
+        <div class="p-2 my-2 rounded-md border flex flex-wrap gap-4">
+            <!-- example: -->
+            <div>
+                <span class="text-slate-500">.translate-y-6</span>
+                <div class="w-20 h-20 bg-cover rounded-md relative" style="background-image: url(img/kayden.jpg);">
+                    <img src="img/kayden.jpg" alt="translate-y-6" class="translate-y-6 relative h-20 w-20 rounded-md">
+                </div>
+            </div>
+            <div>
+                <span class="text-slate-500">.-translate-y-6</span>
+                <div class="w-20 h-20 bg-cover rounded-md relative" style="background-image: url(img/kayden.jpg);">
+                    <img src="img/kayden.jpg" alt="-translate-y-6" class="-translate-y-6 relative h-20 w-20 rounded-md">
+                </div>
+            </div>
+            <div>
+                <span class="text-slate-500">.-translate-x-6</span>
+                <div class="w-20 h-20 bg-cover rounded-md relative" style="background-image: url(img/kayden.jpg);">
+                    <img src="img/kayden.jpg" alt="-translate-x-6" class="-translate-x-6 relative h-20 w-20 rounded-md">
+                </div>
+            </div>
+            <div>
+                <span class="text-slate-500">.translate-x-6</span>
+                <div class="w-20 h-20 bg-cover rounded-md relative" style="background-image: url(img/kayden.jpg);">
+                    <img src="img/kayden.jpg" alt="translate-x-6" class="translate-x-6 relative h-20 w-20 rounded-md">
+                </div>
+            </div>
+        </div>
+
+        <!-- skew -->
+        <h3 class="border-b">skew</h3>
+        <p>skewing elements with transform property. <span class="text-red-500">
+            .skew-{x/y}-{amount}</span>. example:</p>
+        <div class="p-2 my-2 border rounded-md flex flex-wrap gap-2">
+            <div class="p-2">
+                <span class="text-slate-500">skew-y-3</span>
+                <img src="img/kayden.jpg" alt="" class="h-20 w-20 rounded-md skew-y-3">
+            </div>
+            <div class="p-2">
+                <span class="text-slate-500">skew-y-6</span>
+                <img src="img/kayden.jpg" alt="" class="h-20 w-20 rounded-md skew-y-6">
+            </div>
+            <div class="p-2">
+                <span class="text-slate-500">skew-y-12</span>
+                <img src="img/kayden.jpg" alt="" class="h-20 w-20 rounded-md skew-y-12">
+            </div>
+        </div>
+
+        <!-- transform-origin -->
+        <h3 class="border-b">transform-origin</h3>
+        <p>specifying the origin for an selected elements positions using transform property values. <span class="text-red-500">.origin-{keywords}</span>. example:</p>
+        <div class="p-2 my-2 rounded-md border flex flex-wrap gap-2">
+            <div class="p-2">
+                <span class="text-slate-500">origin-center</span>
+                <img src="img/kayden.jpg" alt="" class="h-20 w-20 rounded-md origin-center rotate-45">
+            </div>
+            <div class="p-2">
+                <span class="text-slate-500">origin-top-left</span>
+                <img src="img/kayden.jpg" alt="" class="h-20 w-20 rounded-md origin-top-left rotate-45">
+            </div>
+            <div class="p-2">
+                <span class="text-slate-500">origin-bottom</span>
+                <img src="img/kayden.jpg" alt="" class="h-20 w-20 rounded-md origin-bottom rotate-45">
+            </div>
+        </div>
+    </div>
+    <!-- ends -->
+</body>
+</html>

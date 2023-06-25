@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables with-Tailwindcss</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-black text-white p-2">
+    <h1>Tables with-Tailwindcss</h1>
+
+    <div class="p-2 my-2 rounded-md bg-slate-900">
+        <h3 class="border-b-2">.border-collapse/separated</h3>
+        <p>controlling whether tables border should collapse or separated <span class="text-red-500">.border-{collapse/separate}</span>. example:</p>
+
+        <li>border-collapse, example:</li>
+        <table class="bg-slate-800 border border-slate-500 border-collapse text-white">
+            <thead class="bg-slate-500">
+                <tr class="text-left">
+                    <th class="border p-2 border-slate-400">No</th>
+                    <th class="border p-2 border-slate-400">Subject</th>
+                    <th class="border p-2 border-slate-400">Explanation</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="border border-slate-500 p-2">1</td>
+                    <td class="border border-slate-500 p-2">Food review</td>
+                    <td class="border border-slate-500 p-2">Lorem ipsum dolor sit amet consectetur adipisicing elit.</td>
+                </tr>
+                <tr>
+                    <td class="border border-slate-500 p-2">2</td>
+                    <td class="border border-slate-500 p-2">Lorem, ipsum dolor.</td>
+                    <td class="border border-slate-500 p-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, tempora.</td>
+                </tr>
+            </tbody>
+        </table>
+        <!-- border-separate example -->
+        <li>border-separate, example:</li>
+        <table class="bg-slate-800 border border-slate-500 border-separate text-white">
+            <thead class="bg-slate-500">
+                <tr class="text-left">
+                    <th class="border p-2 border-slate-400">No</th>
+                    <th class="border p-2 border-slate-400">Subject</th>
+                    <th class="border p-2 border-slate-400">Explanation</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="border border-slate-500 p-2">1</td>
+                    <td class="border border-slate-500 p-2">Food review</td>
+                    <td class="border border-slate-500 p-2">Lorem ipsum dolor sit amet consectetur adipisicing elit.</td>
+                </tr>
+                <tr>
+                    <td class="border border-slate-500 p-2">2</td>
+                    <td class="border border-slate-500 p-2">Lorem, ipsum dolor.</td>
+                    <td class="border border-slate-500 p-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, tempora.</td>
+                </tr>
+            </tbody>
+        </table>
+        <!-- border-separated ends -->
+        <!-- border-spacing start -->
+        <h3 class="border-b-2">border-spacing</h3>
+        <p>controlling spacing between each tables borders. <span class="text-red-500">.border-spacing-{amount}</span> or <span class="text-red-500">.border-spacing-{x/y}-{amount}</span>. example:</p>
+        <li>border-spacing-2</li>
+        <table class="bg-slate-800 border border-slate-500 border-separate border-spacing-2 text-white">
+            <thead class="bg-slate-500">
+                <tr class="text-left">
+                    <th class="border p-2 border-slate-400">No</th>
+                    <th class="border p-2 border-slate-400">Subject</th>
+                    <th class="border p-2 border-slate-400">Explanation</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="border border-slate-500 p-2">1</td>
+                    <td class="border border-slate-500 p-2">Food review</td>
+                    <td class="border border-slate-500 p-2">Lorem ipsum dolor sit amet consectetur adipisicing elit.</td>
+                </tr>
+                <tr>
+                    <td class="border border-slate-500 p-2">2</td>
+                    <td class="border border-slate-500 p-2">Lorem, ipsum dolor.</td>
+                    <td class="border border-slate-500 p-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, tempora.</td>
+                </tr>
+            </tbody>
+        </table>
+        <!-- border-spacing ends -->
+    </div>
+
+    <!-- table-layout start -->
+    <div class="p-2 my-2 rounded-md bg-emerald-800">
+        <h3 class="border-b-2">table-layout</h3>
+        <p>controlling the table layout algorithm. <span class="text-red-500">.table-{auto/fixed}</span>. example:</p>
+        <!-- table-layout:auto; -->
+        <li>table-auto (allow table automaticly sized the columns to fit the amount of content!)</li>
+        <table class="bg-slate-800 table-auto text-white rounded-md">
+            <thead class="bg-slate-500">
+                <tr class="">
+                    <th class="">No</th>
+                    <th class="">Subject</th>
+                    <th class="">Explanation</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="">1</td>
+                    <td class="">Food review</td>
+                    <td class="">Lorem ipsum dolor sit amet consectetur adipisicing elit.</td>
+                </tr>
+                <tr>
+                    <td class="">2</td>
+                    <td class="">Lorem, ipsum dolor.</td>
+                    <td class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, tempora.</td>
+                </tr>
+            </tbody>
+        </table>
+        <!-- table-layout:fixed; -->
+        <li>table-fixed (ignore the content and used the fixed width to sized the columns)</li>
+        <table class="bg-slate-800 table-fixed text-white rounded-md">
+            <thead class="bg-slate-500">
+                <tr class="">
+                    <th class="">No</th>
+                    <th class="">Subject</th>
+                    <th class="">Explanation</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="">1</td>
+                    <td class="">Food review</td>
+                    <td class="">Lorem ipsum dolor sit amet consectetur adipisicing elit.</td>
+                </tr>
+                <tr>
+                    <td class="">2</td>
+                    <td class="">Lorem, ipsum dolor.</td>
+                    <td class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, tempora.</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <!-- table-layout-ends -->
+    <!-- caoption-side/caption-positions start  -->
+    <div class="p-2 my-2 rounded-md bg-sky-800">
+        <h3 class="border-b-2">caption-side</h3>
+        <p>Utilities for controlling the alignment of a caption element inside of a table. <span class="text-red-500">.caption-{top/bottom}</span>. example:</p>
+        <li class="border-y px-2 my-2">caption-top, example:</li>
+        <table class="border border-slate-700 bg-slate-800 table-auto">
+            <caption class="caption-top my-2">
+                Table 1.2: Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </caption>
+            <thead>
+                <tr class="bg-slate-700 text-left">
+                    <th class="p-2 font-mono">FullName</th>
+                    <th class="p-2 font-mono">Address</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="p-2 border border-slate-700">Franciss Bermonllto</td>
+                    <td class="p-2 border border-slate-700">Fraance, Londons Gg.53 Aolpo Number 13 Red-Mail</td>
+                </tr>
+                <tr>
+                    <td class="p-2 border border-slate-700">Belmonny</td>
+                    <td class="p-2 border border-slate-700">Bali, Indonesia. Hayam-Wuruk Gg 03 Number 09 White-House</td>
+                </tr>
+            </tbody>
+        </table>
+        <!-- caption-bottom -->
+        <li class="border-y px-2 my-2">caption-bottom, example:</li>
+        <table class="border border-slate-700 bg-slate-800 table-auto">
+            <caption class="caption-bottom my-2">
+                Table 1.2: Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </caption>
+            <thead>
+                <tr class="bg-slate-700 text-left">
+                    <th class="p-2 font-mono">FullName</th>
+                    <th class="p-2 font-mono">Address</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="p-2 border border-slate-700">Franciss Bermonllto</td>
+                    <td class="p-2 border border-slate-700">Fraance, Londons Gg.53 Aolpo Number 13 Red-Mail</td>
+                </tr>
+                <tr>
+                    <td class="p-2 border border-slate-700">Belmonny</td>
+                    <td class="p-2 border border-slate-700">Bali, Indonesia. Hayam-Wuruk Gg 03 Number 09 White-House</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <!-- caoption-side/caption-positions ends  -->
+    
+</body>
+</html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition and Animation -With*Tailwindcss</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-black text-white p-2">
+    <!-- start -->
+    <h1>Transition & Animaton -With*Tailwindcss</h1>
+    <div class="p-2 my-2 rounded-md bg-slate-800">
+        <!-- transition-poroperty -->
+        <h3 class="border-y">Transition-property</h3>
+        <p>controlling which css properties transition will be used and runs! <span class="text-red-400">.transition-{property}</span>. example:</p>
+        <div class="p-2 my-2 rounded-md bg-slate-200">
+            <button class="p-3 rounded-sm font-semibold bg-violet-600 transition ease-in-out delay-150 hover:scale-110 hover:bg-violet-900 hover:-translate-y-1 hover:rounded-md">Hover me!</button>
+        </div>
+
+        <br>
+        <!-- transition-duration -->
+        <h3 class="border-y">trasition-durations</h3>
+        <p>controlling the durations of an selected elements transitions. <span class="text-red-400">.duration-{amount?}</span>. example:</p>
+        <div class="p-2 my-2 rounded-md bg-slate-200 flex flex-row gap-2 flex-wrap">
+            <div class="p-2 grid">
+                <span class="text-slate-600">.duration-150</span>
+                <button class="p-3 my-1 rounded-md font-semibold bg-sky-400 transition duration-150 ease-in-out hover:-translate-y-1">Hover me!</button>
+            </div>
+            <div class="p-2 grid">
+                <span class="text-slate-600">.duration-300</span>
+                <button class="p-3 my-1 rounded-md font-semibold bg-sky-400 transition duration-300 ease-in-out hover:-translate-y-1">Hover me!</button>
+            </div>
+            <div class="p-2 grid">
+                <span class="text-slate-600">.duration-700</span>
+                <button class="p-3 my-1 rounded-md font-semibold bg-sky-400 transition duration-700 ease-in-out hover:-translate-y-1">Hover me!</button>
+            </div>
+        </div>
+
+        <br>
+        <!-- transition-timing-function -->
+        <h3 class="border-y">transition-timing-function</h3>
+        <p>controlling the easing of elements in css that got transition classes/utilitites! <span class="text-red-400">.ease-{timing-function}</span>. example:</p>
+        <!-- example: -->
+        <div class="p-2 my-2 rounded-md bg-slate-200 flex gap-2 flex-wrap">
+            <!-- ease-in -->
+            <div class="p-2 grid">
+                <span class="text-slate-700">ease-in</span>
+                <button class="ease-in duration-300 hover:scale-110 p-3 my-2 rounded-md bg-sky-500">Hover me!</button>
+            </div>
+            <!-- ease-out -->
+            <div class="p-2 grid">
+                <span class="text-slate-700">ease-out</span>
+                <button class="ease-out duration-300 hover:scale-110 p-3 my-2 rounded-md bg-sky-500">Hover me!</button>
+            </div>
+            <!-- ease-in-out -->
+            <div class="p-2 grid">
+                <span class="text-slate-700">ease-in-out</span>
+                <button class="ease-in-out duration-300 hover:scale-110 p-3 my-2 rounded-md bg-sky-500">Hover me!</button>
+            </div>
+        </div>
+
+        <br>
+        <!-- transition-delay -->
+        <h3 class="border-y">transition-delay</h3>
+        <p>controlling the delay of CSS transitions. <span class="text-red-500">.delay-{amount?}</span>. example:</p>
+        <div class="p-2 my-2 rounded-md bg-slate-200 flex flex-wrap gap-2">
+            <!-- delay-75 -->
+            <div class="p-2 grid">
+                <span class="text-slate-600">.delay-75</span>
+                <button class="p-3 my-2 font-semibold bg-sky-500 rounded-md transition delay-75 duration-150 ease-in-out hover:-translate-y-1">Hover me</button>
+            </div>
+            <!-- delay-300 -->
+            <div class="p-2 grid">
+                <span class="text-slate-600">.delay-300</span>
+                <button class="p-3 my-2 font-semibold bg-sky-500 rounded-md transition delay-300 duration-150 ease-in-out hover:-translate-y-1">Hover me</button>
+            </div>
+            <!-- delay-700 -->
+            <div class="p-2 grid">
+                <span class="text-slate-600">.delay-700</span>
+                <button class="p-3 my-2 font-semibold bg-sky-500 rounded-md transition delay-700 duration-150 ease-in-out hover:-translate-y-1">Hover me</button>
+            </div>
+        </div>
+    </div>
+    <!-- new=section -->
+    <div class="bg-gray-900 p-2 rounded-md">
+        <h1 class="border-x px-2">animations</h1>
+        <p>Utilities for animating elements with CSS animations. <span class="text-red-500">.animate-{property-values}</span>. example:</p>
+        <div class="p-2 my-2 rounded-md bg-slate-200 text-black">
+            <!-- animate-spin -->
+            <li class="my-2 border-y border-black">spin</li>
+            <div class="bg-slate-300 rounded-md p-2">
+                <div class="p-3 font-semibold w-fit rounded-md flex gap-2 cursor-no-drop justify-evenly text-white bg-indigo-700">
+                    <span class="h-5 w-5 animate-spin border-b-2 rounded-full border-b-white"></span>
+                    <p>Processing...</p>
+                </div>
+            </div>
+            <!-- animate-ping -->
+            <li class="my-2 border-y border-black">ping</li>
+            <div class=" rounded-md bg-slate-300 p-2">
+                <div class="bg-slate-900 w-fit text-white rounded-md p-3 relative cursor-not-allowed font-semibold">
+                    <p>Notifications!</p>
+                    <span class="h-5 w-5 animate-ping bg-sky-400 rounded-full absolute -top-2 -right-2"></span>
+                    <span class="h-3 w-3 rounded-full bg-sky-600 absolute -top-1 -right-1"></span>
+                </div>
+            </div>
+            <!-- aimate-pulse -->
+            <li class="my-2 border-y border-black">pulse/skleton animate</li>
+            <div class="p-2 rounded-md bg-slate-300 w-fit">
+                <div class="bg-slate-500 rounded-md p-3">
+                    <div class=" flex gap-4 place-items-center animate-pulse">
+                        <!-- left-content-circle -->
+                        <div class="bg-slate-700 rounded-full h-16 w-16"></div>
+                        <!-- box-content-right -->
+                        <div class="flex gap-2 py-2 flex-col">
+                            <!-- bar-1 -->
+                            <div class="rounded-full bg-slate-700 h-5 w-40"></div>
+                            <!-- box-bar-2 -->
+                            <div class="my-2">
+                                <div class="grid grid-cols-3 gap-2">
+                                    <div class="col-span-2 rounded-full bg-slate-700 h-5 w-full mb-2"></div>
+                                    <div class="col-span-1 rounded-full bg-slate-700 h-5"></div>
+                                </div>
+                                <div class="bg-slate-700 rounded-full h-5"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- animate-bounce -->
+            <li class="my-2 border-y border-black">bounce</li>
+            <div class="p-2 h-20 flex place-items-center place-content-center my-2 rounded-md bg-slate-300">
+                <p class="w-10 h-10 animate-bounce rounded-full bg-slate-900 text-white flex place-items-center place-content-center cursor-pointer hover:animate-none hover:ease-in hover:transition-all">⬇️</p>
+            </div>
+
+
+        </div>
+    </div>
+</body>
+</html>

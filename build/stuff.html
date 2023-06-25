@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>all here</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="p-5 bg-slate-800   ">
+    <!-- content-1 -->
+    <div class="w-full h-auto bg-cyan-500 text-white p-5 overflow-y-auto rounded-md">
+        <div class="flex justify-between font-semibold p-2 bg-sky-800">
+            <h1>My Logo</h1>
+            <div class="hide">
+                <a class="px-2 hover:border-b-2 border-white " href="">Button A</a>
+                <a class="px-2 hover:border-b-2 border-white " href="">Button B</a>
+                <a class="px-2 hover:border-b-2 border-white " href="">Button C</a>
+                <a class="px-2 hover:border-b-2 border-white " href="">Button D</a>
+            </div>
+        </div>
+        <div class="h-52 flex place-content-center place-items-center bg-fixed bg-cover" style="background-image: url(img/japan-bg.jpg);">
+            <h1 class="p-5 bg-black font-mono font-semibold ">My <br> LOGO</h1>
+        </div>
+        <div class="bg-white text-black px-2 py-5 grid">
+            <h5 class="text-center p-5">Our Client</h5>
+            <div class="grid grid-cols-1 gap-2 justify-center xl:grid-cols-2">
+                <div class="flex items-center gap-4">
+                    <img src="img/kayden.jpg" alt="Bambang" class="w-32 h-32 border-4 border-teal-600 rounded-full">
+                    <div>
+                        <p class="font-semibold ">Bambang</p>
+                        <span class="text-slate-300 text-sm border-b">CEO of Chicken-Nugget</span><br>
+                        <i class="text-slate-400">"Kind a fantastic outwork, great job!"</i>
+                    </div>
+                </div>
+                <div class="flex items-center gap-4">
+                    <img src="img/pp-2.jpg" alt="Joko" class="w-32 h-32 border-4 border-rose-600 rounded-full">
+                    <div>
+                        <p class="font-semibold ">Joko</p>
+                        <span class="text-slate-300 text-sm border-b">CEO of Chicken-Burgers</span><br>
+                        <i class="text-slate-400">"Kind a fantastic outwork, great job!"</i>
+                    </div>
+                </div>
+            </div>
+            <button class="rounded-md bg-rose-600 text-white font-semibold p-3 my-5 border-2 w-fit place-self-center hover:bg-rose-500 animate-bounce">View More!</button>
+        </div>
+        <div class="text-center bg-black text-white font-semibold p-5">
+            <h3>Footer</h3>
+        </div>
+    </div>
+
+    <br>
+    <hr>
+    <br>
+
+    <div class="w-full h-auto p-5 rounded-md  bg-teal-600 text-white">
+        <h5 class="px-5 py-3 text-center bg-slate-800">Registration-Forms</h5>
+        <form action="" class="p-5 bg-white text-black">
+            <div>
+                <label for="">First-name <span class="text-red-600">*</span></label>
+                <input required class="w-full outline-none bg-slate-300 text-black px-2 mb-2 rounded-sm text-sm" type="text">
+            </div>
+            <div>
+                <label for="">Last-name <span class="text-red-600">*</span></label>
+                <input required class="w-full outline-none bg-slate-300 text-black px-2 mb-2 rounded-sm text-sm" type="text">
+            </div>
+            <div>
+                <label for="">Username <span class="text-red-600">*</span></label>
+                <input required class="w-full outline-none bg-slate-300 text-black px-2 mb-2 rounded-sm text-sm" type="text">
+            </div>
+            <div>
+                <label for="">password <span class="text-red-600">*</span></label>
+                <input required class="w-full outline-none bg-slate-300 text-black px-2 mb-2 rounded-sm text-sm" type="password">
+            </div>
+            <div>
+                <label for="">email <span class="text-red-600">*</span></label>
+                <input required class="w-full outline-none bg-slate-300 text-black px-2 mb-2 rounded-sm text-sm" type="email">
+            </div>
+            <div class="mb-2">
+                <label for="">Gender <span class="text-red-600">***</span></label>
+                <div class="flex gap-4">
+                    <div>
+                        <input type="radio" value="female">
+                        <label for="">female</label>
+                    </div>
+                    <div>
+                        <input type="radio">
+                        <label for="">male</label>
+                    </div>
+                    <i class="text-xs">*no more than 2 type of gender i think :P</i>
+                </div>
+            </div>
+            <div class="grid">
+                <label for="">Address</label>
+                <textarea name="address" class="rounded-md bg-slate-300 text-black px-2" cols="20" rows="3"></textarea>
+            </div>
+            <button class="p-3 my-2 rounded-md bg-sky-500 text-white font-semibold hover:bg-blue-600 active:translate-y-1">Sign-Up</button>
+            <button class="p-3 my-2 rounded-md bg-red-500 text-white font-semibold hover:bg-rose-600 active:translate-y-1">Cancel</button>
+        </form>
+    </div>
+
+    <br>
+    <hr>
+    <br>
+
+    <div class="p-5 rounded-md w-full h-auto bg-rose-600">
+        <h5 class="py-3 px-5 border-b-2 text-white font-semibold">Calculator- <i class="text-teal-500">layout</i></h5>
+        <div class="grid grid-cols-4 gap-2 p-2 bg-slate-800 text-white my-2 mx-5 xl:mx-52 rounded-md" style="box-shadow: 5px 5px 2px lightgray;">
+            <div class="col-span-4 bg-white rounded-md p-5"></div>
+            <input class="p-2 hover:bg-slate-500 hover:text-white rounded-full text-orange-500" type="button" value="AC">
+            <input class="p-2 hover:bg-slate-500 hover:text-white rounded-full text-orange-500" type="button" value="Del">
+            <input class="p-2 hover:bg-slate-500 hover:text-white rounded-full text-orange-500" type="button" value="%">
+            <input class="p-2 hover:bg-slate-500 hover:text-white rounded-full text-orange-500" type="button" value="/">
+
+            <input class="p-2 hover:bg-slate-500 rounded-full" type="button" value="7">
+            <input class="p-2 hover:bg-slate-500 rounded-full" type="button" value="8">
+            <input class="p-2 hover:bg-slate-500 rounded-full" type="button" value="9">
+            <input class="p-2 hover:bg-slate-500 hover:text-white rounded-full text-orange-500" type="button" value="X">
+            
+            <input class="p-2 hover:bg-slate-500 rounded-full" type="button" value="4">
+            <input class="p-2 hover:bg-slate-500 rounded-full" type="button" value="5">
+            <input class="p-2 hover:bg-slate-500 rounded-full" type="button" value="6">
+            <input class="p-2 hover:bg-slate-500 hover:text-white rounded-full text-orange-500" type="button" value="-">
+
+            <input class="p-2 hover:bg-slate-500 rounded-full" type="button" value="1">
+            <input class="p-2 hover:bg-slate-500 rounded-full" type="button" value="2">
+            <input class="p-2 hover:bg-slate-500 rounded-full" type="button" value="3">
+            <input class="p-2 hover:bg-slate-500 hover:text-white rounded-full text-orange-500" type="button" value="+">
+
+            <input class="p-2 hover:bg-slate-500 rounded-full" type="button" value="00">
+            <input class="p-2 hover:bg-slate-500 rounded-full" type="button" value="0">
+            <input class="p-2 hover:bg-slate-500 rounded-full" type="button" value=".">
+            <input class="p-2 hover:bg-slate-500 bg-orange-500 rounded-full" type="button" value="=">
+        </div>
+    </div>
+
+    <br>
+    <hr>
+    <br>
+
+    <div class="p-5 rounded-md  h-auto bg-amber-500">
+        <div class="grid bg-violet-700 p-2 rounded-md text-white">
+            <div class="flex justify-end gap-2 p-2">
+                <h5>Gmail</h5>
+                <h5>Picture</h5>
+                <button class="hover:border-b">Login</button>
+            </div>
+            <h1 class="place-self-center p-2 text-3xl rounded-md bg-black my-2">BAMBANG</h1>
+            <div class="grid">
+                <input type="text" class="w-full rounded-full p-2 my-2 text-slate-700 outline-none " placeholder="Search..">
+                <div class="text-center">
+                    <button class="px-3 py-3 bg-slate-600 my-2 rounded-md">Search</button>
+                    <button class="px-3 py-3 bg-slate-600 my-2 rounded-md">Search by Image</button>
+                </div>
+                <p class="text-center">Bambang is available in: <a href="#" class="text-red-600 hover:border-b-2">Japanesse</a> <a href="#" class="text-red-600 hover:border-b-2">English</a></p>
+            </div>
+            <div>
+                <p><a href="#" class="mx-2 hover:border-b-2 mb-2">Japanesse</a></p>
+                <div class="flex justify-between py-2 bg-slate-700">
+                    <div>
+                        <a href="#" class="hover:border-b-2 mx-2">About</a>
+                        <a href="#" class="hover:border-b-2 mx-2">Bussiness</a>
+                    </div>
+                    <div>
+                        <a href="#" class="hover:border-b-2 mx-2">Privacy</a>
+                        <a href="#" class="hover:border-b-2 mx-2">Settings</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
