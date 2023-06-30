@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tailwindcss-26</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="box-border bg-zinc-500">
+    <dialog class="p-3 sm:p-5 rounded-md w-auto h-auto xl:m-20 overflow-y-auto" id="menu">
+        <div class="flex justify-between items-center border-b-2 py-4 border-black">
+            <h3 class="font-bold text-black capitalize">Take a look our menu!</h3>
+            <a href="#" class="p-2 bg-black text-white font-semibold hover:bg-slate-500 rounded"
+                onclick="document.querySelector('#menu').close();">x</a>
+        </div>
+        <div class="my-2">
+            <div class="my-2">
+                <h3 class="font-semibold bg-rose-500 text-white p-2">Starter</h3>
+                <div class="text-slate-100 font-medium p-2 border-b border-white bg-slate-100">
+                    <div class="flex justify-between hover:bg-slate-200">
+                        <p class="text-slate-600">Tomato Soup</p>
+                        <p class="text-orange-500">$5,99</p>
+                    </div>
+                    <div class="flex justify-between hover:bg-slate-200">
+                        <p class="text-slate-600">Fruit Salad</p>
+                        <p class="text-orange-500">$8,99</p>
+                    </div>
+                    <div class="flex justify-between hover:bg-slate-200">
+                        <p class="text-slate-600">Waffle / Bread</p>
+                        <p class="text-orange-500">$3,99</p>
+                    </div>
+                    <div class="flex justify-between hover:bg-slate-200">
+                        <p class="text-slate-600">Puddings</p>
+                        <p class="text-orange-500">$2,99</p>
+                    </div>
+                    <div class="flex justify-between hover:bg-slate-200">
+                        <p class="text-slate-600">Ice-Cream</p>
+                        <p class="text-orange-500">$2,99</p>
+                    </div>
+                    <div class="flex justify-between hover:bg-slate-200">
+                        <p class="text-slate-600">Glass-Wine</p>
+                        <p class="text-orange-500">$9,99</p>
+                    </div>
+                    <div class="flex justify-between hover:bg-slate-200">
+                        <p class="text-slate-600">Juice <span class="text-red-300 border-b border-slate-700">pick any
+                                fruit.</span></p>
+                        <p class="text-orange-500">$9,99</p>
+                    </div>
+                </div>
+            </div>
+            <div class="my-2">
+                <h3 class="font-semibold bg-orange-700 text-white p-2">Main Course</h3>
+                <div class="text-slate-100 font-medium p-2 border-b border-white bg-slate-100">
+                    <div class="flex justify-between hover:bg-slate-200">
+                        <p class="text-slate-600">Tomahawk Steak</p>
+                        <p class="text-orange-500">$25,99</p>
+                    </div>
+                    <div class="flex justify-between hover:bg-slate-200">
+                        <p class="text-slate-600">Beef Ribs</p>
+                        <p class="text-orange-500">$15,99</p>
+                    </div>
+                    <div class="flex justify-between hover:bg-slate-200">
+                        <p class="text-slate-600">Burgers w-Sausages</p>
+                        <p class="text-orange-500">$9,99</p>
+                    </div>
+                    <div class="flex justify-between hover:bg-slate-200">
+                        <p class="text-slate-600">Onion Rings</p>
+                        <p class="text-orange-500">$7,99</p>
+                    </div>
+                    <div class="flex justify-between hover:bg-slate-200">
+                        <p class="text-slate-600">Spagetti Carbonarra</p>
+                        <p class="text-orange-500">$11,99</p>
+                    </div>
+                    <div class="flex justify-between hover:bg-slate-200">
+                        <p class="text-slate-600">Italian style Pizza</p>
+                        <p class="text-orange-500">$15,99</p>
+                    </div>
+                    <div class="flex justify-between hover:bg-slate-200">
+                        <p class="text-slate-600">Smoke Chicken Panarila</p>
+                        <p class="text-orange-500">$12,99</p>
+                    </div>
+                    <div class="flex justify-between hover:bg-slate-200">
+                        <p class="text-slate-600">12 Row Fresh-Sushi</p>
+                        <p class="text-orange-500">$27,99</p>
+                    </div>
+                    <div class="flex justify-between hover:bg-slate-200">
+                        <p class="text-slate-600">Fried Rice</p>
+                        <p class="text-orange-500">$8,99</p>
+                    </div>
+                    <div class="flex justify-between hover:bg-slate-200">
+                        <p class="text-slate-600">Fried Noodle with-Seafood</p>
+                        <p class="text-orange-500">$14,99</p>
+                    </div>
+                    <div class="flex justify-between hover:bg-slate-200">
+                        <p class="text-slate-600">Javanesse-style Fried-Tofu</p>
+                        <p class="text-orange-500">$6,99</p>
+                    </div>
+                    <div class="flex justify-between hover:bg-slate-200">
+                        <p class="text-slate-600">Spring-rool seafood</p>
+                        <p class="text-orange-500">$10,99</p>
+                    </div>
+                    <div class="flex justify-between hover:bg-slate-200">
+                        <p class="text-slate-600">Gumbo with-Rice</p>
+                        <p class="text-orange-500">$8,99</p>
+                    </div>
+                </div>
+            </div>
+            <div class="my-2">
+                <h3 class="font-semibold p-2 text-white bg-green-500">Desert</h3>
+                <div class="bg-slate-100 font-medium p-2 border-b border-white">
+                    <div class="flex justify-between hover:bg-slate-200">
+                        <p class="text-slate-600">Slice Choco-Cake</p>
+                        <div class="text-rose-500">$3,99</div>
+                    </div>
+                    <div class="flex justify-between hover:bg-slate-200">
+                        <p class="text-slate-600">Slice Melon-Cake</p>
+                        <div class="text-rose-500">$3,99</div>
+                    </div>
+                    <div class="flex justify-between hover:bg-slate-200">
+                        <p class="text-slate-600">Slice Apple-Cake</p>
+                        <div class="text-rose-500">$3,99</div>
+                    </div>
+                    <div class="flex justify-between hover:bg-slate-200">
+                        <p class="text-slate-600">Martini</p>
+                        <div class="text-rose-500">$9,99</div>
+                    </div>
+                    <div class="flex justify-between hover:bg-slate-200">
+                        <p class="text-slate-600">Tequila</p>
+                        <div class="text-rose-500">$7,99</div>
+                    </div>
+                    <div class="flex justify-between hover:bg-slate-200">
+                        <p class="text-slate-600">Bourboun</p>
+                        <div class="text-rose-500">$7,99</div>
+                    </div>
+                    <div class="flex justify-between hover:bg-slate-200">
+                        <p class="text-slate-600">Steak-Dice (8pcs)</p>
+                        <div class="text-rose-500">$9,99</div>
+                    </div>
+                    <div class="flex justify-between hover:bg-slate-200">
+                        <p class="text-slate-600">Choco-Bomb (5pcs)</p>
+                        <div class="text-rose-500">$8,99</div>
+                    </div>
+                    <div class="flex justify-between hover:bg-slate-200">
+                        <p class="text-slate-600">Gorengan (3pcs)</p>
+                        <div class="text-rose-500">$5,99</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </dialog>
+    <!-- dialgo-2 -->
+    <dialog id="contact" class="w-auto h-auto p-3 sm:p-5 rounded-md xl:m-32 my-20 bg-slate-800">
+        <div class="flex justify-between items-center p-2">
+            <h3 class="font-bold text-white">Contact</h3>
+            <a href="#" class="hover:bg-slate-500 hover:text-white bg-slate-200 text-black font-semibold p-2" onclick="document.querySelector('#contact').close();">X</a>
+        </div>
+        <p class="my-2 font-medium text-slate-500 border-b-2">Plase have a reserve <span
+                class="text-sky-500">first!</span></p>
+        <form action="">
+            <input type="text" class="w-full my-2 p-1 rounded-sm text-black" placeholder="Name">
+            <input type="text" class="w-full my-2 p-1 rounded-sm text-black" placeholder="Reservator-Name">
+            <div class="flex gap-2">
+                <input type="number" class="w-full my-2 p-1 rounded-sm text-black" placeholder="How Many People?">
+                <input type="date" class="w-full my-2 p-1 rounded-sm text-black">
+            </div>
+            <input type="text" class="w-full rounded-sm p-1 my-2 text-black" placeholder="Any Special Requirement?">
+            <input type="button" value="Send Message" class="p-3 my-2 rounded bg-sky-500 hover:bg-sky-400 text-white font-semibold cursor-pointer">
+        </form>
+    </dialog>
+    <!-- main -->
+    <main class="flex justify-center items-center h-screen w-full">
+        <div class="bg-zinc-800 rounded p-5 xl:p-8 h-auto">
+            <h1 class="p-2 bg-slate-800 font-semibold text-white rounded-sm border border-slate-600">Online <br><span
+                    class="text-rose-600">Restaurant</span></h1>
+            <p class="font-medium text-white capitalize my-2"><i>Best food in <span
+                        class="text-orange-500 ">town!</span></i>
+            </p>
+            <div class="flex gap-2">
+                <button class="p-3 rounded bg-slate-700 text-white  font-semibold hover:bg-slate-600"
+                    onclick="openMenu();">Menu</button>
+                <button class="p-3 rounded bg-slate-700 text-white  font-semibold hover:bg-slate-600"
+                    onclick="openContact();">Contact</button>
+            </div>
+        </div>
+    </main>
+    <script>
+        function openMenu() {
+            document.getElementById('menu').showModal();
+        }
+        function openContact() {
+            document.getElementById('contact').showModal();
+        }
+    </script>
+</body>
+
+</html>

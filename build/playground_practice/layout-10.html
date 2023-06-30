@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice-layout-10 with?tailwindcss</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <div class="p-5 grid grid-cols-1 xl:grid-cols-3 gap-4 xl:gap-8">
+        <!-- content-1 -->
+        <div class="w-full xl:col-span-1">
+            <div class="w-full h-40 bg-slate-700 flex justify-center items-center">
+                <h1 class="p-2 font-semibold text-white xl:text-xl border-b">Picture goes here</h1>
+            </div>
+            <div class="p-2 bg-slate-100 font-medium xl:text-lg">
+                <p>💼 Freelance</p>
+                <p>📌 New-York, Delhi 2991</p>
+                <p>📧 Example@mail.com</p>
+                <p>📞 +229110002</p>
+            </div>
+            <div class="font-semibold border-y bg-slate-100 p-2">
+                <h1 class="mb-2 border-b border-black xl:text-lg">Knowing Programming Language</h1>
+                <div>
+                    <p class="px-1 mb-2">Javascript</p>
+                    <div class="h-4 xl:h-5 rounded-xl w-full bg-white mb-2 xl:mb-4">
+                        <div class="h-4 xl:h-5 rounded-xl text-white  text-center text-xs xl:text-sm font-bold bg-sky-500"
+                            style="width: 50%;">50%</div>
+                    </div>
+                    <p class="px-1 mb-2">Css 3</p>
+                    <div class="h-4 xl:h-5 rounded-xl w-full mb-2 xl:mb-4 bg-white">
+                        <div class="h-4 xl:h-5 rounded-xl text-white  text-center text-xs xl:text-sm font-bold bg-sky-500"
+                            style="width: 80%;">80%</div>
+                    </div>
+                    <p class="px-1 mb-2">HTMl 5</p>
+                    <div class="h-4 xl:h-5 rounded-xl w-full mb-2 xl:mb-4 bg-white">
+                        <div class="h-4 xl:h-5 rounded-xl text-white  text-center text-xs xl:text-sm font-bold bg-sky-500"
+                            style="width: 75%;">75%</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- content-2 -->
+        <div class="w-full xl:col-span-2">
+            <div class="bg-slate-200 p-5">
+                <h1 class="text-base xl:text-lg font-semibold font-serif border-b border-black mb-2">Work-Experience
+                </h1>
+                <div class="hover:bg-slate-300 p-2 border-b border-slate-300">
+                    <h1 class="font-medium font-mono text-base xl:text-lg">Havard Uni, Physic</h1>
+                    <p class="text-rose-600"><i>Mar 2019 - Jun 2019</i></p>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta, fuga. Quae, quidem sequi culpa
+                        eligendi aspernatur, non reiciendis laborum deleniti vero velit, labore commodi sed ut adipisci
+                        iusto vitae deserunt!</p>
+                </div>
+                <div class="hover:bg-slate-300 p-2 border-b border-slate-300">
+                    <h1 class="font-medium font-mono text-base xl:text-lg">Google, Programmer-Intermedite</h1>
+                    <p class="text-rose-600"><i>Aug 2019 - Apr 2020</i></p>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta, fuga. Quae, quidem sequi culpa
+                        eligendi aspernatur, non reiciendis laborum deleniti vero velit, labore commodi sed ut adipisci
+                        iusto vitae deserunt!</p>
+                </div>
+                <div class="hover:bg-slate-300 p-2 border-b border-slate-300">
+                    <h1 class="font-medium font-mono text-base xl:text-lg">UAE- Server Side</h1>
+                    <p class="text-rose-600"><i>Jun 2020 - Now</i></p>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta, fuga. Quae, quidem sequi culpa
+                        eligendi aspernatur, non reiciendis laborum deleniti vero velit, labore commodi sed ut adipisci
+                        iusto vitae deserunt!</p>
+                </div>
+            </div>
+            <div class="my-2 bg-slate-200 p-5">
+                <h3 class="border-b border-black font-semibold font-serif mb-2 text-base xl:text-lg">Education-Records
+                </h3>
+                <div class="p-2 border-b border-b-slate-300 hover:bg-slate-300">
+                    <h1 class="text-base xl:text-lg font-mono font-medium">New-York Clossium JHS</h1>
+                    <p class="text-rose-600"><i>2011 - 2014</i></p>
+                    <p class="">"What a Fantastic exsperience!"</p>
+                </div>
+                <div class="p-2 border-b border-b-slate-300 hover:bg-slate-300">
+                    <h1 class="text-base xl:text-lg font-mono font-medium">State 023-SHS</h1>
+                    <p class="text-rose-600"><i>2014 - 2017</i></p>
+                    <p class="">"Almost got the first at all course! dang!"</p>
+                </div>
+                <div class="p-2 border-b border-b-slate-300 hover:bg-slate-300">
+                    <h1 class="text-base xl:text-lg font-mono font-medium">California Comp-Sience</h1>
+                    <p class="text-rose-600"><i>2017 - 2019</i></p>
+                    <p class="">"Great Year! Great's Friens and Partners!"</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div
+        class="bg-slate-800 text-white font-semibold font-mono text-base xl:text-lg grid justify-center items-center text-center p-10 xl:p-20">
+        <h1 class="text-teal-500">Its Me!</h1>
+        <div class="mb-2">
+            <a class="hover:border-b mx-2" href="#">Instagram</a>
+            <a class="hover:border-b mx-2" href="#">Twitter</a>
+            <a class="hover:border-b mx-2" href="#">Youtube</a>
+        </div>
+        <p>Powered by <a class="hover:border-b mx-2" href="#">Me.</a></p>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice-layout-12 with?tailwindcss</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="box-border scroll-smooth">
+    <nav
+        class="fixed w-full z-10 bottom-0 flex justify-between items-center gap-2 bg-white text-black font-semibold text-sm xl:text-lg">
+        <a class="hover:bg-slate-500 p-4 xl:p-5 hover:text-white" href="#">Home</a>
+        <a class="hover:bg-slate-500 p-4 xl:p-5 hover:text-white" href="#">Jess & Char</a>
+        <a class="hover:bg-slate-500 p-4 xl:p-5 hover:text-white" href="#">Wedding</a>
+        <a class="hover:bg-slate-500 p-4 xl:p-5 hover:text-white" href="#">RSVP</a>
+    </nav>
+    <header class="h-screen w-full bg-no-repeat bg-center bg-cover flex justify-center items-center"
+        style="background-image: url(../img/new/bg-4.jpg);">
+        <div class="font-serif p-2 text-lg xl:text-3xl text-center font-semibold text-slate-800">
+            <h1>Jessica & Charles</h1>
+            <p>Are Getting Married</p>
+            <p><i class="border-b-2 bg-teal-500 text-white rounded-xl">29 Oct 2018</i></p>
+        </div>
+    </header>
+    <div class="px-10 xl:px-32">
+        <h3 class="p-4 my-1 text-base xl:text-xl font-semibold text-center">Jessice & Charles</h3>
+        <img src="../img/new/bg-2.png" class="w-full rounded-md xl:rounded-xl my-4 xl:my-6"
+            style="box-shadow: 5px 5px 4px grey;">
+        <p class="my-2 xl:my-5 text-base xl:text-lg font-medium break-all">Lorem ipsum, dolor sit amet consectetur
+            adipisicing elit. Nesciunt vel impedit molestiae ipsam, reprehenderit nemo nobis saepe itaque,
+            temporibus
+            sed cum consequatur beatae asperiores voluptas est voluptates esse illum enim ab magni delectus.
+            Voluptas,
+            ex officia perspiciatis minus quis nobis dolore. Doloremque laboriosam repudiandae ad non ea provident
+            repellendus sapiente.</p>
+        <div class="p-2 text-center">
+            <button
+                class="text-center my-2 px-4 py-3 bg-teal-500 text-white font-semibold hover:bg-teal-400 cursor-pointer">Wedding
+                Details</button>
+        </div>
+    </div>
+    <div class="h-[700px] w-full flex justify-center items-center bg-cover font-semibold opacity-80 hover:opacity-100"
+        style="background-image: url(../img/wedding.jpg);">
+        <h1 class="text-lg xl:text-3xl text-white font-sans bg-slate-500 p-2 rounded-md ">You Are Invited!</h1>
+    </div>
+    <div class="px-10 xl:px-32 p-5">
+        <div>
+            <h3 class="text-center text-base xl:text-xl font-semibold p-2">The Wedding</h3>
+            <img src="../img/new/bg-1.jpg" class="my-2 xl:my-5 rounded-md xl:rounded-xl"
+                style="box-shadow: 5px 5px 4px grey;">
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-2 xl:gap-5 my-5 xl:my-10">
+            <div class="p-2 xl:p-5 xl:text-center bg-slate-100 rounded-md xl:rounded-xl hover:bg-slate-300">
+                <h3 class="font-semibold text-base xl:text-xl p-2 text-center">When</h3>
+                <p>Wedding Ceremony - <span class="text-red-500 font-bold"><i>2:00 PM</i></span></p>
+                <p>Reception & Dinner - <span class="text-red-500 font-bold"><i>5:15 PM</i></span></p>
+            </div>
+            <div class="p-2 xl:p-5 xl:text-center bg-slate-100 rounded-md xl:rounded-xl hover:bg-slate-300">
+                <h3 class="font-semibold text-base xl:text-xl p-2 text-center">Where</h3>
+                <p>Wedding Ceremony - <span class="text-red-500 font-bold"><i>Gala Theater, New York</i></span></p>
+                <p>Reception & Dinner - <span class="text-red-500 font-bold"><i>Ratatoullie-Restaurant</i></span></p>
+            </div>
+        </div>
+    </div>
+    <div
+        class="p-10 xl:py-20 flex justify-center items-center bg-gradient-to-tr from-rose-600 to-orange-500 text-white my-2 xl:my-5">
+        <div class="p-5 xl:p-10 text-center">
+            <h1 class="font-bold">HOPE YOU CAN MAKE IT</h1>
+            <p>Kindly Respond very soon for Reservation!</p>
+            <button
+                class="bg-white px-5 py-3 text-black font-semibold rounded-md xl:rounded-lg my-2 xl:my-5 hover:bg-black hover:text-white"
+                onclick="document.querySelector('#tbs').showModal();">RSVP</button>
+        </div>
+    </div>
+    <dialog id="tbs" class="bg-slate-100 rounded-md backdrop-opacity-50">
+        <h3 class="text-lg xl:text-xl font-semibold border-b border-teal-500">Please fill the form for reservation!</h3>
+        <form action="" class="">
+            <input required
+                class="w-full p-2 rounded-sm my-2 text-black outline-none border-b border-slate-500 bg-transparent"
+                type="text" placeholder="Full Name">
+            <input required
+                class="w-full p-2 rounded-sm my-2 text-black outline-none border-b border-slate-500 bg-transparent"
+                type="email" placeholder="E-mail">
+            <input required
+                class="w-full p-2 rounded-sm my-2 text-black outline-none border-b border-slate-500 bg-transparent"
+                type="number" placeholder="How Many People?">
+            <input required
+                class="w-full p-2 rounded-sm my-2 text-black outline-none border-b border-slate-500 bg-transparent"
+                type="text" placeholder="Invitaton Codes">
+            <div class="flex justify-between">
+                <input type="button" value="Send"
+                    class="bg-sky-400 px-5 py-3 text-white rounded-sm font-semibold cursor-pointer hover:bg-sky-500">
+                <input type="button" value="Cancel"
+                    class="bg-red-500 px-5 py-3 text-white rounded-sm font-semibold cursor-pointer hover:bg-red-600"
+                    onclick="document.querySelector('#tbs').close()">
+            </div>
+        </form>
+    </dialog>
+</body>
+
+</html>

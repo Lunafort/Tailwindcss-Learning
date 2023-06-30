@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice-layout-8 with?tailwindcss</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="box-border">
+    <nav class="bg-slate-700 text-white flex justify-between items-center p-4 sticky top-0"
+        style="box-shadow: 0 5px 2px grey;">
+        <div class="relative">
+            <a class="p-2 hover:bg-slate-500 hover:text-white font-semibold" href="#" onclick="openTabs();">=</a>
+            <div class="hidden absolute bg-slate-500 w-52 -left-5 top-8" id="tabs">
+                <a class="p-2 hover:bg-slate-800 hover:text-white font-semibold" href="#"
+                    onclick="document.querySelector('#tabs').style.display = 'none';">Close Menu</a>
+                <a class="p-2 hover:bg-slate-800 hover:text-white font-semibold" href="#">Food</a>
+                <a class="p-2 hover:bg-slate-800 hover:text-white font-semibold" href="#">About</a>
+            </div>
+        </div>
+        <a class="p-2 hover:bg-slate-500 hover:text-white font-semibold" href="#">Mail</a>
+        <a class="p-2 hover:bg-slate-500 hover:text-white font-semibold" href="#">MyFood</a>
+    </nav>
+    <main>
+        <!-- menus -->
+        <div class="grid grid-cols-1 xl:grid-cols-4 gap-4 xl:gap-8 p-5 mx-3 xl:mx-32">
+            <div class="rounded-md bg-slate-200" style="box-shadow: 5px 5px 2px slateblue;">
+                <div class="w-full h-52 bg-slate-700" style="border-radius: 10px 10px 0 0;"></div>
+                <div class="p-2 text-black">
+                    <h2 class="font-bold">Food Title</h2>
+                    <p class="break-all">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus dolore
+                        repellendus odio iure
+                        laborum hic perferendis magni incidunt maiores temporibus?</p>
+                </div>
+            </div>
+            <div class="rounded-md bg-slate-200" style="box-shadow: 5px 5px 2px slateblue;">
+                <div class="w-full h-52 bg-slate-700" style="border-radius: 10px 10px 0 0;"></div>
+                <div class="p-2 text-black">
+                    <h2 class="font-bold">Food Title</h2>
+                    <p class="break-all">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus dolore
+                        repellendus odio iure
+                        laborum hic perferendis magni incidunt maiores temporibus?</p>
+                </div>
+            </div>
+            <div class="rounded-md bg-slate-200" style="box-shadow: 5px 5px 2px slateblue;">
+                <div class="w-full h-52 bg-slate-700" style="border-radius: 10px 10px 0 0;"></div>
+                <div class="p-2 text-black">
+                    <h2 class="font-bold">Food Title</h2>
+                    <p class="break-all">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus dolore
+                        repellendus odio iure
+                        laborum hic perferendis magni incidunt maiores temporibus?</p>
+                </div>
+            </div>
+            <div class="rounded-md bg-slate-200" style="box-shadow: 5px 5px 2px slateblue;">
+                <div class="w-full h-52 bg-slate-700" style="border-radius: 10px 10px 0 0;"></div>
+                <div class="p-2 text-black">
+                    <h2 class="font-bold">Food Title</h2>
+                    <p class="break-all">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus dolore
+                        repellendus odio iure
+                        laborum hic perferendis magni incidunt maiores temporibus?</p>
+                </div>
+            </div>
+            <div class="rounded-md bg-slate-200" style="box-shadow: 5px 5px 2px slateblue;">
+                <div class="w-full h-52 bg-slate-700" style="border-radius: 10px 10px 0 0;"></div>
+                <div class="p-2 text-black">
+                    <h2 class="font-bold">Food Title</h2>
+                    <p class="break-all">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus dolore
+                        repellendus odio iure
+                        laborum hic perferendis magni incidunt maiores temporibus?</p>
+                </div>
+            </div>
+            <div class="rounded-md bg-slate-200" style="box-shadow: 5px 5px 2px slateblue;">
+                <div class="w-full h-52 bg-slate-700" style="border-radius: 10px 10px 0 0;"></div>
+                <div class="p-2 text-black">
+                    <h2 class="font-bold">Food Title</h2>
+                    <p class="break-all">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus dolore
+                        repellendus odio iure
+                        laborum hic perferendis magni incidunt maiores temporibus?</p>
+                </div>
+            </div>
+            <div class="rounded-md bg-slate-200" style="box-shadow: 5px 5px 2px slateblue;">
+                <div class="w-full h-52 bg-slate-700" style="border-radius: 10px 10px 0 0;"></div>
+                <div class="p-2 text-black">
+                    <h2 class="font-bold">Food Title</h2>
+                    <p class="break-all">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus dolore
+                        repellendus odio iure
+                        laborum hic perferendis magni incidunt maiores temporibus?</p>
+                </div>
+            </div>
+            <div class="rounded-md bg-slate-200" style="box-shadow: 5px 5px 2px slateblue;">
+                <div class="w-full h-52 bg-slate-700" style="border-radius: 10px 10px 0 0;"></div>
+                <div class="p-2 text-black">
+                    <h2 class="font-bold">Food Title</h2>
+                    <p class="break-all">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus dolore
+                        repellendus odio iure
+                        laborum hic perferendis magni incidunt maiores temporibus?</p>
+                </div>
+            </div>
+        </div>
+        <!-- pagination -->
+        <div class="text-center my-10 p-5 mx-10 xl:mx-32">
+            <a class="p-3 rounded-xl mx-1 my-2 bg-black text-white hover:bg-black hover:text-white " href="#">1</a>
+            <a class="p-3 rounded-xl mx-1 my-2 hover:bg-black hover:text-white " href="#">2</a>
+            <a class="p-3 rounded-xl mx-1 my-2 hover:bg-black hover:text-white " href="#">3</a>
+            <a class="p-3 rounded-xl mx-1 my-2 hover:bg-black hover:text-white " href="#">4</a>
+            <a class="p-3 rounded-xl mx-1 my-2 hover:bg-black hover:text-white " href="#">5</a>
+            <a class="p-3 rounded-xl mx-1 my-2 hover:bg-black hover:text-white " href="#">..</a>
+            <a class="p-3 rounded-xl mx-1 my-2 hover:bg-black hover:text-white " href="#">>></a>
+        </div>
+        <hr class="border-black my-5">
+        <!-- about -->
+        <div class="mx-10 xl:mx-32">
+            <h3 class="text-center font-semibold text-md xl:text-2xl">About Me, The Chef!</h3>
+            <div class="w-full border-2 bg-slate-700 h-96 rounded-md flex justify-center items-center my-5">
+                <p class="font-semibold text-white p-2 border-b text-md xl:text-2xl">Image goes here!</p>
+            </div>
+            <div>
+                <h3 class="text-md xl:text-2xl text-left xl:text-center font-semibold mb-2">Who am I</h3>
+                <p class="text-slate-500 text-left xl:text-center font-semibold mb-2"><i>with passions and dreams!</i>
+                </p>
+                <p class="indent-4 first-letter:text-3xl first-letter:text-teal-500">Lorem ipsum dolor sit amet
+                    consectetur adipisicing elit. Exercitationem nihil ad sed fuga aspernatur
+                    cupiditate ratione alias eligendi accusantium expedita sunt mollitia voluptas, necessitatibus
+                    maiores deleniti officiis tenetur, obcaecati officia praesentium, provident dolores magnam impedit
+                    commodi rerum. Fugit saepe laborum architecto, quas maxime unde molestiae veniam rem laboriosam
+                    tenetur est!</p>
+            </div>
+        </div>
+        <hr class="border-black my-2">
+        <!-- footer -->
+        <div class="grid grid-cols-1 xl:grid-cols-3 gap-4 mx-10 xl:mx-32">
+            <div>
+                <h3 class="my-2 text-md xl:text-2xl font-semibold font-serif">FOOTER</h3>
+                <p class="indent-6  my-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis
+                    accusamus nostrum repudiandae
+                    pariatur alias. Sequi aut, assumenda distinctio alias eos fugit, deleniti eveniet quam placeat
+                    beatae modi aperiam numquam delectus.</p>
+                <p class="my-2">Powered by <a href="#" class="border-black hover:border-b text-teal-500">Me.</a></p>
+            </div>
+            <div>
+                <h3 class="my-2 text-md xl:text-2xl font-semibold font-serif">BLOG POST</h3>
+                <div class="grid gap-2 my-2">
+                    <div class="flex gap-4 items-center border-b border-black p-2 hover:bg-slate-300">
+                        <div class="h-16 w-16 my-2 rounded-md bg-slate-700" style="box-shadow: 7px 7px 2px lightblue;">
+                        </div>
+                        <div>
+                            <h3>Lorem</h3>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-4 items-center border-b border-black p-2 hover:bg-slate-300">
+                        <div class="h-16 w-16 my-2 rounded-md bg-slate-700" style="box-shadow: 7px 7px 2px lightblue;">
+                        </div>
+                        <div>
+                            <h3>Lorem</h3>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <h3 class="my-2 text-md xl:text-2xl font-semibold font-serif">PUPULAR POST</h3>
+                <p class="p-2 my-2">
+                    <span class="text-white bg-slate-500 p-2 my-2">Travel</span>
+                    <span class="text-white bg-slate-500 p-2 my-2">IKEA</span>
+                    <span class="text-white bg-slate-500 p-2 my-2">London</span>
+                    <span class="text-white bg-slate-500 p-2 my-2">Croisant</span>
+                    <span class="text-white bg-slate-500 p-2 my-2">Trip</span>
+                    <span class="text-white bg-slate-500 p-2 my-2">Journey</span>
+                    <span class="text-white bg-slate-500 p-2 my-2">Mindset</span>
+                    <span class="text-white bg-slate-500 p-2 my-2">Idea</span>
+                </p>
+            </div>
+        </div>
+    </main>
+    <script>
+        function openTabs() {
+            const tab = document.querySelector('#tabs');
+            if (tab.style.display === 'grid') {
+                tab.style.display = 'none';
+            } else {
+                tab.style.display = 'grid';
+            }
+        }
+    </script>
+</body>
+
+</html>

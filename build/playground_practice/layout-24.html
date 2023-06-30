@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tailwindcss-24</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body class="box-border">
+    <nav class="font-medium flex justify-between bg-black p-2">
+        <a href="#" class="p-2 rounded hover:bg-white hover:text-black text-white">Home</a>
+        <a href="#about" class="p-2 rounded hover:bg-white hover:text-black text-white">About</a>
+        <a href="#contact" class="p-2 rounded hover:bg-white hover:text-black text-white">Menu</a>
+        <a href="#location" class="p-2 rounded hover:bg-white hover:text-black text-white">Where</a>
+    </nav>
+    <header class="flex flex-col h-96 p-5 justify-between bg-cover bg-fixed"
+        style="background-image: url(../img/new/bg-1.jpg);">
+        <div class="place-self-center my-auto shadow-lg shadow-slate-400">
+            <h1 class="p-5 bg-slate-100 text-lg xl:text-xl font-semibold rounded">
+                The<br><span class="text-teal-500">Cafe</span>
+            </h1>
+        </div>
+        <div class="hidden sm:flex justify-between font-semibold">
+            <p class="p-2 bg-black text-white">Open From 5Pm to 8am</p>
+            <p class="p-2">23 Street London, Delhi</p>
+        </div>
+    </header>
+    <main class="p-2 xl:px-52 text-base xl:text-lg bg-slate-900 text-white">
+        <!-- about -->
+        <div id="about" class="text-base xl:text-lg ">
+            <h1 class="p-2 xl:p-5 border-b-2 font-semibold text-center">About the Cafe</h1>
+            <div class="">
+                <p class="text-base my-2 break-all indent-8">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Blanditiis atque quasi in distinctio debitis omnis quam libero, cum ad ipsa voluptas dicta ut
+                    consectetur enim. Natus recusandae mollitia esse cumque, consectetur nesciunt velit soluta possimus
+                    eligendi. Ducimus qui incidunt consectetur, molestiae pariatur, laudantium fuga cumque iusto ea
+                    suscipit expedita saepe!</p>
+                <p class="my-2 text-base border-l-4 p-1 border-slate-700 bg-slate-300 text-black">Lorem ipsum dolor sit
+                    amet consectetur adipisicing elit. Quasi et, cupiditate nisi reprehenderit nulla id. Libero est,
+                    expedita culpa blanditiis magni nihil corrupti? Laboriosam id expedita officiis dolores repudiandae
+                    dolor?</p>
+            </div>
+            <div>
+                <img src="../img/kitchen-2.jpg" alt="pp" class="w-full h-auto rounded-sm my-4">
+                <p><strong>Opening Hours: </strong><span class="text-slate-400">everyday from 5Pm until 8Am</span></p>
+                <p><strong>Address: </strong><span class="text-slate-400">New York, Delhi</span></p>
+            </div>
+        </div>
+        <!-- menus -->
+        <div id="menu" class="my-2 text-white text-base xl:text-lg">
+            <h1 class="p-2 xl:p-5 font-semibold border-b-2 my-2">The Menu</h1>
+            <div class="">
+                <div class="font-semibold flex justify-evenly text-black text-center">
+                    <button id="eatButton" class="p-2 bg-orange-500 text-white hover:bg-slate-300 w-full"
+                        onclick="openEat();">Eat</button>
+                    <button id="drinkButton" class="p-2 bg-white hover:bg-slate-300  w-full"
+                        onclick="openDrink();">Drink</button>
+                </div>
+                <div id="eat" class="bg-slate-100 block w-full">
+                    <div class="border-b border-slate-500 hover:bg-slate-300 p-2">
+                        <h3 class="font-semibold text-black">Nacos</h3>
+                        <p class="text-slate-500">Lorem ipsum dolor sit amet.</p>
+                    </div>
+                    <div class="border-b border-slate-500 hover:bg-slate-300 p-2">
+                        <h3 class="font-semibold text-black">Tacos</h3>
+                        <p class="text-slate-500">Lorem ipsum dolor sit amet.</p>
+                    </div>
+                    <div class="border-b border-slate-500 hover:bg-slate-300 p-2">
+                        <h3 class="font-semibold text-black">Burrito</h3>
+                        <p class="text-slate-500">Lorem ipsum dolor sit amet.</p>
+                    </div>
+                    <div class="border-b border-slate-500 hover:bg-slate-300 p-2">
+                        <h3 class="font-semibold text-black">Hombalo</h3>
+                        <p class="text-slate-500">Lorem ipsum dolor sit amet.</p>
+                    </div>
+                    <div class="border-b border-slate-500 hover:bg-slate-300 p-2">
+                        <h3 class="font-semibold text-black">Tortias</h3>
+                        <p class="text-slate-500">Lorem ipsum dolor sit amet.</p>
+                    </div>
+                </div>
+                <div id="drink" class="bg-slate-100 hidden w-full">
+                    <div class="border-b border-slate-500 hover:bg-slate-300 p-2">
+                        <h3 class="font-semibold text-black">Coca-Cola</h3>
+                        <p class="text-slate-500">Lorem ipsum dolor sit amet.</p>
+                    </div>
+                    <div class="border-b border-slate-500 hover:bg-slate-300 p-2">
+                        <h3 class="font-semibold text-black">Fanta</h3>
+                        <p class="text-slate-500">Lorem ipsum dolor sit amet.</p>
+                    </div>
+                    <div class="border-b border-slate-500 hover:bg-slate-300 p-2">
+                        <h3 class="font-semibold text-black">Jungle-Juice</h3>
+                        <p class="text-slate-500">Lorem ipsum dolor sit amet.</p>
+                    </div>
+                    <div class="border-b border-slate-500 hover:bg-slate-300 p-2">
+                        <h3 class="font-semibold text-black">Tequila</h3>
+                        <p class="text-slate-500">Lorem ipsum dolor sit amet.</p>
+                    </div>
+                    <div class="border-b border-slate-500 hover:bg-slate-300 p-2">
+                        <h3 class="font-semibold text-black">Martini</h3>
+                        <p class="text-slate-500">Lorem ipsum dolor sit amet.</p>
+                    </div>
+                </div>
+            </div>
+            <img src="../img/soto.png" alt="" class="w-full h-auto my-2 rounded">
+        </div>
+        <!-- location -->
+        <div class="my-2 text-white text-base xl:text-lg">
+            <h3 class="font-semibold border-b-2 p-2 xl:p-5">Where to Find Us?</h3>
+            <p class="text-slate-500 hover:text-orange-500 font-medium">Find us at some address bellow!</p>
+            <div class="my-2">
+                <img src="../img/mie-ayam.jpg" alt="" class="w-full h-auto rounded my-1">
+                <p class="my-2 p-1 text-base xl:text-lg"><span
+                        class="text-black font-semibold bg-white p-1 uppercase rounded">fyi</span> Lorem ipsum dolor sit
+                    amet consectetur adipisicing elit. Nobis veniam quaerat molestias optio asperiores, repudiandae quo
+                    deserunt nulla dolorem unde quas laudantium voluptatem dolores, aspernatur ab vero. Vitae, eum enim!
+                </p>
+                <p class="my-2 p-1"><strong>Reserve</strong> a table, please contact us first!</p>
+                <form action="">
+                    <input type="text" class="w-full my-2 rounded-sm border border-white p-1 text-black"
+                        placeholder="Name">
+                    <div class="flex gap-2">
+                        <input type="text" class="w-1/2 my-2 rounded-sm border border-white p-1 text-black"
+                            placeholder="How Many People?">
+                        <input type="date" class="w-1/2 my-2 rounded-sm border border-white p-1 text-black">
+                    </div>
+                    <input type="text" class="w-full border border-black text-black p-1 my-2"
+                        placeholder="Any Special Requirement?">
+                    <input type="button" value="Send Message"
+                        class="p-3 rounded bg-white text-black font-semibold hover:bg-slate-400 cursor-pointer">
+                </form>
+            </div>
+        </div>
+        <!-- foot -->
+    </main>
+    <footer class="bg-slate-800 text-white font-semibold flex h-52 justify-center items-center">
+        <h1>Powered by <a href="#" class="text-teal-500 hover:text-orange-500">Me.</a></h1>
+    </footer>
+    <script>
+        const eat = document.getElementById('eat');
+        const eatBtn = document.getElementById('eatButton');
+        const drink = document.getElementById('drink');
+        const drinkBtn = document.getElementById('drinkButton');
+        function openEat() {
+            drink.style.display = 'none';
+            drinkBtn.style.backgroundColor = 'white';
+            drinkBtn.style.color = 'black';
+            eatBtn.style.backgroundColor = 'orange';
+            eatBtn.style.color = 'white';
+            eat.style.display = 'block';
+        }
+        function openDrink() {
+            eat.style.display = 'none';
+            eatBtn.style.backgroundColor = 'white';
+            eatBtn.style.color = 'black';
+            drinkBtn.style.backgroundColor = 'blue';
+            drinkBtn.style.color = 'white';
+            drink.style.display = 'block';
+        }
+    </script>
+</body>
+
+</html>

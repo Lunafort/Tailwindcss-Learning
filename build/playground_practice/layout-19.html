@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice-layout-19 with?Tailwindcss</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="box-border grid grid-cols-1 xl:grid-cols-5">
+    <!-- l-con/nav -->
+    <nav
+        class="flex items-center xl:items-start p-2 xl:p-5 gap-2 xl:flex-col col-span-1 font-medium bg-slate-800 xl:h-screen xl:sticky top-0 w-full text-white">
+        <img src="../img/new/profile-10.jpg" alt="pp" class="w-24 h-24 rounded">
+        <a class="hover:bg-slate-500 hover:text-white p-1" href="#">Home</a>
+        <a class="hover:bg-slate-500 hover:text-white p-1" href="#">About</a>
+        <a class="hover:bg-slate-500 hover:text-white p-1" href="#">Photos</a>
+    </nav>
+    <!-- r-con -->
+    <main class="col-span-4  bg-slate-200">
+        <!-- r-con-1 -->
+        <div class="flex justify-center items-center h-96 xl:bg-gradient-to-r bg-gradient-to-b from-slate-800 to-violet-800">
+            <div class="bg-white text-black p-2 rounded font-medium hover:bg-slate-800 hover:text-white cursor-help" style="box-shadow :5px 5px 2px grey;">
+                <h1 class="font-bold text-base xl:text-lg">Bambang's</h1>
+                <p>Web Designer & Web Developer</p>
+            </div>
+        </div>
+        <!-- r-con-2 -->
+        <div class="p-2">
+            <h3 class="font-semibold border-b-2 border-black w-fit text-base xl:text-lg">Me</h3>
+            <p class="my-2 font-base">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum et, pariatur non
+                doloribus qui amet quis quod laudantium. Facilis deleniti distinctio culpa pariatur sint sunt commodi
+                reiciendis voluptas amet consequuntur exercitationem, dicta temporibus similique ipsam labore aliquid
+                nemo asperiores aut sapiente voluptatem voluptate libero error! Aperiam voluptatem hic et beatae?</p>
+        </div>
+        <!-- r-con-3 -->
+        <div class="p-2">
+            <h3 class="font-semibold border-b-2 border-black w-fit text-base xl:text-lg">My Skills</h3>
+            <div class="my-2">
+                <p class="font-medium">Games</p>
+                <div class="h-4 text-center font-medium text-xs text-white bg-slate-300">
+                    <div class="h-4 bg-slate-800 w-[50%]">50%</div>
+                </div>
+            </div>
+            <div class="my-2">
+                <p class="font-medium">Photography</p>
+                <div class="h-4 text-center font-medium text-xs text-white bg-slate-300">
+                    <div class="h-4 bg-slate-800 w-[47%]">47%</div>
+                </div>
+            </div>
+            <div class="my-2">
+                <p class="font-medium">Coding</p>
+                <div class="h-4 text-center font-medium text-xs text-white bg-slate-300">
+                    <div class="h-4 bg-slate-800 w-[58%]">58%</div>
+                </div>
+            </div>
+            <div class="my-4 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 text-center font-medium">
+                <div class="hover:bg-slate-800 hover:text-white p-2 xl:p-10 w-full bg-slate-300 text-black">
+                    <h3>+23</h3>
+                    <p>Partners</p>
+                </div>
+                <div class="hover:bg-slate-800 hover:text-white p-2 xl:p-10 w-full bg-slate-300 text-black">
+                    <h3>+63</h3>
+                    <p>Meetings</p>
+                </div>
+                <div class="hover:bg-slate-800 hover:text-white p-2 xl:p-10 w-full bg-slate-300 text-black">
+                    <h3>+33</h3>
+                    <p>Project Done</p>
+                </div>
+                <div class="hover:bg-slate-800 hover:text-white p-2 xl:p-10 w-full bg-slate-300 text-black">
+                    <h3>+41</h3>
+                    <p>Employee</p>
+                </div>
+            </div>
+            <button class="my-2 px-4 py-3 hover:bg-sky-600 rounded bg-sky-500 text-white font-semibold">Download
+                Resume</button>
+        </div>
+        <!-- r-con-4 -->
+        <div class="my-2 p-2">
+            <h3 class="font-semibold border-b-2 border-black w-fit">My Price</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-2 md:gap-4 p-2">
+                <div class="font-medium brightness-75 hover:brightness-100 text-center border border-slate-400">
+                    <p class="p-4 border-b bg-black text-white">Basic</p>
+                    <p class="p-3 border-b bg-white hover:bg-slate-400">Web Design</p>
+                    <p class="p-3 border-b bg-white hover:bg-slate-400">Photography</p>
+                    <p class="p-3 border-b bg-white hover:bg-slate-400">5Gb Storage</p>
+                    <p class="p-3 border-b bg-white hover:bg-slate-400">Mail Support</p>
+                    <p class="p-3 border-b bg-white hover:bg-slate-400">$10 <br>per month</p>
+                    <button
+                        class="px-4 py-3 my-2 rounded bg-sky-500 hover:bg-sky-600 hover:text-white text-semibold">Sign-Up</button>
+                </div>
+                <div class="font-medium brightness-75 hover:brightness-100 text-center border border-slate-400">
+                    <p class="p-4 border-b bg-orange-500 text-white">Basic</p>
+                    <p class="p-3 border-b bg-white hover:bg-slate-400">Web Design</p>
+                    <p class="p-3 border-b bg-white hover:bg-slate-400">Photography</p>
+                    <p class="p-3 border-b bg-white hover:bg-slate-400">5Gb Storage</p>
+                    <p class="p-3 border-b bg-white hover:bg-slate-400">Mail Support</p>
+                    <p class="p-3 border-b bg-white hover:bg-slate-400">$10 <br>per month</p>
+                    <button
+                        class="px-4 py-3 my-2 rounded bg-rose-500 hover:bg-rose-600 hover:text-white text-semibold">Sign-Up</button>
+                </div>
+            </div>
+        </div>
+        <!-- r-con-5 -->
+        <div class="my-2 p-2">
+            <h3 class="border-b-2 w-fit font-semibold border-black">My Reputation</h3>
+            <div class="grid grid-cols-1 my-2 ">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-2">
+                    <div class="flex gap-2 my-2 items-center">
+                        <img src="../img/pp-3.jpg" alt="pp-2"
+                            class="rounded-full w-32 h-32 brightness-75 hover:brightness-100 md:w-50 md:w-50">
+                        <div class="border-b border-black">
+                            <h3 class="font-semibold">Bambangs'Wifes <span class="text-red-600"><i> Ceo
+                                        at-MyOwnHouse</i></span></h3>
+                            <p><i>"Bambang Save us from starvings!"</i></p>
+                        </div>
+                    </div>
+                    <div class="flex gap-2 my-2 items-center">
+                        <img src="../img/new/profile-15.jpg" alt="pp-3"
+                            class="rounded-full w-32 h-32 brightness-75 hover:brightness-100 md:w-50 md:w-50">
+                        <div class="border-b border-black">
+                            <h3 class="font-semibold">Bambangs'Kiddos <span class="text-red-600"><i> Army
+                                        at-MyOwnHouse</i></span></h3>
+                            <p><i>"Our Fathers Save us from failing grades!"</i></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex place-content-center gap-2 my-2 items-center text-center">
+                    <img src="../img/pp.jpg" alt="pp-3"
+                        class="rounded-full w-32 h-32 brightness-75 hover:brightness-100 md:w-50 md:w-50">
+                    <div class=" border-b border-black">
+                        <h3 class="font-semibold">Bambangs' Uncle <span class="text-red-600"><i> Exta-Army
+                                    @MyOwnHouse</i></span></h3>
+                        <p><i>"Our Fathers Save us from failing grades!"</i></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- r-con-6 -->
+        <div class="my-2 p-2">
+            <h3 class="font-semibold border-b-2 border-black w-fit">My Photos</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-1 my-2">
+                <img src="../img/avatar6.png" alt="" class="w-full h-full opacity-80 hover:opacity-100 rounded-sm">
+                <img src="../img/pp-3.jpg" alt="" class="w-full h-full opacity-80 hover:opacity-100 rounded-sm">
+                <img src="../img/pp-2.jpg" alt="" class="w-full h-full opacity-80 hover:opacity-100 rounded-sm">
+                <img src="../img/new/profile-18.jpg" alt=""
+                    class="w-full h-full opacity-80 hover:opacity-100 rounded-sm">
+                <img src="../img/new/profile-5.jpg" alt=""
+                    class="w-full h-full opacity-80 hover:opacity-100 rounded-sm">
+                <img src="../img/avatar1.png" alt="" class="w-full h-full opacity-80 hover:opacity-100 rounded-sm">
+            </div>
+        </div>
+        <!-- r-con-7 -->
+        <div class="my-2 p-2">
+            <h3 class="border-b-2 border-black font-semibold">Contact Me</h3>
+            <div class="my-2 font-medium">
+                <p>📌 New York, Delhi</p>
+                <p>📞 +23388823</p>
+                <p>📧 example@mail.com</p>
+            </div>
+            <p class="my-t font-medium">Let's get in touch. Send me a message:</p>
+            <form action="">
+                <input type="text" placeholder="Name" class="w-full p-1 xl:p-2 my-2 outline-none">
+                <input type="email" placeholder="E-mail" class="w-full p-1 xl:p-2 my-2 outline-none">
+                <input type="text" placeholder="Subject" class="w-full p-1 xl:p-2 my-2 outline-none">
+                <input type="text" placeholder="Message" class="w-full p-1 xl:p-2 my-2 outline-none">
+            </form>
+            <button
+                class="px-4 py-3 rounded bg-slate-800 hover:bg-slate-700 hover:text-white text-white font-semibold">Send
+                Message</button>
+        </div>
+        <!-- r-con-8 -->
+        <div class="bg-slate-800 p-5 xl:p-10">
+            <div class="flex gap-2 p-2">
+                <a href="#"><img src="../icon/fb.png" alt="fb" class="w-8 h-8 hover:-translate-y-2 rounded"></a>
+                <a href="#"><img src="../icon/line.png" alt="fb" class="w-8 h-8 hover:-translate-y-2 rounded"></a>
+                <a href="#"><img src="../icon/insta.png" alt="fb" class="w-8 h-8 hover:-translate-y-2 rounded"></a>
+                <a href="#"><img src="../icon/yt.png" alt="fb" class="w-8 h-8 hover:-translate-y-2 rounded"></a>
+                <a href="#"><img src="../icon/wa.png" alt="fb" class="w-8 h-8 hover:-translate-y-2 rounded"></a>
+            </div>
+            <p class="font-semibold text-white">Powered by <a href="#" class="hover:border-b border-white">Me</a></p>
+        </div>
+    </main>
+</body>
+
+</html>

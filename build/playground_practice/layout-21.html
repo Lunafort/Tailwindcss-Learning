@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practice-layout-21 with?tailwindcss</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="box-border">
+    <nav
+        class="flex  sm:justify-between p-2 bg-slate-800 text-white font-medium uppercase gap-1 items-center sticky top-0 z-10">
+        <div class="hidden sm:block">
+            <a class="p-2 hover:border-b-2" href="#">home</a>
+            <a class="p-2 hover:border-b-2" href="#">about</a>
+            <a class="p-2 hover:border-b-2" href="#">portofolio</a>
+            <a class="p-2 hover:border-b-2" href="#">contact</a>
+        </div>
+        <a href="#" class="p-2">💩</a>
+    </nav>
+    <header class="flex justify-center items-center p-16 xl:p-52 bg-gradient-to-b from-slate-800 to-sky-700">
+        <h1 class="p-2 font-bold text-black bg-white rounded ">Website-logo</h1>
+    </header>
+    <main class="p-2 xl:p-10 bg-gradient-to-b from-sky-700 to-teal-500">
+        <div class="p-2 text-white">
+            <h3 class="font-semibold text-white border-b-2 border-black w-fit">About Me</h3>
+            <p class="font-base">I love someone</p>
+            <p class="font-base indent-8 my-4 break-all">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Numquam molestias atque asperiores dolores recusandae neque vitae obcaecati! Impedit minima ipsa
+                voluptatem nisi officia sapiente fugit dicta et illo! Sint consequatur est impedit labore, dolor
+                deleniti nesciunt tempora optio saepe itaque incidunt, esse maxime, unde facilis ab reprehenderit
+                pariatur quia. Consectetur?</p>
+            <div class="grid md:grid-cols-2  items-center">
+                <div class="mx-auto mb-2">
+                    <h3 class="font-bold hover:text-teal-500 text-center my-2">Bambang</h3>
+                    <img src="../img/new/profile-1.png" alt="pp"
+                        class="w-52 md:w-96 h-auto md:h-96 rounded opacity-50 hover:opacity-100">
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus error suscipit veritatis
+                    exercitationem molestias necessitatibus. Cum, quas laborum earum dolore ducimus ad quidem eaque sit,
+                    maxime nostrum corrupti quia, harum voluptate? Delectus numquam debitis quasi velit fuga
+                    perferendis, accusamus ab modi vel, amet, iste laborum cumque accusantium? Unde, fugit! Voluptas
+                    non, corrupti nemo deserunt quo suscipit maiores dolore cumque voluptatum veniam, quia consectetur
+                    ad facere aliquid eos at eligendi quam commodi neque ipsa unde libero. At assumenda quidem
+                    consectetur eaque inventore atque rem, perspiciatis sit mollitia placeat? Fugit temporibus cum in!
+                    Eveniet praesentium dicta quo vitae, delectus quae voluptatem error!</p>
+            </div>
+        </div>
+    </main>
+    <div class="flex items-center bg-teal-500 text-white font-medium justify-around text-center">
+        <p class="p-5">15+ <br>Partners</p>
+        <p class="p-5">45+ <br>Projects Done</p>
+        <p class="p-5">32+ <br>Happy Client</p>
+        <p class="p-5">52+ <br>Meetings</p>
+    </div>
+    <div class="p-16 xl:p-52 flex items-center justify-center bg-cover bg-fixed"
+        style="background-image: url(../img/bg-2.jpg);">
+        <h1 class="font-bold text-white text-center uppercase p-5 xl:p-10 text-lg xl:text-xl">portofolio</h1>
+    </div>
+    <div class="p-5 xl:p-10 ">
+        <div class="xl:px-10 grid place-content-center place-items-center">
+            <div class="my-2">
+                <h3 class="font-semibold py-2 border-b-2 w-fit border-black">My Work</h3>
+                <p class="text-base text-slate-500">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam,
+                    cum!</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-2">
+                <img src="../img/kayden.jpg" alt="" class="w-full h-full hover:opacity-100 opacity-60 rounded-sm">
+                <img src="../img/pp-2.jpg" alt="" class="w-full h-full hover:opacity-100 opacity-60 rounded-sm">
+                <img src="../img/pp-3.jpg" alt="" class="w-full h-full hover:opacity-100 opacity-60 rounded-sm">
+                <img src="../img/new/profile-17.jpg" alt=""
+                    class="w-full h-full hover:opacity-100 opacity-60 rounded-sm">
+                <img src="../img/new/profile-13.jpg" alt=""
+                    class="w-full h-full hover:opacity-100 opacity-60 rounded-sm">
+                <img src="../img/new/profile-18.jpg" alt=""
+                    class="w-full h-full hover:opacity-100 opacity-60 rounded-sm">
+                <img src="../img/new/profile-10.jpg" alt=""
+                    class="w-full h-full hover:opacity-100 opacity-60 rounded-sm">
+                <img src="../img/new/profile-5.jpg" alt=""
+                    class="w-full h-full hover:opacity-100 opacity-60 rounded-sm">
+            </div>
+            <button class="p-3 rounded bg-sky-500 hover:bg-sky-400 text-white font-semibold my-5 animate-bounce">Load
+                More</button>
+        </div>
+    </div>
+    <div class="p-16 xl:p-52 flex justify-center items-center bg-gradient-to-l from-indigo-600 to-violet-500">
+        <h1 class="font-bold text-white text-center uppercase xl:text-xl">contact</h1>
+    </div>
+    <div class="p-5 xl:p-10 ">
+        <div class="mb-2 xl:mb-5 text-center">
+            <h3 class="font-semibold capitalize">where i work</h3>
+            <p><i class="text-slate-500 hover:text-slate-700">i'd love your feedback!</i></p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 justify-center md:justify-around items-center">
+            <img src="../img/japan-bg.jpg" class=":w-full h-auto rounded">
+            <div>
+                <div class="font-semibold my-2">
+                    <p class="text-slate-500 hover:text-slate-600">🌍 New York, Delhi</p>
+                    <p class="text-slate-500 hover:text-slate-600">📧 example@mail.com</p>
+                    <p class="text-slate-500 hover:text-slate-600">📞 +99238812</p>
+                    <p class="font-medium">Leave a note, or join me in a sip of cofee :]</p>
+                </div>
+                <form action="">
+                    <div class="grid md:flex gap-1">
+                        <input type="text" class="w-full md:w-1/2 border mb-1 p-1 border-slate-400 rounded-sm "
+                            placeholder="Name">
+                        <input type="email" class="w-full md:w-1/2 border mb-1 p-1 border-slate-400 rounded-sm "
+                            placeholder="E-mail">
+                    </div>
+                    <input type="text" placeholder="Message" class="p-1 my-1 rounded-sm border border-slate-400 w-full">
+                    <input type="button" value="Send Message"
+                        class="p-3 rounded bg-sky-500 hover:bg-sky-400 cursor-pointer text-white font-semibold my-2">
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- foot -->
+    <div class="flex flex-col justify-center items-center h-52 md:gap-2 bg-slate-800">
+        <button class="p-3 rounded bg-white text-black font-semibold hover:bg-slate-600 hover:text-white text-center">To
+            the Top</button>
+        <div class="flex gap-4 my-2 text-center ">
+            <a href="#"><img src="../icon/fb.png" class="w-8 h-8 rounded"></a>
+            <a href="#"><img src="../icon/insta.png" class="w-8 h-8 rounded"></a>
+            <a href="#"><img src="../icon/line.png" class="w-8 h-8 rounded"></a>
+            <a href="#"><img src="../icon/linkdn.png" class="w-8 h-8 rounded"></a>
+            <a href="#"><img src="../icon/yt.png" class="w-8 h-8 rounded"></a>
+        </div>
+        <p class="text-white font-semibold my-4">Powered By me!</p>
+    </div>
+
+</body>
+
+</html>

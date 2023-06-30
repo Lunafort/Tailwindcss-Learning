@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practicing makes layout with?Tailwindcss</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="box-border">
+    <!-- navbar -->
+    <nav class="p-5 flex sticky top-0 bg-white text-black justify-between" style="box-shadow: 0 5px 2px darkslategrey;">
+        <a class="hover:bg-teal-500 hover:text-white p-2" href="#">MY ART</a>
+        <a class="hover:bg-teal-500 hover:text-white p-2" href="#">ABOUT</a>
+    </nav>
+    <main>
+        <!-- images -->
+        <div class="grid grid-cols-1 xl:grid-cols-2 w-full h-auto">
+            <img src="../img/kitchen-2.jpg" alt="" class="h-full w-full">
+            <img src="../img/kitchen.jpg" alt="" class="h-full w-full">
+            <img src="../img/room-2.jpg" alt="" class="h-full w-full">
+            <img src="../img/room.jpg" alt="" class="h-full w-full">
+        </div>
+        <!-- about -->
+        <div>
+            <div class="grid justify-center text-center py-5 mb-2">
+                <h1>About</h1>
+                <img src="../img/pp.jpg" class="w-full h-60 rounded-sm" style="box-shadow: 5px 5px 2px lightgray;">
+            </div>
+            <p class="text-center break-all px-5 xl:px-20">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos
+                delectus, numquam nostrum eligendi expedita
+                magni nihil tempore consectetur, maiores nemo eius, sed dolore inventore impedit illo perspiciatis eos.
+                Maxime distinctio in, temporibus aliquam modi nisi error nostrum, dolor minima magnam, debitis iste
+                alias molestias eos sint odit incidunt omnis numquam.</p>
+            <p class="text-slate-500 font-semibold my-5 text-center border-y py-2">Please feel free to contact me!</p>
+            <form action="" class="px-5 xl:px-20 my-2">
+                <div>
+                    <label for="">Name:</label>
+                    <input class="w-full border my-1 border-black p-2 " type="text">
+                </div>
+                <div>
+                    <label for="">Email:</label>
+                    <input class="w-full border my-1 border-black p-2 " type="email">
+                </div>
+                <div>
+                    <label for="">Subject:</label>
+                    <input class="w-full border my-1 border-black p-2 " type="text">
+                </div>
+                <input type="button" value="Send Message"
+                    class="my-2 px-3 py-2 rounded-md bg-sky-500 text-white font-semibold hover:bg-sky-400 shadow-lg">
+            </form>
+            <p class="text-center bg-teal-500 p-5 text-white font-semibold">powered by <a
+                    class="text-blue-600 hover:border-b" href="#">Me.</a></p>
+        </div>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practice-layout-22 with?tailwindcss</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <!-- add flex on it before continue! -->
+    <nav class="bg-emerald-500 flex justify-between items-center p-2 sm:hidden ">
+        <h1 class="font-bold text-white">Logo</h1>
+        <a href="#" class="p-2" onclick="openTabs();">🍎</a>
+    </nav>
+    <main class="grid grid-cols-1 md:grid-cols-5">
+        <!-- r-0 -->
+        <div class="md:col-span-1 md:h-screen sticky top-0 hidden sm:grid bg-slate-800 p-2 text-white font-medium md:overflow-y-scroll"
+            id="bigTab">
+            <h1 class="p-5 bg-white text-black text-2xl font-bold">My <br><span class="text-teal-500">LOGO</span></h1>
+            <div class="grid my-2">
+                <a class="hover:bg-slate-700 hover:text-white py-1 px-2" href="#">Shirts</a>
+                <a class="hover:bg-slate-700 hover:text-white py-1 px-2" href="#">Dresses</a>
+                <a class="hover:bg-slate-700 hover:text-white py-1 px-2" href="#" onclick="openmoreTabs();">Jeans</a>
+                <div class="grid pl-5 my-1" id="tabz2">
+                    <a class="hover:bg-slate-700 hover:text-white py-1 px-2" href="#">Skinny</a>
+                    <a class="hover:bg-slate-700 hover:text-white py-1 px-2" href="#">Relaxed</a>
+                    <a class="hover:bg-slate-700 hover:text-white py-1 px-2" href="#">Bootcut</a>
+                    <a class="hover:bg-slate-700 hover:text-white py-1 px-2" href="#">Straight</a>
+                </div>
+                <a class="hover:bg-slate-700 hover:text-white py-1 px-2" href="#">Jackets</a>
+                <a class="hover:bg-slate-700 hover:text-white py-1 px-2" href="#">Gymwear</a>
+                <a class="hover:bg-slate-700 hover:text-white py-1 px-2" href="#">Blazzers</a>
+                <a class="hover:bg-slate-700 hover:text-white py-1 px-2" href="#">Shoes</a>
+            </div>
+            <div class="flex flex-col mt-5">
+                <a class="hover:bg-sky-500 hover:text-white py-1 px-2" href="#">Contact</a>
+                <a class="hover:bg-emerald-500 hover:text-white py-1 px-2" href="#">NewsLetter</a>
+                <a class="hover:bg-orange-500 hover:text-white py-1 px-2" href="#">Subscribe</a>
+            </div>
+        </div>
+        <!-- r-start -->
+        <div class="md:col-span-4 h-full w-full p-2">
+            <div class="bg-slate-800 rounded">
+                <!-- r-1 -->
+                <div class="text-white font-medium flex justify-between p-2">
+                    <h1>Jeans</h1>
+                    <div>
+                        <a href="#" class="p-2">🛒</a>
+                        <a href="#" class="p-2">🔍</a>
+                    </div>
+                </div>
+                <!-- r-2 -->
+                <div class="bg-slate-200 h-72 p-5">
+                    <div class="font-medium">
+                        <h1 class="font-semibold">New Arrivals</h1>
+                        <p class="text-slate-500">Collection <span class="text-rose-600">2019</span></p>
+                        <button class="p-3 rounded bg-orange-500 hover:bg-orange-600 text-white font-semibold">Shop
+                            Now</button>
+                    </div>
+                </div>
+            </div>
+            <!-- r-3 -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-2 my-2 p-2 bg-slate-200 rounded">
+                <div class="bg-white text-black text-medium">
+                    <img src="../img/new/profile-1.jpg" class="w-full h-auto">
+                    <div class="p-2">
+                        <p>$ 20.99</p>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </div>
+                    <div class="flex">
+                        <button
+                            class="md:w-full p-3 m-2 rounded bg-slate-800 hover:bg-sky-500 text-white">Preview</button>
+                        <button
+                            class="md:w-full p-3 m-2 rounded bg-green-500 hover:bg-green-400 text-white">Buy</button>
+                    </div>
+                </div>
+                <div class="bg-white text-black text-medium">
+                    <img src="../img/new/profile-2.jpg" class="w-full h-auto">
+                    <div class="p-2">
+                        <p>$ 7.99</p>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </div>
+                    <div class="flex">
+                        <button
+                            class="md:w-full p-3 m-2 rounded bg-slate-800 hover:bg-sky-500 text-white">Preview</button>
+                        <button
+                            class="md:w-full p-3 m-2 rounded bg-green-500 hover:bg-green-400 text-white">Buy</button>
+                    </div>
+                </div>
+                <div class="bg-white text-black text-medium">
+                    <img src="../img/new/profile-5.jpg" class="w-full h-auto">
+                    <div class="p-2">
+                        <p>$ 8.99</p>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </div>
+                    <div class="flex">
+                        <button
+                            class="md:w-full p-3 m-2 rounded bg-slate-800 hover:bg-sky-500 text-white">Preview</button>
+                        <button
+                            class="md:w-full p-3 m-2 rounded bg-green-500 hover:bg-green-400 text-white">Buy</button>
+                    </div>
+                </div>
+                <div class="bg-white text-black text-medium">
+                    <img src="../img/new/profile-12.jpg" class="w-full h-auto">
+                    <div class="p-2">
+                        <p>$ 31.99</p>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </div>
+                    <div class="flex">
+                        <button
+                            class="md:w-full p-3 m-2 rounded bg-slate-800 hover:bg-sky-500 text-white">Preview</button>
+                        <button
+                            class="md:w-full p-3 m-2 rounded bg-green-500 hover:bg-green-400 text-white">Buy</button>
+                    </div>
+                </div>
+                <div class="bg-white text-black text-medium">
+                    <img src="../img/new/profile-17.jpg" class="w-full h-auto">
+                    <div class="p-2">
+                        <p>$ 28.99</p>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </div>
+                    <div class="flex">
+                        <button
+                            class="md:w-full p-3 m-2 rounded bg-slate-800 hover:bg-sky-500 text-white">Preview</button>
+                        <button
+                            class="md:w-full p-3 m-2 rounded bg-green-500 hover:bg-green-400 text-white">Buy</button>
+                    </div>
+                </div>
+                <div class="bg-white text-black text-medium">
+                    <img src="../img/new/profile-14.jpg" class="w-full h-auto">
+                    <div class="p-2">
+                        <p>$ 99.99</p>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </div>
+                    <div class="flex">
+                        <button
+                            class="md:w-full p-3 m-2 rounded bg-slate-800 hover:bg-sky-500 text-white">Preview</button>
+                        <button
+                            class="md:w-full p-3 m-2 rounded bg-green-500 hover:bg-green-400 text-white">Buy</button>
+                    </div>
+                </div>
+                <div class="bg-white text-black text-medium">
+                    <img src="../img/new/profile-19.jpg" class="w-full h-auto">
+                    <div class="p-2">
+                        <p>$ 78.99</p>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </div>
+                    <div class="flex">
+                        <button
+                            class="md:w-full p-3 m-2 rounded bg-slate-800 hover:bg-sky-500 text-white">Preview</button>
+                        <button
+                            class="md:w-full p-3 m-2 rounded bg-green-500 hover:bg-green-400 text-white">Buy</button>
+                    </div>
+                </div>
+                <div class="bg-white text-black text-medium">
+                    <img src="../img/new/profile-6.jpg" class="w-full h-auto">
+                    <div class="p-2">
+                        <p>$ 5.99</p>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </div>
+                    <div class="flex">
+                        <button
+                            class="md:w-full p-3 m-2 rounded bg-slate-800 hover:bg-sky-500 text-white">Preview</button>
+                        <button
+                            class="md:w-full p-3 m-2 rounded bg-green-500 hover:bg-green-400 text-white">Buy</button>
+                    </div>
+                </div>
+            </div>
+            <!-- r-4 -->
+            <div class="h-auto px-2 py-5 bg-slate-800 text-white font-medium">
+                <h1 class="font-semibold text-lg xl:text-xl">Subscribe</h1>
+                <p class="text-slate-500 capitalize">hit subs for special offers!</p>
+                <input type="text" class="w-full my-1 p-1 rounded-sm text-black" placeholder="E-mail">
+                <button class="p-3 rounded-sm my-2 bg-orange-500 hover:bg-orange-400 text-white font-semibold">Subscribe
+                    <my-2></my-2></button>
+            </div>
+            <!-- r-5 -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-2 bg-slate-500 text-base font-medium p-2 text-white">
+                <div>
+                    <h3 class="font-semibold text-left md:text-center border-b p-1">Contact</h3>
+                    <form action="">
+                        <input class="w-full my-1 p-1 rounded-sm text-black" type="text" placeholder="Name">
+                        <input class="w-full my-1 p-1 rounded-sm text-black" type="email" placeholder="E-mail">
+                        <input class="w-full my-1 p-1 rounded-sm text-black" type="text" placeholder="Subject">
+                        <input class="w-full my-1 p-1 rounded-sm text-black" type="text" placeholder="Message">
+                        <input class="w-full my-1 p-1 rounded-sm bg-black hover:bg-slate-800 cursor-pointer"
+                            type="button" value="Send">
+                    </form>
+                </div>
+                <div>
+                    <h3 class="font-semibold text-left md:text-center border-b p-1">About</h3>
+                    <div class="text-center grid">
+                        <a class="hover:text-slate-700" href="#">About us</a>
+                        <a class="hover:text-slate-700" href="#">We are hiring</a>
+                        <a class="hover:text-slate-700" href="#">Support</a>
+                        <a class="hover:text-slate-700" href="#">Find Store</a>
+                        <a class="hover:text-slate-700" href="#">Shipment</a>
+                        <a class="hover:text-slate-700" href="#">Payment</a>
+                        <a class="hover:text-slate-700" href="#">Gift Card</a>
+                        <a class="hover:text-slate-700" href="#">Return</a>
+                        <a class="hover:text-slate-700" href="#">Help</a>
+                    </div>
+                </div>
+                <div>
+                    <div class="mb-1">
+                        <h3 class="font-semibold border-b p-1 text-left">Store</h3>
+                        <p class="text-slate-200 hover:text-slate-700">📌 New York, Delhi</p>
+                        <p class="text-slate-200 hover:text-slate-700">📞 0087231</p>
+                        <p class="text-slate-200 hover:text-slate-700">📧 example@mail.com</p>
+                    </div>
+                    <div class="my-1">
+                        <h3 class="font-semibold border-b p-1 text-left">We Accept</h3>
+                        <p class="text-slate-200 hover:text-slate-700">💳 Credit Card</p>
+                        <p class="text-slate-200 hover:text-slate-700">💰 Cash</p>
+                        <p class="text-slate-200 hover:text-slate-700">🪙 Gold</p>
+                    </div>
+                    <div class="flex gap-2 my-2 border-t-2 p-1">
+                        <a href="#"><img src="../icon/fb.png" class="w-7 h-7 rounded hover:translate-y-2"></a>
+                        <a href="#"><img src="../icon/insta.png" class="w-7 h-7 rounded hover:translate-y-2"></a>
+                        <a href="#"><img src="../icon/yt.png" class="w-7 h-7 rounded hover:translate-y-2"></a>
+                        <a href="#"><img src="../icon/line.png" class="w-7 h-7 rounded hover:translate-y-2"></a>
+                        <a href="#"><img src="../icon/twitter.png" class="w-7 h-7 rounded hover:translate-y-2"></a>
+                    </div>
+                </div>
+            </div>
+            <!-- r-6 -->
+            <div class="h-36 font-semibold flex items-center justify-center text-white bg-slate-800">
+                <h1 class="text-center ">Powered by <a href="#" class="text-red-600 hover:text-red-500">Me.</a></h1>
+            </div>
+        </div>
+        <!-- r-end -->
+    </main>
+
+    <script>
+        function openmoreTabs() {
+            const tabs2 = document.getElementById('tabz2');
+            if (tabs2.style.display === 'grid') {
+                tabs2.style.display = 'none';
+            } else {
+                tabs2.style.display = 'grid';
+            }
+        }
+        function openTabs() {
+            const bigTabs = document.getElementById('bigTab');
+            if (bigTabs.style.display === 'grid') {
+                bigTabs.style.display = 'none';
+            } else {
+                bigTabs.style.display = 'grid';
+            }
+        }
+    </script>
+</body>
+
+</html>

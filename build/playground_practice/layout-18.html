@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice-layout-18 with?Tailwindcss</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body class="box-border text-base xl:text-lg ">
+    <nav class="sm:hidden flex sticky top-0 p-2 justify-between items-center bg-slate-800 z-10">
+        <a href="#" class="hover:border-b">🚀</a>
+        <a href="#"><img src="../img/avatar5.png" alt="pp-1" class="w-10 h-10 rounded"></a>
+    </nav>
+    <main class="grid grid-cols-1 md:grid-cols-3 xl:grid-cols-4 p-2 gap-2">
+        <!-- l-con -->
+        <div class="md:col-span-1 sm:sticky top-0 md:h-screen">
+            <!-- l-con-1 -->
+            <div class="p-2 flex items-center gap-5 xl:grid bg-slate-700 text-white">
+                <img src="../img/new/profile-20.jpg" alt="pp-2" class="w-20 h-20 xl:w-full xl:h-full rounded">
+                <div class="">
+                    <h5 class="text-slate-500 hover:text-red-600">@Bamns091</h5>
+                    <h3 class="font-semibold">Bambang-Tamvan</h3>
+                </div>
+            </div>
+            <!-- l-con-2 -->
+            <div class="grid bg-slate-500 font-medium text-white">
+                <a class="hover:bg-slate-600 hover:text-teal-300 p-2" href="#">Portofolio</a>
+                <a class="hover:bg-slate-600 hover:text-teal-300 p-2" href="#">About</a>
+                <a class="hover:bg-slate-600 hover:text-teal-300 p-2" href="#">Contact</a>
+                <a class="hover:bg-slate-600 hover:text-teal-300 p-2" href="#">Help <span class="font-bold">?</span></a>
+            </div>
+            <!-- l-con-3 -->
+            <div class="grid md:flex bg-slate-500 gap-2 p-2 font-semibold text-white ">
+                <button class="px-5 py-2 rounded hover:bg-sky-600 bg-sky-500">Setting</button>
+                <button class="px-5 py-2 rounded hover:bg-red-600 bg-red-500">Logout</button>
+            </div>
+        </div>
+        <!-- r-con -->
+        <div class="md:col-span-2 xl:col-span-3 ">
+            <!-- r-con-1 -->
+            <div class="bg-slate-300 p-2 border-b border-black">
+                <h1 class="text-lg xl:text-xl font-bold border-b-2 border-slate-600 mb-2 w-fit">My-Portofolio</h1>
+                <div class="flex gap-2 flex-wrap">
+                    <p class="font-semibold p-1">Filter :</p>
+                    <a href="#" class="bg-black text-white p-1 rounded-sm">All</a>
+                    <a href="#" class="hover:bg-black hover:text-white p-1 rounded-sm">Design</a>
+                    <a href="#" class="hover:bg-black hover:text-white p-1 rounded-sm">Photos</a>
+                    <a href="#" class="hover:bg-black hover:text-white p-1 rounded-sm">Art</a>
+                    <a href="#" class="hover:bg-black hover:text-white p-1 rounded-sm">Georgous</a>
+                    <a href="#" class="hover:bg-black hover:text-white p-1 rounded-sm">Magnificient</a>
+                </div>
+            </div>
+            <!-- r-con-2 -->
+            <div class="py-1 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3">
+                <div>
+                    <img src="../img/pp-2.jpg" alt="pp-3" class="w-full  h-72">
+                    <div class="p-2 bg-slate-100 hover:bg-slate-300">
+                        <h3 class="font-semibold border-b-2 w-fit border-teal-500 my-2">Bambang</h3>
+                        <p class="text-base break-all ">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi,
+                            alias
+                            laboriosam voluptates harum maiores accusantium fuga, porro possimus labore tempore nihil
+                            esse quibusdam fugit, dolorum ex molestias voluptatem consequatur. Nihil.</p>
+                    </div>
+
+                </div>
+                <div>
+                    <img src="../img/pp-3.jpg" alt="pp-4" class="w-full  h-72">
+                    <div class="p-2 bg-slate-100 hover:bg-slate-300">
+                        <h3 class="font-semibold border-b-2 w-fit border-teal-500 my-2">Charles</h3>
+                        <p class="text-base break-all ">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi,
+                            alias
+                            laboriosam voluptates harum maiores accusantium fuga, porro possimus labore tempore nihil
+                            esse quibusdam fugit, dolorum ex molestias voluptatem consequatur. Nihil.</p>
+                    </div>
+                </div>
+                <div>
+                    <img src="../img/new/profile-1.jpg" alt="pp-4" class="w-full h-72">
+                    <div class="p-2 bg-slate-100 hover:bg-slate-300">
+                        <h3 class="font-semibold border-b-2 w-fit border-teal-500 my-2">Sri M</h3>
+                        <p class="text-base break-all ">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi,
+                            alias
+                            laboriosam voluptates harum maiores accusantium fuga, porro possimus labore tempore nihil
+                            esse quibusdam fugit, dolorum ex molestias voluptatem consequatur. Nihil.</p>
+                    </div>
+                </div>
+                <div>
+                    <img src="../img/new/profile-15.jpg" alt="pp-4" class="w-full h-72">
+                    <div class="p-2 bg-slate-100 hover:bg-slate-300">
+                        <h3 class="font-semibold border-b-2 w-fit border-teal-500 my-2">Honigon</h3>
+                        <p class="text-base break-all ">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi,
+                            alias
+                            laboriosam voluptates harum maiores accusantium fuga, porro possimus labore tempore nihil
+                            esse quibusdam fugit, dolorum ex molestias voluptatem consequatur. Nihil.</p>
+                    </div>
+                </div>
+                <div>
+                    <img src="../img/new/profile-18.jpg" alt="pp-4" class="w-full h-72">
+                    <div class="p-2 bg-slate-100 hover:bg-slate-300">
+                        <h3 class="font-semibold border-b-2 w-fit border-teal-500 my-2">Jessica</h3>
+                        <p class="text-base break-all ">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi,
+                            alias
+                            laboriosam voluptates harum maiores accusantium fuga, porro possimus labore tempore nihil
+                            esse quibusdam fugit, dolorum ex molestias voluptatem consequatur. Nihil.</p>
+                    </div>
+                </div>
+                <div>
+                    <img src="../img/new/profile-19.jpg" alt="pp-4" class="w-full h-72">
+                    <div class="p-2 bg-slate-100 hover:bg-slate-300">
+                        <h3 class="font-semibold border-b-2 w-fit border-teal-500 my-2">Petronia</h3>
+                        <p class="text-base break-all ">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi,
+                            alias
+                            laboriosam voluptates harum maiores accusantium fuga, porro possimus labore tempore nihil
+                            esse quibusdam fugit, dolorum ex molestias voluptatem consequatur. Nihil.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- pagination -->
+            <div class="flex gap-2 xl:gap-4 justify-center items-center p-2 font-medium">
+                <a class="hover:bg-slate-500 rounded-sm hover:text-white p-2" href="#">(-)</a>
+                <a class="hover:bg-slate-500 rounded-sm hover:text-white p-2" href="#">1</a>
+                <a class="hover:bg-slate-500 rounded-sm hover:text-white p-2" href="#">2</a>
+                <a class="hover:bg-slate-500 rounded-sm hover:text-white p-2" href="#">3</a>
+                <a class="hover:bg-slate-500 rounded-sm hover:text-white p-2" href="#">4</a>
+                <a class="hover:bg-slate-500 rounded-sm hover:text-white p-2" href="#">..</a>
+                <a class="hover:bg-slate-500 rounded-sm hover:text-white p-2" href="#">(+)</a>
+            </div>
+        </div>
+    </main>
+    <!-- about -->
+    <div class="grid grid-cols-1 xl:grid-cols-3">
+        <div class="col-span-1 p-2 bg-slate-200">
+            <div>
+                <div class="flex flex-wrap justify-center">
+                    <img src="../img/new/profile-4.jpg" class="xl:w-1/2 md:w-1/5 w-full h-auto">
+                    <img src="../img/pp.jpg" class="xl:w-1/2 md:w-1/5 w-full h-auto">
+                </div>
+                <div class="p-2">
+                    <h3 class="font-semibold text-center my-3 border-b border-black">About-Me</h3>
+                    <p class="text-base break-all">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur
+                        debitis vero
+                        consectetur eligendi labore rem, corporis ducimus saepe nobis ipsum nihil esse dicta, nostrum
+                        quisquam
+                        maiores alias velit eius ullam.</p>
+                </div>
+            </div>
+            <div>
+                <h3 class="font-semibold my-2 text-center border-b border-black">Technical-Skills</h3>
+                <div class="my-2">
+                    <p class="text-base xl:text-lg font-semibold">Eating</p>
+                    <div class="h-6 w-full bg-slate-500 text-white font-medium text-center">
+                        <div class="h-6 w-[35%] bg-slate-700">35%</div>
+                    </div>
+                </div>
+                <div class="my-2">
+                    <p class="text-base xl:text-lg font-semibold">Learning</p>
+                    <div class="h-6 w-full bg-slate-500 text-white font-medium text-center">
+                        <div class="h-6 w-[55%] bg-slate-700">55%</div>
+                    </div>
+                </div>
+                <div class="my-2">
+                    <p class="text-base xl:text-lg font-semibold">Practicing</p>
+                    <div class="h-6 w-full bg-slate-500 text-white font-medium text-center">
+                        <div class="h-6 w-[80%] bg-slate-700">80%</div>
+                    </div>
+                </div>
+                <button
+                    class="px-5 py-3 rounded bg-sky-700 hover:bg-sky-400 hover:text-white font-semibold my-2">Download
+                    Resume</button>
+            </div>
+        </div>
+        <div class="col-span-2 bg-slate-200 text-">
+            <div>
+                <h3 class="font-semibold text-center border-b border-black">How Much i Charge?</h3>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-3 xl:gap-5 my-2 xl:my-4 p-2">
+                    <div class=" font-medium text-center bg-slate-200 rounded-sm brightness-50 hover:brightness-100">
+                        <p class="p-5 bg-black font-semibold text-white">BASIC</p>
+                        <p class="p-3 border-b border-slate-300 hover:bg-white">Web Design</p>
+                        <p class="p-3 border-b border-slate-300 hover:bg-white">Photography</p>
+                        <p class="p-3 border-b border-slate-300 hover:bg-white">1 GB Storage</p>
+                        <p class="p-3 border-b border-slate-300 hover:bg-white">Mail Support</p>
+                        <p class="p-3 border-b border-slate-300 hover:bg-white">$10 <br> per-month</p>
+                        <button
+                            class="px-4 py-3 rounded bg-sky-400 hover:bg-sky-500 hover:text-white my-2 xl:my-5">Sign-Up</button>
+                    </div>
+
+                    <div class=" font-medium text-center bg-slate-200 rounded-sm brightness-50 hover:brightness-100">
+                        <p class="p-5 bg-green-500 font-semibold text-white">MIDDLE</p>
+                        <p class="p-3 border-b border-slate-300 hover:bg-white">Web Design</p>
+                        <p class="p-3 border-b border-slate-300 hover:bg-white">Photography</p>
+                        <p class="p-3 border-b border-slate-300 hover:bg-white">1 GB Storage</p>
+                        <p class="p-3 border-b border-slate-300 hover:bg-white">Mail Support</p>
+                        <p class="p-3 border-b border-slate-300 hover:bg-white">$10 <br> per-month</p>
+                        <button
+                            class="px-4 py-3 rounded bg-sky-400 hover:bg-sky-500 hover:text-white my-2 xl:my-5">Sign-Up</button>
+                    </div>
+
+                    <div class=" font-medium text-center bg-slate-200 rounded-sm brightness-50 hover:brightness-100">
+                        <p class="p-5 bg-orange-500 font-semibold text-white">PRO</p>
+                        <p class="p-3 border-b border-slate-300 hover:bg-white">Web Design</p>
+                        <p class="p-3 border-b border-slate-300 hover:bg-white">Photography</p>
+                        <p class="p-3 border-b border-slate-300 hover:bg-white">1 GB Storage</p>
+                        <p class="p-3 border-b border-slate-300 hover:bg-white">Mail Support</p>
+                        <p class="p-3 border-b border-slate-300 hover:bg-white">$10 <br> per-month</p>
+                        <button
+                            class="px-4 py-3 rounded bg-sky-400 hover:bg-sky-500 hover:text-white my-2 xl:my-5">Sign-Up</button>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <h3 class="font-semibold text-center border-b border-black">Contact Me</h3>
+                <div class="grid grid-cols-1 md:grid-cols-3 my-2 xl:my-4 p-2">
+                    <div class="text-center bg-slate-100 p-2 xl:p-5 text-black hover:bg-slate-800 hover:text-white ">
+                        <p class="text-3xl xl:text-5xl">📧</p>
+                        <p class="font-semibold my-2">example@mail.com</p>
+                    </div>
+                    <div class="text-center bg-slate-100 p-2 xl:p-5 text-black hover:bg-slate-800 hover:text-white ">
+                        <p class="text-3xl xl:text-5xl">📌</p>
+                        <p class="font-semibold my-2">New York, Delhi</p>
+                    </div>
+                    <div class="text-center bg-slate-100 p-2 xl:p-5 text-black hover:bg-slate-800 hover:text-white ">
+                        <p class="text-3xl xl:text-5xl">📞</p>
+                        <p class="font-semibold my-2">+223990812</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- sec-3 -->
+    <div class="h-full bg-slate-800 text-white grid grid-cols-1 xl:grid-cols-3 gap-2 xl:gap-4">
+        <div class="p-2 xl:p-5">
+            <h3 class="font-semibold text-center border-b ">Send me Massage</h3>
+            <form action="" class="my-2 ">
+                <div class="my-2">
+                    <label for="">Name</label>
+                    <input type="text" required class="w-full text-black outline-none p-1 md:p-2 border-black border">
+                </div>
+                <div class="my-2">
+                    <label for="">E-mail</label>
+                    <input type="email" required class="w-full text-black outline-none p-1 md:p-2 border-black border">
+                </div>
+                <div class="my-2">
+                    <label for="">Subject</label>
+                    <input type="text" required class="w-full text-black outline-none p-1 md:p-2 border-black border">
+                </div>
+                <input type="button"
+                    class="px-4 py-2 rounded bg-sky-500 hover:bg-sky-400 font-semibold hover:text-white cursor-pointer"
+                    value="Send Message">
+            </form>
+        </div>
+        <div class=" col-span-2">
+            <div class="p-2 xl:p-5 grid grid-cols-1 xl:grid-cols-3 gap-2 xl:gap-5">
+                <div>
+                    <h3 class="font-semibold text-center border-b ">Footer</h3>
+                    <p class="text-base my-2 xl:my-5 break-all">Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. Vitae earum eveniet totam fugiat est ad. Numquam deleniti delectus obcaecati, minima eaque
+                        neque officiis repellat illo, voluptate placeat expedita hic enim!</p>
+                </div>
+                <div>
+                    <h3 class="font-semibold text-center border-b ">Blog-Spot</h3>
+                    <div class="grid my-2 gap-2">
+                        <div
+                            class="hover:bg-slate-300 hover:text-black flex gap-2 xl:gap-5 items-center p-2  border-b border-slate-600">
+                            <img src="../img/pp-3.jpg" alt="pp-5" class="w-16 h-16 rounded">
+                            <div>
+                                <p class="font-semibold">lorem</p>
+                                <p>Lorem ipsum dolor sit, </p>
+                            </div>
+                        </div>
+                        <div class="hover:bg-slate-300 hover:text-black flex gap-2 xl:gap-5 items-center p-2 ">
+                            <img src="../img/pp-2.jpg" alt="pp-5" class="w-16 h-16 rounded">
+                            <div>
+                                <p class="font-semibold">lorem</p>
+                                <p>Lorem ipsum dolor sit, </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="font-semibold text-center border-b ">Popular-Tags</h3>
+                    <p class="break-keep flex flex-wrap my-2 text-base">
+                        <span class="p-1 mx-1 bg-slate-400">Travel</span>
+                        <span class="p-1 mx-1 bg-slate-400">Shooping</span>
+                        <span class="p-1 mx-1 bg-slate-400">Food</span>
+                        <span class="p-1 mx-1 bg-slate-400">Fashion</span>
+                        <span class="p-1 mx-1 bg-slate-400">Art</span>
+                        <span class="p-1 mx-1 bg-slate-400">Cool</span>
+                        <span class="p-1 mx-1 bg-slate-400">Money</span>
+                        <span class="p-1 mx-1 bg-slate-400">Codes</span>
+                        <span class="p-1 mx-1 bg-slate-400">Tired</span>
+                    </p>
+                </div>
+            </div>
+            <div class="bg-slate-700 p-2">
+                <h3 class="font-semibold text-center p-10">Footer</h3>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
